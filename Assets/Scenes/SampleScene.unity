@@ -295,6 +295,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23cf218589b190c489c0e4e10b3b2b4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  PlayerMovementState: 0
+  SprintMultiplier: 2
+  MovementSpeed: 5
+  MovementAcceleration: 0.5
 --- !u!50 &2875166039839295118
 Rigidbody2D:
   serializedVersion: 4
@@ -310,7 +314,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -321,7 +325,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
