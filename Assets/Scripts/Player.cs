@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public enum MovementState
     {
         Neutral,
-        CrouchShield,
+        Block,
         Slide,
         Sprint
     }
@@ -38,8 +38,8 @@ public class Player : MonoBehaviour
                 pos = Vector3.MoveTowards(transform.position, transform.position + maxVelocity, MovementAcceleration);
                 rb.MovePosition(pos);
                 break;
-            case MovementState.CrouchShield:
-
+            case MovementState.Block:
+                // Stand still
                 break;
             case MovementState.Slide:
 
@@ -56,14 +56,26 @@ public class Player : MonoBehaviour
     private void Update()
     {
         movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
-        if (Input.GetButton("Sprint") && PlayerMovementState == MovementState.Neutral)
+        if (Input.GetButton("Sprint") && PlayerMovementState == MovementState.Neutral) // Left shift to sprint
         {
             PlayerMovementState = MovementState.Sprint;
         }
-        else if(releaseSprintTimer >= ReleaseSprintDelay)
+        else if(releaseSprintTimer >= ReleaseSprintDelay) // Release sprint (slight delay for easier sliding)
 		{
             PlayerMovementState = MovementState.Neutral;
             releaseSprintTimer = 0;
         }
+
+        bool block = Input.GetButton("Block");
+        if(block && PlayerMovementState == MovementState.Neutral)
+		{
+            PlayerMovementState = MovementState.Block;
+		}
+
+        if(PlayerMovementState == MovementState.Block && !block)
+		{
+            PlayerMovementState = MovementState.Neutral;
+		}
+
     }
 }
