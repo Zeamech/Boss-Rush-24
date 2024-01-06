@@ -15,13 +15,17 @@ public class Player : MonoBehaviour
     public MovementState PlayerMovementState;
 
     public float SprintMultiplier = 1.5f;
+    public float SlideMultiplier = 1.2f;
     public float MovementSpeed = 5f;
     public float MovementAcceleration = 0.5f;
     public float ReleaseSprintDelay = 0.5f;
+    public float SlideDuration = 0.8f;
 
     private Rigidbody2D rb;
     private Vector2 movementDirection;
+    private Vector2 lastInputDirection; // used for sliding
     private float releaseSprintTimer = 0f;
+    private float releaseSlideTimer = 0f;
     private void Awake()
     {
         PlayerMovementState = MovementState.Neutral;
@@ -42,7 +46,10 @@ public class Player : MonoBehaviour
                 // Stand still
                 break;
             case MovementState.Slide:
-
+                releaseSlideTimer += Time.deltaTime;
+                maxVelocity = lastInputDirection * MovementSpeed * SprintMultiplier * SlideMultiplier * Time.deltaTime;
+                pos = Vector3.MoveTowards(transform.position, transform.position + maxVelocity, MovementAcceleration);
+                rb.MovePosition(pos);
                 break;
             case MovementState.Sprint:
                 releaseSprintTimer += Time.deltaTime;
@@ -56,6 +63,8 @@ public class Player : MonoBehaviour
     private void Update()
     {
         movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        if(movementDirection.magnitude > 0) lastInputDirection = movementDirection;
+
         if (Input.GetButton("Sprint") && PlayerMovementState == MovementState.Neutral) // Left shift to sprint
         {
             PlayerMovementState = MovementState.Sprint;
@@ -66,15 +75,20 @@ public class Player : MonoBehaviour
             releaseSprintTimer = 0;
         }
 
-        bool block = Input.GetButton("Block");
-        if(block && PlayerMovementState == MovementState.Neutral)
-		{
-            PlayerMovementState = MovementState.Block;
-		}
+        bool block = Input.GetButton("Block"); // Left ctrl to block
+        if(block && PlayerMovementState == MovementState.Neutral) PlayerMovementState = MovementState.Block;
+        if(PlayerMovementState == MovementState.Block && !block) PlayerMovementState = MovementState.Neutral;
 
-        if(PlayerMovementState == MovementState.Block && !block)
+        if(PlayerMovementState == MovementState.Sprint && Input.GetButton("Block")) // Start a slide
 		{
-            PlayerMovementState = MovementState.Neutral;
+            // TODO: Redo this however we want. For now it just sets speed to 2x sprint speed and decelerates to zero.
+            PlayerMovementState = MovementState.Slide;
+		}
+        if(PlayerMovementState == MovementState.Slide && releaseSlideTimer >= SlideDuration)
+		{
+            releaseSlideTimer = 0;
+            if (block) PlayerMovementState = MovementState.Block;
+            else PlayerMovementState = MovementState.Neutral;
 		}
 
     }
