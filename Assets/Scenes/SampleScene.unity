@@ -123,6 +123,32 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &171287755 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5221375375649743227, guid: 74cde52175acf124bacc9484c2eccbf9, type: 3}
+  m_PrefabInstance: {fileID: 2875166039839295115}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &171287758
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 171287755}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8e8dbaee8228d18489d8d96a2172d98f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -363,6 +389,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3938864329349406760, guid: 74cde52175acf124bacc9484c2eccbf9, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2875166039839295117}
+    - targetCorrespondingSourceObject: {fileID: 5221375375649743227, guid: 74cde52175acf124bacc9484c2eccbf9, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 171287758}
   m_SourcePrefab: {fileID: 100100000, guid: 74cde52175acf124bacc9484c2eccbf9, type: 3}
 --- !u!1 &2875166039839295116 stripped
 GameObject:
@@ -382,9 +411,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerMovementState: 0
-  SprintMultiplier: 2
+  SprintMultiplier: 1.5
+  SlideMultiplier: 1.2
   MovementSpeed: 5
-  MovementAcceleration: 1.5
+  MovementAcceleration: 0.5
+  ReleaseSprintDelay: 0.5
+  SlideDuration: 0.8
 --- !u!50 &2875166039839295118
 Rigidbody2D:
   serializedVersion: 4
