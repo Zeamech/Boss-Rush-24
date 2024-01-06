@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     public float SlideDuration = 0.8f;
 
     private Rigidbody2D rb;
+    private Animator ani;
     private Vector2 movementDirection;
     private Vector2 lastInputDirection; // used for sliding
     private float releaseSprintTimer = 0f;
@@ -30,6 +31,7 @@ public class Player : MonoBehaviour
     {
         PlayerMovementState = MovementState.Neutral;
         rb = GetComponent<Rigidbody2D>();
+        ani = GetComponentInChildren<Animator>();
     }
 
     private void FixedUpdate()
@@ -38,18 +40,30 @@ public class Player : MonoBehaviour
         switch (PlayerMovementState)
         {
             case MovementState.Neutral:
+                ani.SetBool("Slide", false);
+                ani.SetBool("Block", false);
                 maxVelocity = movementDirection * MovementSpeed * Time.deltaTime;
                 pos = Vector3.MoveTowards(transform.position, transform.position + maxVelocity, MovementAcceleration);
                 rb.MovePosition(pos);
+                if (movementDirection != Vector2.zero)
+                    ani.SetBool("Run", true);
+                else
+                    ani.SetBool("Run", false);
                 break;
             case MovementState.Block:
+                ani.SetBool("Run", false);
+                ani.SetBool("Slide", false);
                 // Stand still
+                ani.SetBool("Block", true);
                 break;
             case MovementState.Slide:
+                ani.SetBool("Run", false);
+                ani.SetBool("Block", false);
                 releaseSlideTimer += Time.deltaTime;
                 maxVelocity = lastInputDirection * MovementSpeed * SprintMultiplier * SlideMultiplier * Time.deltaTime;
                 pos = Vector3.MoveTowards(transform.position, transform.position + maxVelocity, MovementAcceleration);
                 rb.MovePosition(pos);
+                ani.SetBool("Slide", true);
                 break;
             case MovementState.Sprint:
                 releaseSprintTimer += Time.deltaTime;
