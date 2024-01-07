@@ -46,7 +46,13 @@ public class Player : MonoBehaviour
                 pos = Vector3.MoveTowards(transform.position, transform.position + maxVelocity, MovementAcceleration);
                 rb.MovePosition(pos);
                 if (movementDirection != Vector2.zero)
+                {
                     ani.SetBool("Run", true);
+                    if (movementDirection.x > 0)
+                        ani.transform.localScale = new Vector2(1, ani.transform.localScale.y);
+                    if (movementDirection.x < 0)
+                        ani.transform.localScale = new Vector2(-1, ani.transform.localScale.y);
+                }
                 else
                     ani.SetBool("Run", false);
                 break;
