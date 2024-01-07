@@ -8,25 +8,31 @@ using UnityEngine.UI;
 
 public class InventoryItem : MonoBehaviour, IBeginDragHandler, IEndDragHandler, IDragHandler
 { 
-    public Image image;
+    public Image Image;
+    public Text CountText;
     
     [HideInInspector] public Transform ParentAfterDrag;
+    [HideInInspector] public int Count = 1;
     [HideInInspector] public ItemsSO Item;
-
-    private void Awake()
-    {
-        image = GetComponent<Image>();
-    }
 
     public void InitializeItem(ItemsSO newItem)
     {
+        Image = GetComponent<Image>();
         Item = newItem;
-        image.sprite = newItem.Icon;
+        Image.sprite = newItem.Icon;
+        RefreshCount();
+    }
+
+    public void RefreshCount()
+    {
+        CountText.text = Count.ToString();
+        bool textActive = Count > 1;
+        CountText.gameObject.SetActive(textActive);
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        image.raycastTarget = false;
+        Image.raycastTarget = false;
         ParentAfterDrag = transform.parent;
         transform.SetParent(transform.root);
     }
@@ -38,7 +44,7 @@ public class InventoryItem : MonoBehaviour, IBeginDragHandler, IEndDragHandler, 
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        image.raycastTarget = true;
+        Image.raycastTarget = true;
         transform.SetParent(ParentAfterDrag);
     }
 }

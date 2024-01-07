@@ -10,9 +10,11 @@ public class ItemsSO : ScriptableObject
     public ItemType Type;
     public int ID;
     public string Name;
+    public Sprite Prefab;
 
     [Header("Only UI")]
     public bool stackable;
+    public int StackMax;
     public string Description;
 
     [Header("Both")]
@@ -24,6 +26,8 @@ public class ItemsSO : ScriptableObject
         Weapon,
         Trade,
         Potion,
-        Armor
+        Armor,
+        Merchandise,
+        Talismans
     }
 }

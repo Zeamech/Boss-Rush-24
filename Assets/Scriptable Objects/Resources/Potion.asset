@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78d3c8387eda89d439d7aa9141c9f1f4, type: 3}
   m_Name: Potion
   m_EditorClassIdentifier: 
-  Type: 2
-  ID: 0
+  Type: 4
+  ID: 1
   Name: Potion
   stackable: 0
+  StackMax: 0
   Description: 
   Icon: {fileID: 21300000, guid: aaf91da6ee9188446af37fc905967061, type: 3}
   Value: 0

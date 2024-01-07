@@ -26,6 +26,14 @@ public class GameManager : MonoBehaviour
 
     public void PickupItem(int id)
     {
-        inventoryManager.AddItem(AllItems[id]);
+        if(inventoryManager.AllItemsInInventory.Count < inventoryManager.InventorySlots.Count)
+        {
+            inventoryManager.AddItem(AllItems[id]);
+            Debug.Log("Item Added");
+        }
+        else
+        {
+            Debug.Log("Item Not Added");
+        }
     }
 }
