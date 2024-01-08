@@ -7,9 +7,11 @@ public class LevelManager : MonoBehaviour
 {
     public List<MissionTemplate> missionTemplates = new List<MissionTemplate>();
     public Transform GridObj;
+    public GameObject PlayerObj;
 
     private GameObject activeRoom;
     private GameObject activeBoss;
+    private GameObject activePlayer;
 
     private void Start()
     {
@@ -29,7 +31,10 @@ public class LevelManager : MonoBehaviour
     {
         activeRoom = Instantiate(missionTemplates[0].LevelRoom, GridObj);
         activeBoss = Instantiate(missionTemplates[0].LevelBoss);
-        activeBoss.transform.position = Vector3.zero;
+        activeBoss.transform.position = new Vector2(5, 0);
+        activePlayer = Instantiate(PlayerObj);
+        activePlayer.transform.position = new Vector2(-5, 0);
+        FindObjectOfType<CamController>().SetTarget(activePlayer);
         missionTemplates.Remove(missionTemplates[0]);
     }
     //when level is complete unload level then restarts loading sequence for next mission
@@ -37,6 +42,7 @@ public class LevelManager : MonoBehaviour
     {
         Destroy(activeRoom);
         Destroy(activeBoss);
+        Destroy(activePlayer);
         activeRoom = null;
         activeBoss = null;
     }
