@@ -16,4 +16,4 @@ MonoBehaviour:
   MissionName: 
   MissionDescription: 
   LevelRoom: {fileID: 3526232036533380203, guid: 32ebc8076d073d842a975ca4a38bd8e9, type: 3}
-  LevelBoss: {fileID: 3640133143516167887, guid: d277655e0b88c6142b9900d0f591755f, type: 3}
+  LevelBoss: {fileID: 1233366785277844851, guid: 9ec577390f601494398fba4e32162d7d, type: 3}
