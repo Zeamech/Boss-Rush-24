@@ -21,6 +21,7 @@ public class Player : MonoBehaviour
     public float ReleaseSprintDelay = 0.5f;
     public float SlideDuration = 0.8f;
 
+    public GameObject PlayerHealthBar;
     private Rigidbody2D rb;
     private Animator ani;
     private Vector2 movementDirection;
@@ -29,6 +30,7 @@ public class Player : MonoBehaviour
     private float releaseSlideTimer = 0f;
     private void Awake()
     {
+        PlayerHealthBar = transform.Find("HealthBar").gameObject;
         PlayerMovementState = MovementState.Neutral;
         rb = GetComponent<Rigidbody2D>();
         ani = GetComponentInChildren<Animator>();
