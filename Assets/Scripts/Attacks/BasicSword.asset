@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dad6f61ec4fb19640a500b1e7dba26e1, type: 3}
+  m_Name: BasicSword
+  m_EditorClassIdentifier: 
+  ID: 0
+  DisplayName: Iron Sword
+  Description: 
+  ItemType: 0
+  Icon: {fileID: 0}
+  MaxStackSize: 0
+  BasicAttack: {fileID: 11400000, guid: bfc0f0622096aa1429e3c61d9e3fc6ad, type: 2}
+  SlideAttack: {fileID: 11400000, guid: eeb1ccc3239757c449cd80afcabcdfc4, type: 2}
+  SprintAttack: {fileID: 11400000, guid: b6a84ca37473fae4e8c5c05a02f53d7f, type: 2}
+  BlockAttack: {fileID: 11400000, guid: eed635d7660018142bf245569a7b6890, type: 2}
+  DrawAttack: {fileID: 0}

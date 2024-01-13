@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30de138617d747641a6d1fabc7e5a5d9, type: 3}
+  m_Name: SwordBasic
+  m_EditorClassIdentifier: 
+  PlayerAttack: {fileID: 861629977081621993, guid: 507d3f18b79e49641a14a41d718da1ec, type: 3}
+  anim1: {fileID: 7400000, guid: ddc1b2c1d34e7d34fb6b3c405719397c, type: 2}
+  anim2: {fileID: 7400000, guid: 36410dd5348796244a6e64e5a0a16f53, type: 2}

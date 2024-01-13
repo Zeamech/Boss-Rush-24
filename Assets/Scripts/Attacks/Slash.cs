@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Slash : MonoBehaviour
+public abstract class AttackController : MonoBehaviour
 {
     public float StartUpTime;
     public float RecoveryTime;

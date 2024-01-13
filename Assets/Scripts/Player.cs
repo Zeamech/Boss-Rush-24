@@ -10,9 +10,16 @@ public class Player : MonoBehaviour
         Neutral,
         Block,
         Slide,
-        Sprint
+        Sprint,
+        Attack
     }
     public MovementState PlayerMovementState;
+    public MovementState PreAttackState;
+
+    public InventoryItemData EquippedWeapon;
+    public ParticleSystem PlayerParticleSystem;
+    public GameObject PlayerAim;
+    public GameObject PlayerTarget;
 
     public float SprintMultiplier = 1.5f;
     public float SlideMultiplier = 1.2f;
@@ -20,6 +27,7 @@ public class Player : MonoBehaviour
     public float MovementAcceleration = 0.5f;
     public float ReleaseSprintDelay = 0.5f;
     public float SlideDuration = 0.8f;
+    public float AttackDuration = 0.3f;
 
     private Rigidbody2D rb;
     private Animator ani;
@@ -27,6 +35,7 @@ public class Player : MonoBehaviour
     private Vector2 lastInputDirection; // used for sliding
     private float releaseSprintTimer = 0f;
     private float releaseSlideTimer = 0f;
+    private bool attackTriggered;
     private void Awake()
     {
         PlayerMovementState = MovementState.Neutral;
@@ -36,6 +45,8 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
+        PlayerAim.transform.localRotation = Quaternion.FromToRotation(Vector3.right, movementDirection); ;
+        ParticleSystem.EmissionModule pEM = PlayerParticleSystem.emission;
         Vector3 pos, maxVelocity;
         switch (PlayerMovementState)
         {
@@ -47,6 +58,7 @@ public class Player : MonoBehaviour
                 rb.MovePosition(pos);
                 if (movementDirection != Vector2.zero)
                 {
+                    pEM.rateOverTime = 30;
                     ani.SetBool("Run", true);
                     if (movementDirection.x > 0)
                         ani.transform.localScale = new Vector2(1, ani.transform.localScale.y);
@@ -54,15 +66,20 @@ public class Player : MonoBehaviour
                         ani.transform.localScale = new Vector2(-1, ani.transform.localScale.y);
                 }
                 else
+                {
                     ani.SetBool("Run", false);
+                    pEM.rateOverTime = 0;
+                }
                 break;
             case MovementState.Block:
+                pEM.rateOverTime = 0;
                 ani.SetBool("Run", false);
                 ani.SetBool("Slide", false);
                 // Stand still
                 ani.SetBool("Block", true);
                 break;
             case MovementState.Slide:
+                pEM.rateOverTime = 80;
                 ani.SetBool("Run", false);
                 ani.SetBool("Block", false);
                 releaseSlideTimer += Time.deltaTime;
@@ -72,11 +89,40 @@ public class Player : MonoBehaviour
                 ani.SetBool("Slide", true);
                 break;
             case MovementState.Sprint:
+                pEM.rateOverTime = 50;
                 releaseSprintTimer += Time.deltaTime;
                 maxVelocity = movementDirection * MovementSpeed * SprintMultiplier * Time.deltaTime;
                 pos = Vector3.MoveTowards(transform.position, transform.position + maxVelocity, MovementAcceleration);
                 rb.MovePosition(pos);
                 break;
+            case MovementState.Attack:
+                pEM.rateOverTime = 0;
+                if (attackTriggered == false)
+                {
+                    ani.SetTrigger("Attack");
+                    switch (PreAttackState)
+                    {
+                        case MovementState.Neutral:
+                            EquippedWeapon.BasicAttack.AttackCall(PlayerTarget.transform);
+                            break;
+                        case MovementState.Sprint:
+                            EquippedWeapon.SprintAttack.AttackCall(PlayerTarget.transform);
+                            break;
+                        case MovementState.Slide:
+                            EquippedWeapon.SlideAttack.AttackCall(PlayerTarget.transform);
+                            break;
+                        case MovementState.Block:
+                            EquippedWeapon.BlockAttack.AttackCall(PlayerTarget.transform);
+                            break;
+
+                    }
+                    
+                    attackTriggered = true; 
+                } 
+                AttackDuration -= Time.deltaTime;
+                break;
+
+
         }
     }
 
@@ -111,5 +157,17 @@ public class Player : MonoBehaviour
             else PlayerMovementState = MovementState.Neutral;
 		}
 
+        if(Input.GetMouseButtonDown(0) && PlayerMovementState != MovementState.Attack) 
+        {
+            PreAttackState = PlayerMovementState;
+            PlayerMovementState = MovementState.Attack;
+            AttackDuration = .1f;
+        }
+
+        if (PlayerMovementState == MovementState.Attack && AttackDuration <= 0)
+        {
+            PlayerMovementState = MovementState.Neutral;
+            attackTriggered = false;
+        }
     }
 }
