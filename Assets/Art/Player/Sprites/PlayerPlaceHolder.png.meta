@@ -656,8 +656,8 @@ TextureImporter:
       name: PlayerPlaceHolder_24
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 96
+        y: 32
         width: 32
         height: 32
       alignment: 0
@@ -669,6 +669,69 @@ TextureImporter:
       bones: []
       spriteID: 943927f1f1591f54f9c81169e85b3b82
       internalID: -1395198313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerPlaceHolder_25
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136090f51541f454085bee8e10424df2
+      internalID: 697536269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerPlaceHolder_26
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41f6e1435bc23a43a44d512d9294430
+      internalID: -545410947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PlayerPlaceHolder_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c65d9b6bc7fb147bd40857a835ab43
+      internalID: -416325321
       vertices: []
       indices: 
       edges: []
@@ -702,6 +765,9 @@ TextureImporter:
       PlayerPlaceHolder_22: 1883710249
       PlayerPlaceHolder_23: 1813213504
       PlayerPlaceHolder_24: -1395198313
+      PlayerPlaceHolder_25: 697536269
+      PlayerPlaceHolder_26: -545410947
+      PlayerPlaceHolder_27: -416325321
       PlayerPlaceHolder_3: 288186421
       PlayerPlaceHolder_4: -267251224
       PlayerPlaceHolder_5: 1728643083
