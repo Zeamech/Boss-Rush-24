@@ -675,7 +675,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1179171668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1082,7 +1082,7 @@ GameObject:
   - component: {fileID: 1797478744}
   - component: {fileID: 1797478746}
   m_Layer: 0
-  m_Name: Grid
+  m_Name: LevelGrid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1132,6 +1132,8 @@ MonoBehaviour:
   - {fileID: 11400000, guid: bf5bacf49866ee248bd9e4d46e645329, type: 2}
   GridObj: {fileID: 1797478745}
   PlayerObj: {fileID: 3938864329349406760, guid: 74cde52175acf124bacc9484c2eccbf9, type: 3}
+  SliderPlayer: {fileID: 333216725}
+  SliderBoss: {fileID: 1633916683}
 --- !u!1 &1903339236
 GameObject:
   m_ObjectHideFlags: 0

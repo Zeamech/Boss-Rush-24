@@ -45,7 +45,7 @@ public class Player : MonoBehaviour
 
     private void FixedUpdate()
     {
-        PlayerAim.transform.localRotation = Quaternion.FromToRotation(Vector3.right, movementDirection); ;
+        if(movementDirection != Vector2.zero) PlayerAim.transform.localRotation = Quaternion.FromToRotation(Vector3.right, movementDirection);
         ParticleSystem.EmissionModule pEM = PlayerParticleSystem.emission;
         Vector3 pos, maxVelocity;
         switch (PlayerMovementState)
@@ -99,6 +99,7 @@ public class Player : MonoBehaviour
                 pEM.rateOverTime = 0;
                 if (attackTriggered == false)
                 {
+                    ani.SetBool("Block", false);
                     ani.SetTrigger("Attack");
                     switch (PreAttackState)
                     {
@@ -114,7 +115,6 @@ public class Player : MonoBehaviour
                         case MovementState.Block:
                             EquippedWeapon.BlockAttack.AttackCall(PlayerTarget.transform);
                             break;
-
                     }
                     
                     attackTriggered = true; 
@@ -161,11 +161,27 @@ public class Player : MonoBehaviour
         {
             PreAttackState = PlayerMovementState;
             PlayerMovementState = MovementState.Attack;
-            AttackDuration = .1f;
+            AttackDuration = EquippedWeapon.attackCoolsown;
         }
 
         if (PlayerMovementState == MovementState.Attack && AttackDuration <= 0)
         {
+            switch (PreAttackState)
+            {
+                case MovementState.Neutral:
+                    AttackDuration = EquippedWeapon.BasicAttack.AttackDuration();
+                    break;
+                case MovementState.Sprint:
+                    AttackDuration = EquippedWeapon.SprintAttack.AttackDuration();
+                    break;
+                case MovementState.Slide:
+                    AttackDuration = EquippedWeapon.SlideAttack.AttackDuration();
+                    break;
+                case MovementState.Block:
+                    AttackDuration = EquippedWeapon.BlockAttack.AttackDuration();
+                    break;
+            }
+
             PlayerMovementState = MovementState.Neutral;
             attackTriggered = false;
         }

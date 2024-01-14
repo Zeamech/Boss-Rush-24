@@ -20,6 +20,7 @@ public class InventoryItemData : ScriptableObject
     public Sprite Icon;
     public int MaxStackSize;
 
+    public float attackCoolsown = 0.3f;
     public AttackBehaviour BasicAttack;
     public AttackBehaviour SlideAttack;
     public AttackBehaviour SprintAttack;
