@@ -12,16 +12,23 @@ public class GolemControler : MonoBehaviour
     public GameObject TargetObject;
     public GameObject Projectle;
 
+    public float moveTimerMx = 3;
+    public float slamTimerMx = .1f;
+    public float handRecTimeMx = 3;
+    public float moveTimer0Mx = 3;
+    public float slamTimer0Mx = .1f;
+    public float handRecTime0MX = 3;
+
     private float laserFireTIme;
 
     private Animator golemHand0Ani;
     private Animator golemHand1Ani;
 
-    private float moveTimer = 4;
-    private float slamTimer = .2f;
+    private float moveTimer = 3;
+    private float slamTimer = .1f;
     private float handRecTime = 3;
-    private float moveTimer0 = 4;
-    private float slamTimer0 = .2f;
+    private float moveTimer0 = 3;
+    private float slamTimer0 = .1f;
     private float handRecTime0 = 6;
 
     [SerializeField]private float handSpeed = 8;
@@ -50,7 +57,7 @@ public class GolemControler : MonoBehaviour
                     slamTimer0 -= Time.deltaTime;
                     if (slamTimer0 <= 0)
                     {
-                        handRecTime0 = 3;
+                        handRecTime0 = handRecTime0MX;
                         hand0Down = true;
                     }
                 }
@@ -67,8 +74,8 @@ public class GolemControler : MonoBehaviour
                 handRecTime0 -= Time.deltaTime;
                 if (handRecTime0 <= 0)
                 {
-                    moveTimer0 = 4;
-                    slamTimer0 = 1;
+                    moveTimer0 = moveTimer0Mx;
+                    slamTimer0 = slamTimer0Mx;
                     hand0Down = false;
                 }
 
@@ -86,7 +93,7 @@ public class GolemControler : MonoBehaviour
                     slamTimer -= Time.deltaTime;
                     if (slamTimer <= 0)
                     {
-                        handRecTime = 3;
+                        handRecTime = handRecTimeMx;
                         hand1Down = true;
                     }
                 }
@@ -103,8 +110,8 @@ public class GolemControler : MonoBehaviour
                 handRecTime -= Time.deltaTime;
                 if (handRecTime <= 0)
                 {
-                    moveTimer = 4;
-                    slamTimer = 1;
+                    moveTimer = moveTimerMx;
+                    slamTimer = slamTimerMx;
                     hand1Down = false;
                 }
 

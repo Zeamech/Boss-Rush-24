@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerAttack: {fileID: 861629977081621993, guid: 507d3f18b79e49641a14a41d718da1ec, type: 3}
   anim1: {fileID: 7400000, guid: 4f85f026a1988ea4699675ff997ab2a0, type: 2}
+  attackDuration: 0.5

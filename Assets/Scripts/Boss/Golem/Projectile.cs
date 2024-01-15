@@ -6,6 +6,8 @@ using UnityEngine;
 public class Projectile : MonoBehaviour
 {
     public GameObject TargetObject;
+
+    public float projDamage = 2;
     public float projSpeed;
     private float LifeTIme = 3;
 
@@ -17,5 +19,15 @@ public class Projectile : MonoBehaviour
         LifeTIme -= Time.deltaTime;
         if(LifeTIme <= 0)
             Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.GetComponent<Player>() != null)
+        {
+            collision.GetComponent<HealthBar>().AlterHealth(-projDamage);
+        }
+
+        if(collision.GetComponent<GolemControler>() == null) Destroy(gameObject);
     }
 }

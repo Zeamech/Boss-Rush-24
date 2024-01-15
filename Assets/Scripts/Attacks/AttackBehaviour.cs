@@ -7,4 +7,6 @@ public abstract class AttackBehaviour : ScriptableObject
 
     public abstract void AttackCall(Transform AttackHost);
 
+    public abstract float AttackDuration();
+
 }
