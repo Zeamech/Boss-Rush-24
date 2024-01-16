@@ -1147,6 +1147,7 @@ GameObject:
   - component: {fileID: 1903339241}
   - component: {fileID: 1903339240}
   - component: {fileID: 1903339242}
+  - component: {fileID: 1903339243}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1272,6 +1273,30 @@ MonoBehaviour:
   screenBlur: {fileID: 0}
   blurAlpha: 0
   camSpd: 2
+--- !u!114 &1903339243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903339236}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d75986f207501be48bba5d05ffd77018, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  triggerList: f7e1664c
+  useOtherObject: 0
+  data:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f8e98c778f39789479b5bfedba3dfce3, type: 2}
+  decodeBank: 0
+  loadAsynchronous: 0
+  saveDecodedBank: 0
+  unloadTriggerList: 958ca0ea
+  bankNameInternal: 
+  valueGuidInternal: 
 --- !u!1 &2047037772
 GameObject:
   m_ObjectHideFlags: 0

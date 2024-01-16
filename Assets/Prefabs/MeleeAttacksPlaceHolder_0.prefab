@@ -123,6 +123,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   stunDuration: 0
   LifeTime: 0.3
+  playerSwordSlashAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5738480e71a387b47b658d7fd2ada9a8, type: 2}
 --- !u!58 &6808647014951838345
 CircleCollider2D:
   m_ObjectHideFlags: 0

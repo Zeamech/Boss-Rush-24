@@ -22,23 +22,186 @@
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
 		</SoundBank>
-		<SoundBank Id="3291379323" Type="User" Language="SFX" Hash="{D2E55AC1-0ECA-16E9-7E03-29B2C3533127}">
+		<SoundBank Id="3291379323" Type="User" Language="SFX" Hash="{76C0DA12-3B82-389F-82C1-C256BDF3A147}">
 			<ShortName>TestBank</ShortName>
 			<Path>TestBank.bnk</Path>
 			<Media>
+				<File Id="37744847" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_HandSlam.wav</ShortName>
+					<CachePath>SFX/Golem_HandSlam_4896EB2C.wem</CachePath>
+				</File>
+				<File Id="78742084" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerAction_Block_02.wav</ShortName>
+					<CachePath>SFX/PlayerAction_Block_02_8F57AE07.wem</CachePath>
+				</File>
+				<File Id="142357567" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_HandSlam.wav</ShortName>
+					<CachePath>SFX/Golem_HandSlam_9D1E6633.wem</CachePath>
+				</File>
+				<File Id="155595539" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Whrilwind_WithMetal.wav</ShortName>
+					<CachePath>SFX/Player_Whrilwind_WithMetal_9C7B83F5.wem</CachePath>
+				</File>
+				<File Id="242347820" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Exports\UI_Confirm.wav</ShortName>
+					<CachePath>SFX/Exports/UI_Confirm_10C4C929.wem</CachePath>
+				</File>
+				<File Id="260157068" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerAction_Block_02.wav</ShortName>
+					<CachePath>SFX/PlayerAction_Block_02_B1B91BB1.wem</CachePath>
+				</File>
+				<File Id="261679546" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Exports\UI_Hover.wav</ShortName>
+					<CachePath>SFX/Exports/UI_Hover_10C4C929.wem</CachePath>
+				</File>
+				<File Id="285853821" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_HandSlam.wav</ShortName>
+					<CachePath>SFX/Golem_HandSlam_3E46AA02.wem</CachePath>
+				</File>
+				<File Id="291562151" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Whrilwind_NoMetal.wav</ShortName>
+					<CachePath>SFX/Player_Whrilwind_NoMetal_10C4C929.wem</CachePath>
+				</File>
+				<File Id="327083476" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_SwordAttack.wav</ShortName>
+					<CachePath>SFX/Player_SwordAttack_6283752C.wem</CachePath>
+				</File>
+				<File Id="427384741" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_SwordAttack.wav</ShortName>
+					<CachePath>SFX/Player_SwordAttack_EB8A2B65.wem</CachePath>
+				</File>
+				<File Id="442526702" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Exports\UI_Cancel.wav</ShortName>
+					<CachePath>SFX/Exports/UI_Cancel_10C4C929.wem</CachePath>
+				</File>
 				<File Id="534221521" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Confirm.wav</ShortName>
 					<CachePath>SFX/Confirm_10C4C929.wem</CachePath>
 				</File>
+				<File Id="606264282" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerAction_Block_02.wav</ShortName>
+					<CachePath>SFX/PlayerAction_Block_02_886B011F.wem</CachePath>
+				</File>
+				<File Id="691972418" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_SwordAttack.wav</ShortName>
+					<CachePath>SFX/Player_SwordAttack_4714DD48.wem</CachePath>
+				</File>
+				<File Id="721400278" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Flurry.wav</ShortName>
+					<CachePath>SFX/Player_Flurry_10C4C929.wem</CachePath>
+				</File>
+				<File Id="787857177" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerReactions_Damaged_03.wav</ShortName>
+					<CachePath>SFX/PlayerReactions_Damaged_03_F7269740.wem</CachePath>
+				</File>
+				<File Id="876959399" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerReactions_Damaged_03.wav</ShortName>
+					<CachePath>SFX/PlayerReactions_Damaged_03_2A196554.wem</CachePath>
+				</File>
+				<File Id="952967441" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerReactions_Damaged_03.wav</ShortName>
+					<CachePath>SFX/PlayerReactions_Damaged_03_5162943D.wem</CachePath>
+				</File>
+				<File Id="955359057" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerReactions_Damaged_03.wav</ShortName>
+					<CachePath>SFX/PlayerReactions_Damaged_03_FC6AC64B.wem</CachePath>
+				</File>
+				<File Id="961888213" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_HandSlam.wav</ShortName>
+					<CachePath>SFX/Golem_HandSlam_E76A07E0.wem</CachePath>
+				</File>
+				<File Id="1049327363" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_SwordAttack.wav</ShortName>
+					<CachePath>SFX/Player_SwordAttack_2CE1DE32.wem</CachePath>
+				</File>
+				<File Id="1056470861" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerActions_Slide.wav</ShortName>
+					<CachePath>SFX/PlayerActions_Slide_508FC599.wem</CachePath>
+				</File>
+				<File Id="1070067498" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Exports\UI_Slider.wav</ShortName>
+					<CachePath>SFX/Exports/UI_Slider_10C4C929.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="1735979121" Name="Play_Golem_HandSlam" DurationType="OneShot" DurationMin="1.4957564" DurationMax="2.178286">
+					<MediaRefs>
+						<MediaRef Id="37744847"/>
+						<MediaRef Id="142357567"/>
+						<MediaRef Id="285853821"/>
+						<MediaRef Id="961888213"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="142959787" Name="Play_Player_Block" DurationType="OneShot" DurationMin="0.5310381" DurationMax="0.87163496">
+					<MediaRefs>
+						<MediaRef Id="78742084"/>
+						<MediaRef Id="260157068"/>
+						<MediaRef Id="606264282"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2301987285" Name="Play_Player_Damaged" DurationType="OneShot" DurationMin="0.47796226" DurationMax="0.64479816">
+					<MediaRefs>
+						<MediaRef Id="787857177"/>
+						<MediaRef Id="876959399"/>
+						<MediaRef Id="952967441"/>
+						<MediaRef Id="955359057"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3504908804" Name="Play_Player_Flurry" DurationType="OneShot" DurationMin="1.7169583" DurationMax="1.7169583">
+					<MediaRefs>
+						<MediaRef Id="721400278"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1070486235" Name="Play_Player_SwordAttack" DurationType="OneShot" DurationMin="0.38850504" DurationMax="0.8969191">
+					<MediaRefs>
+						<MediaRef Id="327083476"/>
+						<MediaRef Id="427384741"/>
+						<MediaRef Id="691972418"/>
+						<MediaRef Id="1049327363"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3608174347" Name="Play_Player_Whrilwind_NoMetal" DurationType="OneShot" DurationMin="5.390646" DurationMax="5.390646">
+					<MediaRefs>
+						<MediaRef Id="291562151"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2830931800" Name="Play_Player_Whrilwind_WithMetal" DurationType="OneShot" DurationMin="1.8606635" DurationMax="1.8606635">
+					<MediaRefs>
+						<MediaRef Id="155595539"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1551064360" Name="Play_PlayerActions_Slide" DurationType="OneShot" DurationMin="1.1396018" DurationMax="1.1396018">
+					<MediaRefs>
+						<MediaRef Id="1056470861"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2013398331" Name="Play_TestSFX" DurationType="OneShot" DurationMin="0.59460354" DurationMax="0.59460354">
 					<MediaRefs>
 						<MediaRef Id="534221521"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2244506081" Name="Play_UI_Cancel" DurationType="OneShot" DurationMin="4.361583" DurationMax="4.361583">
+					<MediaRefs>
+						<MediaRef Id="442526702"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3022734157" Name="Play_UI_Confirm" DurationType="OneShot" DurationMin="4.361583" DurationMax="4.361583">
+					<MediaRefs>
+						<MediaRef Id="242347820"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1339559671" Name="Play_UI_Hover" DurationType="OneShot" DurationMin="4.361583" DurationMax="4.361583">
+					<MediaRefs>
+						<MediaRef Id="261679546"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2007211132" Name="Play_UI_Slider" DurationType="OneShot" DurationMin="4.361583" DurationMax="4.361583">
+					<MediaRefs>
+						<MediaRef Id="1070067498"/>
+					</MediaRefs>
+				</Event>
 			</Events>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{D4D55A3D-2400-1500-A63F-B8D5EB1BB928}</FileHash>
+	<FileHash>{F3322C8F-3215-3169-550D-9CB2CE292A5B}</FileHash>
 </SoundBanksInfo>

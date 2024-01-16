@@ -10,6 +10,8 @@ public class AttackController : MonoBehaviour
 
     private List<HealthBar> hitList = new List<HealthBar>();
 
+    [SerializeField] private AK.Wwise.Event playerSwordSlashAudio;
+
     void Update()
     {
         LifeTime -= Time.deltaTime;
@@ -38,5 +40,10 @@ public class AttackController : MonoBehaviour
             Debug.Log("Contact non player");
             collision.GetComponent<HealthBar>().AlterHealth(-1);
         }
+    }
+
+    public void PlayerSwordSlashAudio()
+    {
+        playerSwordSlashAudio.Post(gameObject);
     }
 }

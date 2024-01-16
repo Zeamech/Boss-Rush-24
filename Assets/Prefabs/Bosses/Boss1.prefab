@@ -191,6 +191,7 @@ GameObject:
   - component: {fileID: 3139510035821564426}
   - component: {fileID: 1904419585528866430}
   - component: {fileID: 5023323434014578456}
+  - component: {fileID: 827772424670380662}
   m_Layer: 0
   m_Name: Boss1
   m_TagString: Untagged
@@ -233,6 +234,12 @@ MonoBehaviour:
   GolemHand1: {fileID: 3519181603194544511}
   TargetObject: {fileID: 0}
   Projectle: {fileID: 651712526359535112, guid: f70ab140261e46244b5d57c53a73ce99, type: 3}
+  moveTimerMx: 3
+  slamTimerMx: 0.1
+  handRecTimeMx: 3
+  moveTimer0Mx: 3
+  slamTimer0Mx: 0.1
+  handRecTime0MX: 3
   handSpeed: 8
   hand0Down: 1
   hand1Down: 1
@@ -253,6 +260,30 @@ MonoBehaviour:
   healthBarSlider: {fileID: 0}
   healthbarHead: {fileID: 0}
   currentHealth: 0
+--- !u!114 &827772424670380662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233366785277844851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ee0aaf59c53e48916c7ed6bf40365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handSlamAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0042cc0baed313e449a7f36867e7b865, type: 2}
+  golemDamaged:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  golemDeath:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &3423102537101770746
 GameObject:
   m_ObjectHideFlags: 0
@@ -350,6 +381,7 @@ GameObject:
   - component: {fileID: 5307778793531537053}
   - component: {fileID: 199276419895743319}
   - component: {fileID: 3443389058346737105}
+  - component: {fileID: 4492595852058192682}
   m_Layer: 0
   m_Name: Hand1
   m_TagString: Untagged
@@ -470,6 +502,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLethal: 0
+--- !u!114 &4492595852058192682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3519181603194544511}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ee0aaf59c53e48916c7ed6bf40365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handSlamAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0042cc0baed313e449a7f36867e7b865, type: 2}
+  golemDamaged:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  golemDeath:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!1 &4150243570456289317
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,6 +791,7 @@ GameObject:
   - component: {fileID: 5645852231483774777}
   - component: {fileID: 3668645280036661601}
   - component: {fileID: 3599547291378499109}
+  - component: {fileID: 6896236758405876248}
   m_Layer: 0
   m_Name: Hand0
   m_TagString: Untagged
@@ -855,3 +912,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLethal: 0
+--- !u!114 &6896236758405876248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7360832987654443053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc0ee0aaf59c53e48916c7ed6bf40365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  handSlamAudio:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 0042cc0baed313e449a7f36867e7b865, type: 2}
+  golemDamaged:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
+  golemDeath:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
