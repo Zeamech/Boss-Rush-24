@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Room2
   m_EditorClassIdentifier: 
   MissionId: 0
-  MissionName: 
+  MissionName: Small Room
   MissionDescription: 
   LevelRoom: {fileID: 7993722544785571949, guid: b8715b07794372146aa65cd5acdc591b, type: 3}
   LevelBoss: {fileID: 2209264936518284612, guid: 35e5fcffe7ae47d479085a099dc8d75c, type: 3}

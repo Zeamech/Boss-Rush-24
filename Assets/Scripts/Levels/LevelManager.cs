@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
-    public List<MissionTemplate> missionTemplates = new List<MissionTemplate>();
+    public List<MissionTemplate> missionTemplates;
     public Transform GridObj;
     public GameObject PlayerObj;
 
@@ -16,6 +16,12 @@ public class LevelManager : MonoBehaviour
     private GameObject activeRoom;
     private GameObject activeBoss;
     private GameObject activePlayer;
+
+    private void Awake()
+    {
+        GameManager gM = FindObjectOfType<GameManager>();
+        missionTemplates = gM.missionTemplates;
+    }
 
     private void Start()
     {

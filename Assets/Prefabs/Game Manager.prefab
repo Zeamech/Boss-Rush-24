@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1385630842144426069}
   - component: {fileID: 7500019878970707440}
-  - component: {fileID: 8489602678073870286}
   m_Layer: 0
   m_Name: Game Manager
   m_TagString: Untagged
@@ -45,38 +44,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 650336cc4d1643b439f8bcb9a4cb6f44, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inventoryManager: {fileID: 0}
   AllItems: []
---- !u!114 &8489602678073870286
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3949978434849684824}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61e7cbaa8537d164a8202e6c2b0ef1a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InventorySlots:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}

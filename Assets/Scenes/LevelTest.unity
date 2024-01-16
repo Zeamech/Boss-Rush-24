@@ -1127,9 +1127,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e002986261fbd9043b0d4bc5628888b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  missionTemplates:
-  - {fileID: 11400000, guid: 8cfa28510bcb37047bb680384b25068f, type: 2}
-  - {fileID: 11400000, guid: bf5bacf49866ee248bd9e4d46e645329, type: 2}
+  missionTemplates: []
   GridObj: {fileID: 1797478745}
   PlayerObj: {fileID: 3938864329349406760, guid: 74cde52175acf124bacc9484c2eccbf9, type: 3}
   SliderPlayer: {fileID: 333216725}

@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8557676ff7f254f41b796946beebc328, type: 3}
+  m_Name: Mission6
+  m_EditorClassIdentifier: 
+  MissionId: 0
+  MissionName: Boss 2 Room 3
+  MissionDescription: 
+  LevelRoom: {fileID: 4098532319607483896, guid: 316fe48c462d2524f96b7d9c7125f0fc, type: 3}
+  LevelBoss: {fileID: 2209264936518284612, guid: 35e5fcffe7ae47d479085a099dc8d75c, type: 3}
