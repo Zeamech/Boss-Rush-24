@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b2686b8411cbfe478b961288eaac07f, type: 3}
+  m_Name: Weapon Shop
+  m_EditorClassIdentifier: 
+  _items:
+  - ItemData: {fileID: 11400000, guid: a51f1158bb017164eaf97119d63a3740, type: 2}
+    Amount: 10
+  _maxAllowedGold: 2000
+  _sellMarkUp: 1.5
+  _buyMarkUp: 1.5
