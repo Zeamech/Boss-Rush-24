@@ -73,6 +73,7 @@ public class Player : MonoBehaviour
                 break;
             case MovementState.Block:
                 pEM.rateOverTime = 0;
+                rb.MovePosition(transform.position);
                 ani.SetBool("Run", false);
                 ani.SetBool("Slide", false);
                 // Stand still
@@ -97,6 +98,7 @@ public class Player : MonoBehaviour
                 break;
             case MovementState.Attack:
                 pEM.rateOverTime = 0;
+                rb.MovePosition(transform.position);
                 if (attackTriggered == false)
                 {
                     ani.SetBool("Block", false);
@@ -116,7 +118,7 @@ public class Player : MonoBehaviour
                             EquippedWeapon.BlockAttack.AttackCall(PlayerTarget.transform);
                             break;
                     }
-                    
+                     
                     attackTriggered = true; 
                 } 
                 AttackDuration -= Time.deltaTime;

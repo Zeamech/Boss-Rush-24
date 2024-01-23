@@ -7,14 +7,19 @@ public class HealthBar : MonoBehaviour
 {
     public float MaxHealth = 10;
     public bool UpdateOnUpdate;
+    public float currentHealth;
 
+    public Animator objAni;
     public Slider healthBarSlider;
     [SerializeField] private HealthBar healthbarHead;
-    [SerializeField] private float currentHealth;
 
     private void Start()
     {
         currentHealth = MaxHealth;
+        if(GetComponent<Animator>() != null)
+        {
+            objAni = GetComponent<Animator>();
+        }
     }
 
     private void Update()
@@ -33,6 +38,11 @@ public class HealthBar : MonoBehaviour
             healthbarHead.AlterHealth(Change);
         else
             currentHealth += Change;
+
+        if(Change < 0 && objAni != null)
+        {
+            objAni.SetTrigger("Hit");
+        }
     }
 
     public void UpdateBar(float maxHealth, float currentHealth)

@@ -13,9 +13,11 @@ public class GolemControler : MonoBehaviour
     public GameObject Projectle;
 
     private float laserFireTIme;
+    [SerializeField] private bool fireLaser;
 
     private Animator golemHand0Ani;
     private Animator golemHand1Ani;
+    private Animator golemHeadAni;
 
     private float moveTimer = 4;
     private float slamTimer = .2f;
@@ -23,6 +25,13 @@ public class GolemControler : MonoBehaviour
     private float moveTimer0 = 4;
     private float slamTimer0 = .2f;
     private float handRecTime0 = 6;
+
+    private float healthTracker;
+    private float healthStored;
+    private float headMoveTimer = 2;
+    [SerializeField] private float HeadChaseDist = 10;
+    [SerializeField] private float HeadMoveForce = 20;
+    private bool catchPlayer;
 
     [SerializeField]private float handSpeed = 8;
 
@@ -33,6 +42,9 @@ public class GolemControler : MonoBehaviour
     {
         golemHand0Ani = GolemHand0.GetComponent<Animator>();
         golemHand1Ani = GolemHand1.GetComponent<Animator>();
+        golemHeadAni = GolemHead.GetComponent<Animator>();
+        healthTracker = GetComponent<HealthBar>().currentHealth;
+        healthStored = healthTracker;
     }
 
     void FixedUpdate()
@@ -43,6 +55,7 @@ public class GolemControler : MonoBehaviour
             if (!hand0Down)
             {
                 golemHand0Ani.SetBool("Hand0Up", true);
+                FacePlayer(GolemHand0);
 
                 moveTimer0 -= Time.deltaTime;
                 if (moveTimer0 <= 0)
@@ -79,6 +92,7 @@ public class GolemControler : MonoBehaviour
             if (!hand1Down)
             {
                 golemHand1Ani.SetBool("Hand1Up", true);
+                FacePlayer(GolemHand1);
 
                 moveTimer -= Time.deltaTime;
                 if (moveTimer <= 0)
@@ -111,23 +125,71 @@ public class GolemControler : MonoBehaviour
             }
             #endregion
 
+            //fire laser
             if(laserFireTIme <= 0)
             {
+                golemHeadAni.SetTrigger("FirePlasma");
                 GameObject spawn = Instantiate(Projectle, GolemHead.transform);
+                spawn.transform.parent = null;
                 spawn.GetComponent<Projectile>().TargetObject = TargetObject;
                 spawn.GetComponent<Projectile>().projSpeed = 4;
                 laserFireTIme = 1;
             }
 
-            laserFireTIme -= Time.deltaTime;
-            
+            if(fireLaser)
+                laserFireTIme -= Time.deltaTime;
 
+            //slide head Dodge
+            healthTracker = GetComponent<HealthBar>().currentHealth;
+            if(healthStored != healthTracker)
+            {
+                headMoveTimer -= Time.deltaTime;
+                if(headMoveTimer <= 0)
+                {
+                    golemHeadAni.SetBool("Sliding", true);
+                    GolemHead.GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-HeadMoveForce, HeadMoveForce), Random.Range(-HeadMoveForce, HeadMoveForce));
+                    healthStored = healthTracker;
+                    headMoveTimer = 2;
+                }
+            }
+
+            //Slide head to player
+
+            Vector2 distance = GolemHead.transform.position - TargetObject.transform.position;
+            if(distance.magnitude > HeadChaseDist)
+                catchPlayer = true;
+
+            if (catchPlayer)
+            {
+                golemHeadAni.SetBool("Sliding", true);
+                Vector3 targetPos = new Vector3(TargetObject.transform.position.x, TargetObject.transform.position.y, GolemHead.transform.position.z);
+                GolemHead.GetComponent<Rigidbody2D>().MovePosition(Vector3.Lerp(GolemHead.transform.position, targetPos, Time.deltaTime));
+                if (distance.magnitude < 5)
+                    catchPlayer = false;
+            }
+
+
+            if (Mathf.Abs(GolemHead.GetComponent<Rigidbody2D>().velocity.x) < 0.5f && Mathf.Abs(GolemHead.GetComponent<Rigidbody2D>().velocity.y) < 0.5f && !catchPlayer)
+            {
+                golemHeadAni.SetBool("Sliding", false);
+            }
+
+            FacePlayer(GolemHead);
         }
         else
         {
             if (CheckForPlayer() != null)
                 TargetObject = CheckForPlayer().gameObject;
         }
+    }
+
+    public void FacePlayer(GameObject golemPart)
+    {
+        if (TargetObject.transform.position.x > golemPart.transform.position.x)
+            golemPart.transform.localScale = new Vector3(-1, 1, 1);
+
+        if (TargetObject.transform.position.x < golemPart.transform.position.x)
+            golemPart.transform.localScale = new Vector3(1, 1, 1);
     }
 
     public Player CheckForPlayer()
