@@ -8,7 +8,7 @@ using UnityEngine.Events;
 public abstract class InventoryHolder : MonoBehaviour
 {
     [SerializeField] protected InventorySystem primaryInventorySystem;
-    [SerializeField] private int inventorySize1;
+    [SerializeField] private int inventorySize;
     [SerializeField] protected int offset = 0;
     [SerializeField] protected int _gold;
 
@@ -22,7 +22,7 @@ public abstract class InventoryHolder : MonoBehaviour
     {
         SaveLoad.OnLoadGame += LoadInventory;
 
-        primaryInventorySystem = new InventorySystem(inventorySize1, _gold);
+        primaryInventorySystem = new InventorySystem(inventorySize, _gold);
     }
 
     protected abstract void LoadInventory(SaveData saveData);

@@ -4964,9 +4964,9 @@ MonoBehaviour:
   primaryInventorySystem:
     inventorySlots: []
     _gold: 0
-  inventorySize1: 30
+  inventorySize: 30
   offset: 0
-  _gold: 0
+  _gold: 1000
   ArmorInventorySystem:
     inventorySlots: []
     _gold: 0

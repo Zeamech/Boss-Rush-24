@@ -17,7 +17,7 @@ public class LevelManager : MonoBehaviour
     private GameObject activeBoss;
     private GameObject activePlayer;
 
-    private void Start()
+    private void Awake()
     {
         LoadRoom();
     }
