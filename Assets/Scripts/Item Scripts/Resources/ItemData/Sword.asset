@@ -19,3 +19,9 @@ MonoBehaviour:
   Icon: {fileID: 21300000, guid: 6ea6ed6e2789de04597d992f692003e7, type: 3}
   MaxStackSize: 1
   GoldValue: 500
+  attackCoolsown: 0.3
+  BasicAttack: {fileID: 11400000, guid: bfc0f0622096aa1429e3c61d9e3fc6ad, type: 2}
+  SlideAttack: {fileID: 11400000, guid: eeb1ccc3239757c449cd80afcabcdfc4, type: 2}
+  SprintAttack: {fileID: 11400000, guid: b6a84ca37473fae4e8c5c05a02f53d7f, type: 2}
+  BlockAttack: {fileID: 11400000, guid: eed635d7660018142bf245569a7b6890, type: 2}
+  DrawAttack: {fileID: 0}

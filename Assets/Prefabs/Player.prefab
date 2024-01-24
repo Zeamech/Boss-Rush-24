@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1085538875089114663
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8881179365354025443}
+  m_Layer: 0
+  m_Name: Interaction Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8881179365354025443
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1085538875089114663}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.01, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 216870805355995948}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3938864329349406760
 GameObject:
   m_ObjectHideFlags: 0
@@ -11,10 +42,12 @@ GameObject:
   - component: {fileID: 216870805355995948}
   - component: {fileID: 3637289137498905195}
   - component: {fileID: 5187320506884683823}
-  - component: {fileID: 4285577206700714589}
   - component: {fileID: 8871625206404783566}
   - component: {fileID: 6665322907049543796}
   - component: {fileID: -3781215776406311179}
+  - component: {fileID: 1476561381374309020}
+  - component: {fileID: 8999484063208289331}
+  - component: {fileID: 518050938008947261}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -37,6 +70,7 @@ Transform:
   m_Children:
   - {fileID: 7554586077503548151}
   - {fileID: 7281711423131559216}
+  - {fileID: 8881179365354025443}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &3637289137498905195
@@ -101,31 +135,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4285577206700714589
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3938864329349406760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23cf218589b190c489c0e4e10b3b2b4b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PlayerMovementState: 0
-  PreAttackState: 0
-  EquippedWeapon: {fileID: 11400000, guid: 92fe66469e1c9564f83c4a5e3c293526, type: 2}
-  PlayerParticleSystem: {fileID: 6665322907049543796}
-  PlayerAim: {fileID: 7397883521431180355}
-  PlayerTarget: {fileID: 4498034918045608988}
-  SprintMultiplier: 2
-  SlideMultiplier: 1.2
-  MovementSpeed: 5
-  MovementAcceleration: 1.5
-  ReleaseSprintDelay: 0.5
-  SlideDuration: 0.8
-  AttackDuration: 0.3
 --- !u!199 &8871625206404783566
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -4936,10 +4945,82 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 100
-  UpdateOnUpdate: 1
+  UpdateOnUpdate: 0
   healthBarSlider: {fileID: 0}
   healthbarHead: {fileID: 0}
   currentHealth: 100
+--- !u!114 &1476561381374309020
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3938864329349406760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bd752b65f1adb9408d0ce68c8a8fea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primaryInventorySystem:
+    inventorySlots: []
+    _gold: 0
+  inventorySize1: 30
+  offset: 0
+  _gold: 0
+  ArmorInventorySystem:
+    inventorySlots: []
+    _gold: 0
+  WeaponsInventorySystem:
+    inventorySlots: []
+    _gold: 0
+  TalismansInventorySystem:
+    inventorySlots: []
+    _gold: 0
+  ArmorSlots: 4
+  WeaponSlots: 2
+  TalismanSlots: 3
+--- !u!114 &8999484063208289331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3938864329349406760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23cf218589b190c489c0e4e10b3b2b4b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerMovementState: 0
+  PreAttackState: 0
+  EquippedWeapon: {fileID: 11400000, guid: a51f1158bb017164eaf97119d63a3740, type: 2}
+  PlayerParticleSystem: {fileID: 6665322907049543796}
+  PlayerAim: {fileID: 7397883521431180355}
+  PlayerTarget: {fileID: 4498034918045608988}
+  SprintMultiplier: 1.5
+  SlideMultiplier: 1.2
+  MovementSpeed: 5
+  MovementAcceleration: 0.5
+  ReleaseSprintDelay: 0.5
+  SlideDuration: 0.8
+  AttackDuration: 0.3
+--- !u!114 &518050938008947261
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3938864329349406760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 510f796bfeeee66439404a9c45fd816a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  InteractionPoint: {fileID: 8881179365354025443}
+  InterationLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  InteractionPointRadius: 1
 --- !u!1 &4498034918045608988
 GameObject:
   m_ObjectHideFlags: 0
