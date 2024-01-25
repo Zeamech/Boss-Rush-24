@@ -1264,7 +1264,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1797478745}
-  - component: {fileID: 1797478744}
   - component: {fileID: 1797478746}
   m_Layer: 0
   m_Name: LevelGrid
@@ -1273,18 +1272,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!156049354 &1797478744
-Grid:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1797478743}
-  m_Enabled: 1
-  m_CellSize: {x: 0.5, y: 0.5, z: 0}
-  m_CellGap: {x: 0, y: 0, z: 0}
-  m_CellLayout: 0
-  m_CellSwizzle: 0
 --- !u!4 &1797478745
 Transform:
   m_ObjectHideFlags: 0
