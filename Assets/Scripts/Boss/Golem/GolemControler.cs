@@ -24,6 +24,7 @@ public class GolemControler : MonoBehaviour
     [SerializeField] private float stateSwitchTimer;
     [SerializeField] private float stateSwitchTimerMx = 20;
 
+    private float rageStart = 1f;
     private float laserFireTIme;
     [SerializeField] private bool fireLaser;
 
@@ -91,6 +92,8 @@ public class GolemControler : MonoBehaviour
         stateSwitchTimer -= Time.deltaTime;
         if(stateSwitchTimer <= 0)
         {
+            golemHeadAni.SetBool("Scream", false);
+            rageStart = 1;
             golemState = golemStateList[Random.Range(0, golemStateList.Count)];
             stateSwitchTimer = stateSwitchTimerMx;
         }
@@ -118,14 +121,18 @@ public class GolemControler : MonoBehaviour
 
                 case GolemState.PlasmaSpam:
                     headMoveTimer -= Time.deltaTime;
+                    rageStart -= Time.deltaTime;
                     if (headMoveTimer <= 0)
                     {
                         HeadDodge();
                         headMoveTimer = 1;
                     }
-                    golemHeadAni.SetTrigger("Scream");
+                    golemHeadAni.SetBool("Scream", true);
                     HandsReset();
-                    FirePlasma(0.05f, 0.5f, Projectile.ProjectionType.Consistent);
+                    if (rageStart <= 0)
+                    {
+                        FirePlasma(0.05f, 0.5f, Projectile.ProjectionType.Consistent);
+                    }
                     break;
             }
 

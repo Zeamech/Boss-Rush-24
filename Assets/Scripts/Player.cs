@@ -48,10 +48,13 @@ public class Player : MonoBehaviour
         if(movementDirection != Vector2.zero) PlayerAim.transform.localRotation = Quaternion.FromToRotation(Vector3.right, movementDirection);
         ParticleSystem.EmissionModule pEM = PlayerParticleSystem.emission;
         Vector3 pos, maxVelocity;
+        if (movementDirection.x > 0)
+            ani.transform.localScale = new Vector2(1, ani.transform.localScale.y);
+        if (movementDirection.x < 0)
+            ani.transform.localScale = new Vector2(-1, ani.transform.localScale.y);
         switch (PlayerMovementState)
         {
             case MovementState.Neutral:
-                ani.SetBool("Slide", false);
                 ani.SetBool("Block", false);
                 ani.SetBool("Sprint", false);
                 maxVelocity = movementDirection * MovementSpeed * Time.deltaTime;
@@ -61,10 +64,6 @@ public class Player : MonoBehaviour
                 {
                     pEM.rateOverTime = 30;
                     ani.SetBool("Run", true);
-                    if (movementDirection.x > 0)
-                        ani.transform.localScale = new Vector2(1, ani.transform.localScale.y);
-                    if (movementDirection.x < 0)
-                        ani.transform.localScale = new Vector2(-1, ani.transform.localScale.y);
                 }
                 else
                 {
@@ -73,11 +72,11 @@ public class Player : MonoBehaviour
                 }
                 break;
             case MovementState.Block:
+                GetComponent<HealthBar>().isInvulnerable = true;
                 pEM.rateOverTime = 0;
                 rb.MovePosition(transform.position);
                 ani.SetBool("Run", false);
                 ani.SetBool("Sprint", false);
-                ani.SetBool("Slide", false);
                 // Stand still
                 ani.SetBool("Block", true);
                 break;
@@ -149,18 +148,27 @@ public class Player : MonoBehaviour
         }
 
         bool block = Input.GetButton("Block"); // Left ctrl to block
-        if(block && PlayerMovementState == MovementState.Neutral) PlayerMovementState = MovementState.Block;
+        if (block && PlayerMovementState == MovementState.Neutral)
+        {
+            PlayerMovementState = MovementState.Block;
+        }
 
-        if(PlayerMovementState == MovementState.Block && !block) PlayerMovementState = MovementState.Neutral;
+        if (PlayerMovementState == MovementState.Block && !block)
+        {
+            PlayerMovementState = MovementState.Neutral;
+            GetComponent<HealthBar>().isInvulnerable = false;
+        }
 
-        if(PlayerMovementState == MovementState.Sprint && Input.GetButton("Block")) // Start a slide
+        if (PlayerMovementState == MovementState.Sprint && Input.GetButton("Block")) // Start a slide
 		{
             // TODO: Redo this however we want. For now it just sets speed to 2x sprint speed and decelerates to zero.
             PlayerMovementState = MovementState.Slide;
 		}
+
         if(PlayerMovementState == MovementState.Slide && releaseSlideTimer >= SlideDuration)
 		{
             GetComponent<HealthBar>().isInvulnerable = false;
+            ani.SetBool("Slide", false);
             releaseSlideTimer = 0;
             if (block) PlayerMovementState = MovementState.Block;
             else PlayerMovementState = MovementState.Neutral;
@@ -186,6 +194,7 @@ public class Player : MonoBehaviour
                 case MovementState.Slide:
                     AttackDuration = EquippedWeapon.SlideAttack.AttackDuration();
                     GetComponent<HealthBar>().isInvulnerable = false;
+                    ani.SetBool("Slide", false);
                     break;
                 case MovementState.Block:
                     AttackDuration = EquippedWeapon.BlockAttack.AttackDuration();

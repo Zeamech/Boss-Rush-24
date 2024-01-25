@@ -51,8 +51,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 0
-  UpdateOnUpdate: 0
   currentHealth: 0
+  UpdateOnUpdate: 0
+  isInvulnerable: 0
   objAni: {fileID: 0}
   healthBarSlider: {fileID: 0}
   healthbarHead: {fileID: 5023323434014578456}
@@ -92,8 +93,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.59375, y: 2.21875}
-    newSize: {x: 1.59375, y: 2.21875}
+    oldSize: {x: 1.59375, y: 2.25}
+    newSize: {x: 1.59375, y: 2.25}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -5084,6 +5085,7 @@ MonoBehaviour:
   TargetObject: {fileID: 0}
   Projectle: {fileID: 651712526359535112, guid: f70ab140261e46244b5d57c53a73ce99, type: 3}
   golemState: 0
+  stateSwitchTimer: 0
   stateSwitchTimerMx: 20
   fireLaser: 1
   HeadChaseDist: 10
@@ -5103,9 +5105,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7edcf000892b938429246eb25c8a1bd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 200
-  UpdateOnUpdate: 1
+  MaxHealth: 100
   currentHealth: 0
+  UpdateOnUpdate: 1
+  isInvulnerable: 0
   objAni: {fileID: 0}
   healthBarSlider: {fileID: 0}
   healthbarHead: {fileID: 0}
@@ -5264,8 +5267,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 0
-  UpdateOnUpdate: 0
   currentHealth: 0
+  UpdateOnUpdate: 0
+  isInvulnerable: 0
   objAni: {fileID: 0}
   healthBarSlider: {fileID: 0}
   healthbarHead: {fileID: 5023323434014578456}
@@ -5650,8 +5654,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MaxHealth: 0
-  UpdateOnUpdate: 0
   currentHealth: 0
+  UpdateOnUpdate: 0
+  isInvulnerable: 0
   objAni: {fileID: 0}
   healthBarSlider: {fileID: 0}
   healthbarHead: {fileID: 5023323434014578456}

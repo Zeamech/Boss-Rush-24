@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4cfb047cef891ae4d89967860ae68e8f
+guid: a163c1894850bb549874a3788f8374dd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -149,13 +149,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: GOlemHead_0
+      name: GolemHand-Sheet_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 400
-        width: 51
-        height: 71
+        x: 0
+        y: 189
+        width: 96
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,20 +163,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26af6aed2a9dfa1419996400752c1eed
-      internalID: -1093798910
+      spriteID: d4cf37f8eb3a25047af6a82e2d362074
+      internalID: -310741618
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GOlemHead_1
+      name: GolemHand-Sheet_1
       rect:
         serializedVersion: 2
-        x: 71
-        y: 400
-        width: 51
-        height: 71
+        x: 96
+        y: 189
+        width: 96
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +184,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67bad23900fdf0447bd6fc9af777d9d1
-      internalID: 962391266
+      spriteID: 71196cb2ff4da094890854016215575d
+      internalID: -1537068534
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GOlemHead_2
+      name: GolemHand-Sheet_2
       rect:
         serializedVersion: 2
-        x: 135
-        y: 400
-        width: 51
-        height: 71
+        x: 192
+        y: 189
+        width: 96
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,20 +205,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 68d5e0e35b1d3084aa101357186f8f14
-      internalID: -1204646896
+      spriteID: 2607f5d4ea09049409c348c9b8172a18
+      internalID: -1779887025
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GOlemHead_3
+      name: GolemHand-Sheet_3
       rect:
         serializedVersion: 2
-        x: 199
-        y: 400
-        width: 51
-        height: 71
+        x: 0
+        y: 126
+        width: 96
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,20 +226,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd6b0489a02b94b44801fc3b9439b6fb
-      internalID: 771964356
+      spriteID: 3dad53b390296044e86aecb6d842eaa1
+      internalID: -887464699
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GOlemHead_4
+      name: GolemHand-Sheet_4
       rect:
         serializedVersion: 2
-        x: 7
-        y: 304
-        width: 51
-        height: 71
+        x: 96
+        y: 126
+        width: 96
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,20 +247,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e28198580aa1bfc408902eba6c2b1182
-      internalID: -1670674912
+      spriteID: 2fa2b749a1c01744099d0e092b98fb2d
+      internalID: -1397652686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GOlemHead_5
+      name: GolemHand-Sheet_5
       rect:
         serializedVersion: 2
-        x: 71
-        y: 304
-        width: 51
-        height: 71
+        x: 192
+        y: 126
+        width: 96
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,20 +268,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42ecb1698a3164045a3745a16c79aa13
-      internalID: -10850925
+      spriteID: 24e5f6856861bae4ab67119cdf371e8e
+      internalID: -1851943325
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GOlemHead_6
+      name: GolemHand-Sheet_6
       rect:
         serializedVersion: 2
-        x: 135
-        y: 304
-        width: 51
-        height: 71
+        x: 0
+        y: 63
+        width: 96
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,20 +289,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6d6399f4b38f0545aa083a0242c57a8
-      internalID: 1600832593
+      spriteID: 9285c1272242be345ba6aec52e6385d9
+      internalID: 1006431620
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GOlemHead_7
+      name: GolemHand-Sheet_7
       rect:
         serializedVersion: 2
-        x: 199
-        y: 304
-        width: 51
-        height: 71
+        x: 96
+        y: 63
+        width: 96
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -310,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3189d821ccb03a647bb2f4316c2b2f99
-      internalID: -1692927634
+      spriteID: 59434b0899d499748aecdabf5cceefa2
+      internalID: -685812347
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GOlemHead_8
+      name: GolemHand-Sheet_8
       rect:
         serializedVersion: 2
-        x: 7
-        y: 208
-        width: 51
-        height: 71
+        x: 192
+        y: 63
+        width: 96
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,20 +331,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fea70a1fba81da4eb894166ce728c00
-      internalID: -1881374318
+      spriteID: ddd3c72ce768b42459417878cb34f6da
+      internalID: -1355068150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GOlemHead_9
+      name: GolemHand-Sheet_9
       rect:
         serializedVersion: 2
-        x: 71
-        y: 208
-        width: 51
-        height: 71
+        x: 0
+        y: 0
+        width: 96
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -352,20 +352,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0244dfb41aaa8af459607bfdcf4f391a
-      internalID: -951088188
+      spriteID: e8fa92413e681d04a8202e8f87f07ba1
+      internalID: -616426521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GOlemHead_10
+      name: GolemHand-Sheet_10
       rect:
         serializedVersion: 2
-        x: 135
-        y: 206
-        width: 51
-        height: 73
+        x: 96
+        y: 0
+        width: 96
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -373,20 +373,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd93e12c54408b74880a3ff8389ff6e3
-      internalID: 1064283473
+      spriteID: c70658a33d55ef64cb1eddabf8838419
+      internalID: -1002000788
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: GOlemHead_11
+      name: GolemHand-Sheet_11
       rect:
         serializedVersion: 2
-        x: 199
-        y: 205
-        width: 51
-        height: 74
+        x: 192
+        y: 0
+        width: 96
+        height: 63
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -394,134 +394,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f7172cd3f503d7845b572df3a4ed4240
-      internalID: -594146881
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GOlemHead_12
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 111
-        width: 51
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3e4e8af793444154e941a33ee5091f87
-      internalID: 111280390
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GOlemHead_13
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 110
-        width: 51
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 681b13d1bbf82214982481e2fceea0c0
-      internalID: -649418665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GOlemHead_14
-      rect:
-        serializedVersion: 2
-        x: 135
-        y: 111
-        width: 51
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: acea2350e702a7743a72647df38bfc6b
-      internalID: 1131508316
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GOlemHead_15
-      rect:
-        serializedVersion: 2
-        x: 199
-        y: 110
-        width: 51
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 503a8a45d3ab71b42b69fa44f6d424f0
-      internalID: 2003616265
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GOlemHead_16
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 15
-        width: 51
-        height: 72
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5cf889da00a093d43b8d7f92e5ccfc98
-      internalID: 1069934840
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: GOlemHead_17
-      rect:
-        serializedVersion: 2
-        x: 71
-        y: 14
-        width: 51
-        height: 74
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bc5f0fa6919fd6a4cabacb8c82e423c6
-      internalID: -248104734
+      spriteID: 2ba9bcc8d6ebad5449bf7dfaedf2b053
+      internalID: -1556387011
       vertices: []
       indices: 
       edges: []
@@ -537,24 +411,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      GOlemHead_0: -1093798910
-      GOlemHead_1: 962391266
-      GOlemHead_10: 1064283473
-      GOlemHead_11: -594146881
-      GOlemHead_12: 111280390
-      GOlemHead_13: -649418665
-      GOlemHead_14: 1131508316
-      GOlemHead_15: 2003616265
-      GOlemHead_16: 1069934840
-      GOlemHead_17: -248104734
-      GOlemHead_2: -1204646896
-      GOlemHead_3: 771964356
-      GOlemHead_4: -1670674912
-      GOlemHead_5: -10850925
-      GOlemHead_6: 1600832593
-      GOlemHead_7: -1692927634
-      GOlemHead_8: -1881374318
-      GOlemHead_9: -951088188
+      GolemHand-Sheet_0: -310741618
+      GolemHand-Sheet_1: -1537068534
+      GolemHand-Sheet_10: -1002000788
+      GolemHand-Sheet_11: -1556387011
+      GolemHand-Sheet_2: -1779887025
+      GolemHand-Sheet_3: -887464699
+      GolemHand-Sheet_4: -1397652686
+      GolemHand-Sheet_5: -1851943325
+      GolemHand-Sheet_6: 1006431620
+      GolemHand-Sheet_7: -685812347
+      GolemHand-Sheet_8: -1355068150
+      GolemHand-Sheet_9: -616426521
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
