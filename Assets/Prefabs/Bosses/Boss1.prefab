@@ -5083,6 +5083,8 @@ MonoBehaviour:
   GolemHand1: {fileID: 3519181603194544511}
   TargetObject: {fileID: 0}
   Projectle: {fileID: 651712526359535112, guid: f70ab140261e46244b5d57c53a73ce99, type: 3}
+  golemState: 0
+  stateSwitchTimerMx: 20
   fireLaser: 1
   HeadChaseDist: 10
   HeadMoveForce: 20

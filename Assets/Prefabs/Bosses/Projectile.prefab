@@ -51,6 +51,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetObject: {fileID: 0}
+  projectionTypes: 1
   projDamage: 2
   projSpeed: 1
 --- !u!212 &8240750960070697438

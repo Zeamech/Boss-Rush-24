@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class HealthBar : MonoBehaviour
 {
     public float MaxHealth = 10;
-    public bool UpdateOnUpdate;
     public float currentHealth;
+    public bool UpdateOnUpdate;
+    public bool isInvulnerable;
+
 
     public Animator objAni;
     public Slider healthBarSlider;
@@ -34,6 +37,9 @@ public class HealthBar : MonoBehaviour
 
     public void AlterHealth(float Change)
     {
+        if (isInvulnerable)
+            return;
+
         if(healthbarHead != null)
             healthbarHead.AlterHealth(Change);
         else

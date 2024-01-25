@@ -119,9 +119,9 @@ MonoBehaviour:
   PlayerParticleSystem: {fileID: 6665322907049543796}
   PlayerAim: {fileID: 7397883521431180355}
   PlayerTarget: {fileID: 4498034918045608988}
-  SprintMultiplier: 2
+  SprintMultiplier: 1.5
   SlideMultiplier: 1.2
-  MovementSpeed: 5
+  MovementSpeed: 3
   MovementAcceleration: 1.5
   ReleaseSprintDelay: 0.5
   SlideDuration: 0.8
@@ -4937,9 +4937,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MaxHealth: 100
   UpdateOnUpdate: 1
+  currentHealth: 100
+  objAni: {fileID: 0}
   healthBarSlider: {fileID: 0}
   healthbarHead: {fileID: 0}
-  currentHealth: 100
 --- !u!1 &4498034918045608988
 GameObject:
   m_ObjectHideFlags: 0
