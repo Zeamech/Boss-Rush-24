@@ -5,7 +5,7 @@ using Unity.VisualScripting;
 using UnityEngine.EventSystems;
 using UnityEngine.Events;
 
-public class InventorySlot_UI : MonoBehaviour , IPointerEnterHandler, IPointerExitHandler
+public class InventorySlot_UI : MonoBehaviour , IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
 {
     [SerializeField] private Image itemSprite;
     [SerializeField] private TextMeshProUGUI itemCount;
@@ -76,5 +76,10 @@ public class InventorySlot_UI : MonoBehaviour , IPointerEnterHandler, IPointerEx
     public void OnPointerExit(PointerEventData eventData)
     {
         MouseHoveredOverInventoryItem(assignedInventorySlot, false);
+    }
+
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        MouseHoveredOverInventoryItem(assignedInventorySlot, true);
     }
 }

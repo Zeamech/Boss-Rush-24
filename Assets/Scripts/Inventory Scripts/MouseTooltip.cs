@@ -8,6 +8,9 @@ public class MouseTooltip : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI itemTooltipName;
     [SerializeField] private TextMeshProUGUI itemTootipDescription;
+    [SerializeField] private GameObject currentMouseObject;
+
+    private MouseItemData _mouseItemData;
 
     private void OnEnable()
     {
@@ -22,6 +25,7 @@ public class MouseTooltip : MonoBehaviour
     private void Awake()
     {
         itemTooltipName.transform.parent.gameObject.SetActive(false);
+        _mouseItemData = currentMouseObject.GetComponent<MouseItemData>();
     }
 
     private void Update()
@@ -41,6 +45,5 @@ public class MouseTooltip : MonoBehaviour
             Debug.Log(data.DisplayName.ToString());
         }
         else itemTooltipName.transform.parent.gameObject.SetActive(false);
-
     }
 }
