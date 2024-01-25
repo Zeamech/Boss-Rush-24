@@ -13,6 +13,7 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_DIRT = 2498286841U;
         static const AkUniqueID PLAY_GOLEM_HANDSLAM = 1735979121U;
         static const AkUniqueID PLAY_PLAYER_BLOCK = 142959787U;
         static const AkUniqueID PLAY_PLAYER_DAMAGED = 2301987285U;
@@ -27,6 +28,21 @@ namespace AK
         static const AkUniqueID PLAY_UI_HOVER = 1339559671U;
         static const AkUniqueID PLAY_UI_SLIDER = 2007211132U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace FOOTSTEP_SURFACE
+        {
+            static const AkUniqueID GROUP = 1833605183U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID STONE = 1216965916U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEP_SURFACE
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {

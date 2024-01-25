@@ -94,8 +94,25 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 07d9ac8661b7b948aafb12660f894a64
     GuidInternal: 
-    m_lastTime: -8584961754806458713
+    m_lastTime: -8584954012251561045
     List:
+    - name: Play_Dirt
+      guid: a5c080d708839f47b2d9747c622f982d
+      id: 2498286841
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 07d9ac8661b7b948aafb12660f894a64
+      - ElementName: Play_Dirt
+        ObjectType: 3
+        guid: a5c080d708839f47b2d9747c622f982d
+      Path: Events\Default Work Unit\Play_Dirt
+      maxAttenuation: 0
+      maxDuration: 0.42338783
+      minDuration: 0.27553812
     - name: Play_Golem_HandSlam
       guid: 0592bf3320c3334db975dc69eba01d47
       id: 1735979121
@@ -357,8 +374,58 @@ MonoBehaviour:
     ParentPath: Switches\Default Work Unit
     guid: 89afd300d307924b82fe5b0cf8adb55a
     GuidInternal: 
-    m_lastTime: -8584971206386689925
-    List: []
+    m_lastTime: -8584954025159660669
+    List:
+    - name: Footstep_Surface
+      guid: 9f0166be360aa24790926f7aa03020b4
+      id: 1833605183
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 89afd300d307924b82fe5b0cf8adb55a
+      - ElementName: Footstep_Surface
+        ObjectType: 11
+        guid: 9f0166be360aa24790926f7aa03020b4
+      Path: Switches\Default Work Unit\Footstep_Surface
+      values:
+      - name: Dirt
+        guid: fd7c927d6adf33439b87f61d85400e53
+        id: 2195636714
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89afd300d307924b82fe5b0cf8adb55a
+        - ElementName: Footstep_Surface
+          ObjectType: 11
+          guid: 9f0166be360aa24790926f7aa03020b4
+        - ElementName: Dirt
+          ObjectType: 10
+          guid: fd7c927d6adf33439b87f61d85400e53
+      - name: Stone
+        guid: 7e8fcfef75a8764eb6efb3377fa371a4
+        id: 1216965916
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 89afd300d307924b82fe5b0cf8adb55a
+        - ElementName: Footstep_Surface
+          ObjectType: 11
+          guid: 9f0166be360aa24790926f7aa03020b4
+        - ElementName: Stone
+          ObjectType: 10
+          guid: 7e8fcfef75a8764eb6efb3377fa371a4
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
   TriggerWwu:
   - PhysicalPath: Triggers\Default Work Unit.wwu
     PathAndIcons:
@@ -374,7 +441,7 @@ MonoBehaviour:
     m_lastTime: -8584971206386159444
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 05000000060000001700000018000000
+  ExpandedWaapiItemIds: 0500000006000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

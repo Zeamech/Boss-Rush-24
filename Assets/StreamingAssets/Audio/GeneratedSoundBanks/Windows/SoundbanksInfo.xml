@@ -21,34 +21,50 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<SwitchGroups>
+				<SwitchGroup Id="1833605183" Name="Footstep_Surface">
+					<Switches>
+						<Switch Id="1216965916" Name="Stone"/>
+						<Switch Id="2195636714" Name="Dirt"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3291379323" Type="User" Language="SFX" Hash="{76C0DA12-3B82-389F-82C1-C256BDF3A147}">
+		<SoundBank Id="3291379323" Type="User" Language="SFX" Hash="{3169E5C8-A270-BFBC-1496-87B77E2A900F}">
 			<ShortName>TestBank</ShortName>
 			<Path>TestBank.bnk</Path>
 			<Media>
 				<File Id="37744847" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Golem_HandSlam.wav</ShortName>
-					<CachePath>SFX/Golem_HandSlam_4896EB2C.wem</CachePath>
+					<CachePath>SFX/Golem_HandSlam_F193BA06.wem</CachePath>
+				</File>
+				<File Id="62797840" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_56987779.wem</CachePath>
 				</File>
 				<File Id="78742084" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlayerAction_Block_02.wav</ShortName>
-					<CachePath>SFX/PlayerAction_Block_02_8F57AE07.wem</CachePath>
+					<CachePath>SFX/PlayerAction_Block_02_1D9F14E1.wem</CachePath>
 				</File>
 				<File Id="142357567" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Golem_HandSlam.wav</ShortName>
-					<CachePath>SFX/Golem_HandSlam_9D1E6633.wem</CachePath>
+					<CachePath>SFX/Golem_HandSlam_68FD6718.wem</CachePath>
 				</File>
 				<File Id="155595539" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Whrilwind_WithMetal.wav</ShortName>
-					<CachePath>SFX/Player_Whrilwind_WithMetal_9C7B83F5.wem</CachePath>
+					<CachePath>SFX/Player_Whrilwind_WithMetal_2FF8C09C.wem</CachePath>
 				</File>
 				<File Id="242347820" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Exports\UI_Confirm.wav</ShortName>
 					<CachePath>SFX/Exports/UI_Confirm_10C4C929.wem</CachePath>
 				</File>
+				<File Id="252847729" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_6BA113BD.wem</CachePath>
+				</File>
 				<File Id="260157068" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlayerAction_Block_02.wav</ShortName>
-					<CachePath>SFX/PlayerAction_Block_02_B1B91BB1.wem</CachePath>
+					<CachePath>SFX/PlayerAction_Block_02_7B3E31B3.wem</CachePath>
 				</File>
 				<File Id="261679546" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Exports\UI_Hover.wav</ShortName>
@@ -56,7 +72,7 @@
 				</File>
 				<File Id="285853821" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Golem_HandSlam.wav</ShortName>
-					<CachePath>SFX/Golem_HandSlam_3E46AA02.wem</CachePath>
+					<CachePath>SFX/Golem_HandSlam_384535BD.wem</CachePath>
 				</File>
 				<File Id="291562151" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Whrilwind_NoMetal.wav</ShortName>
@@ -64,15 +80,23 @@
 				</File>
 				<File Id="327083476" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_SwordAttack.wav</ShortName>
-					<CachePath>SFX/Player_SwordAttack_6283752C.wem</CachePath>
+					<CachePath>SFX/Player_SwordAttack_4638FDB5.wem</CachePath>
 				</File>
 				<File Id="427384741" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_SwordAttack.wav</ShortName>
-					<CachePath>SFX/Player_SwordAttack_EB8A2B65.wem</CachePath>
+					<CachePath>SFX/Player_SwordAttack_E024ADB7.wem</CachePath>
 				</File>
 				<File Id="442526702" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Exports\UI_Cancel.wav</ShortName>
 					<CachePath>SFX/Exports/UI_Cancel_10C4C929.wem</CachePath>
+				</File>
+				<File Id="480246841" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_A267CE9D.wem</CachePath>
+				</File>
+				<File Id="505383271" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_9440F5A4.wem</CachePath>
 				</File>
 				<File Id="534221521" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Confirm.wav</ShortName>
@@ -80,43 +104,51 @@
 				</File>
 				<File Id="606264282" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlayerAction_Block_02.wav</ShortName>
-					<CachePath>SFX/PlayerAction_Block_02_886B011F.wem</CachePath>
+					<CachePath>SFX/PlayerAction_Block_02_E34069B2.wem</CachePath>
 				</File>
 				<File Id="691972418" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_SwordAttack.wav</ShortName>
-					<CachePath>SFX/Player_SwordAttack_4714DD48.wem</CachePath>
+					<CachePath>SFX/Player_SwordAttack_17FE40A5.wem</CachePath>
 				</File>
 				<File Id="721400278" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Flurry.wav</ShortName>
 					<CachePath>SFX/Player_Flurry_10C4C929.wem</CachePath>
 				</File>
+				<File Id="774230664" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_483FCF40.wem</CachePath>
+				</File>
 				<File Id="787857177" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlayerReactions_Damaged_03.wav</ShortName>
-					<CachePath>SFX/PlayerReactions_Damaged_03_F7269740.wem</CachePath>
+					<CachePath>SFX/PlayerReactions_Damaged_03_B65F412A.wem</CachePath>
+				</File>
+				<File Id="802031320" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_DCA58AD1.wem</CachePath>
 				</File>
 				<File Id="876959399" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlayerReactions_Damaged_03.wav</ShortName>
-					<CachePath>SFX/PlayerReactions_Damaged_03_2A196554.wem</CachePath>
+					<CachePath>SFX/PlayerReactions_Damaged_03_8393EFD3.wem</CachePath>
 				</File>
 				<File Id="952967441" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlayerReactions_Damaged_03.wav</ShortName>
-					<CachePath>SFX/PlayerReactions_Damaged_03_5162943D.wem</CachePath>
+					<CachePath>SFX/PlayerReactions_Damaged_03_E290F959.wem</CachePath>
 				</File>
 				<File Id="955359057" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlayerReactions_Damaged_03.wav</ShortName>
-					<CachePath>SFX/PlayerReactions_Damaged_03_FC6AC64B.wem</CachePath>
+					<CachePath>SFX/PlayerReactions_Damaged_03_65DB9306.wem</CachePath>
 				</File>
 				<File Id="961888213" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Golem_HandSlam.wav</ShortName>
-					<CachePath>SFX/Golem_HandSlam_E76A07E0.wem</CachePath>
+					<CachePath>SFX/Golem_HandSlam_A37154FC.wem</CachePath>
 				</File>
 				<File Id="1049327363" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_SwordAttack.wav</ShortName>
-					<CachePath>SFX/Player_SwordAttack_2CE1DE32.wem</CachePath>
+					<CachePath>SFX/Player_SwordAttack_7D2CF7E1.wem</CachePath>
 				</File>
 				<File Id="1056470861" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlayerActions_Slide.wav</ShortName>
-					<CachePath>SFX/PlayerActions_Slide_508FC599.wem</CachePath>
+					<CachePath>SFX/PlayerActions_Slide_2A4961CE.wem</CachePath>
 				</File>
 				<File Id="1070067498" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Exports\UI_Slider.wav</ShortName>
@@ -124,6 +156,16 @@
 				</File>
 			</Media>
 			<Events>
+				<Event Id="2498286841" Name="Play_Dirt" DurationType="OneShot" DurationMin="0.27553812" DurationMax="0.42338783">
+					<MediaRefs>
+						<MediaRef Id="62797840"/>
+						<MediaRef Id="252847729"/>
+						<MediaRef Id="480246841"/>
+						<MediaRef Id="505383271"/>
+						<MediaRef Id="774230664"/>
+						<MediaRef Id="802031320"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="1735979121" Name="Play_Golem_HandSlam" DurationType="OneShot" DurationMin="1.4957564" DurationMax="2.178286">
 					<MediaRefs>
 						<MediaRef Id="37744847"/>
@@ -201,7 +243,15 @@
 					</MediaRefs>
 				</Event>
 			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="1833605183" Name="Footstep_Surface">
+					<Switches>
+						<Switch Id="1216965916" Name="Stone"/>
+						<Switch Id="2195636714" Name="Dirt"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{F3322C8F-3215-3169-550D-9CB2CE292A5B}</FileHash>
+	<FileHash>{75FDDF4C-3F7D-A6D2-6FE5-C34F0A9F7D86}</FileHash>
 </SoundBanksInfo>

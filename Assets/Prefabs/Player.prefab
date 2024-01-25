@@ -5063,6 +5063,7 @@ GameObject:
   - component: {fileID: 7554586077503548151}
   - component: {fileID: 1067932526123384481}
   - component: {fileID: 5124821427742171994}
+  - component: {fileID: 4321871565023687202}
   m_Layer: 0
   m_Name: Graphic
   m_TagString: Untagged
@@ -5158,6 +5159,22 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &4321871565023687202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5221375375649743227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8055f1d40683fd447abf7858bd40b4dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playFootstepEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 3c3aa110b126db648a287d5b627fb65f, type: 2}
 --- !u!1 &7397883521431180355
 GameObject:
   m_ObjectHideFlags: 0
