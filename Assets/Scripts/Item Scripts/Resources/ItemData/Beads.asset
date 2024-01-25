@@ -14,8 +14,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 0
   DisplayName: Beads
-  Description: 
+  Description: You can wear these
   ItemType: 1
   Icon: {fileID: 21300000, guid: b19ebefb2f1d706408f6b03e40ab2f82, type: 3}
   MaxStackSize: 1
   GoldValue: 100
+  attackCoolsown: 0.3
+  BasicAttack: {fileID: 0}
+  SlideAttack: {fileID: 0}
+  SprintAttack: {fileID: 0}
+  BlockAttack: {fileID: 0}
+  DrawAttack: {fileID: 0}
