@@ -883,7 +883,7 @@ MonoBehaviour:
   primaryInventorySystem:
     inventorySlots: []
     _gold: 0
-  inventorySize1: 1
+  inventorySize: 0
   offset: 10
   _gold: 0
 --- !u!114 &408155893
@@ -5507,49 +5507,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 6007643103266319430}
     m_Modifications:
-    - target: {fileID: 2515799581102205542, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2515799581102205542, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2883896147796528145, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2883896147796528145, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5710905627937092973, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
       propertyPath: m_Name
       value: InventoryUIController
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595777489890915907, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6595777489890915907, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7462639889817323665, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7462639889817323665, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7585711106538574295, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7585711106538574295, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8541920479048838610, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
       propertyPath: m_Pivot.x

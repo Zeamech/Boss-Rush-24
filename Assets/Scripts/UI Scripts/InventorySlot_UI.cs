@@ -1,8 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Unity.VisualScripting;
+using UnityEngine.EventSystems;
+using UnityEngine.Events;
 
-public class InventorySlot_UI : MonoBehaviour
+public class InventorySlot_UI : MonoBehaviour , IPointerEnterHandler, IPointerExitHandler
 {
     [SerializeField] private Image itemSprite;
     [SerializeField] private TextMeshProUGUI itemCount;
@@ -12,6 +15,8 @@ public class InventorySlot_UI : MonoBehaviour
 
     public InventorySlot AssignedInventorySlot => assignedInventorySlot;
     public InventoryDisplay ParentDisplay { get; private set; }
+
+    public static UnityAction<InventorySlot, bool> MouseHoveredOverInventoryItem;
 
     private void Awake()
     {
@@ -61,5 +66,15 @@ public class InventorySlot_UI : MonoBehaviour
     public void OnUISlotClick()
     {
         ParentDisplay?.SlotClicked(this);
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        MouseHoveredOverInventoryItem(assignedInventorySlot, true);
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        MouseHoveredOverInventoryItem(assignedInventorySlot, false);
     }
 }

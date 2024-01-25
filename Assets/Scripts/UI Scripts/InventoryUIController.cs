@@ -15,11 +15,12 @@ public class InventoryUIController : MonoBehaviour
 
     private void Awake()
     {
-        TalismansPanel.gameObject.SetActive(false);
-        WeaponsPanel.gameObject.SetActive(false);
-        ArmorPanel.gameObject.SetActive(false);
+        TalismansPanel.transform.parent.gameObject.SetActive(false);
         inventoryPanel.gameObject.SetActive(false);
-        playerInventoryPanel.gameObject.SetActive(false);
+        playerInventoryPanel.transform.parent.gameObject.SetActive(false);
+        WeaponsPanel.transform.parent.gameObject.SetActive(false);
+        TalismansPanel.transform.parent.gameObject.SetActive(false);
+        ArmorPanel.transform.parent.gameObject.SetActive(false);
     }
 
     private void OnEnable()
@@ -38,13 +39,13 @@ public class InventoryUIController : MonoBehaviour
     {
         if (inventoryPanel.gameObject.activeInHierarchy && Keyboard.current.escapeKey.wasPressedThisFrame) inventoryPanel.gameObject.SetActive(false);
 
-        if (playerInventoryPanel.gameObject.activeInHierarchy && Keyboard.current.escapeKey.wasPressedThisFrame) playerInventoryPanel.gameObject.SetActive(false);
+        if (playerInventoryPanel.gameObject.activeInHierarchy && Keyboard.current.escapeKey.wasPressedThisFrame) playerInventoryPanel.transform.parent.gameObject.SetActive(false);
 
-        if (ArmorPanel.gameObject.activeInHierarchy && Keyboard.current.escapeKey.wasPressedThisFrame) ArmorPanel.gameObject.SetActive(false);
+        if (ArmorPanel.gameObject.activeInHierarchy && Keyboard.current.escapeKey.wasPressedThisFrame) ArmorPanel.transform.parent.gameObject.SetActive(false);
 
-        if (WeaponsPanel.gameObject.activeInHierarchy && Keyboard.current.escapeKey.wasPressedThisFrame) WeaponsPanel.gameObject.SetActive(false);
+        if (WeaponsPanel.gameObject.activeInHierarchy && Keyboard.current.escapeKey.wasPressedThisFrame) WeaponsPanel.transform.parent.gameObject.SetActive(false);
 
-        if (TalismansPanel.gameObject.activeInHierarchy && Keyboard.current.escapeKey.wasPressedThisFrame) TalismansPanel.gameObject.SetActive(false);
+        if (TalismansPanel.gameObject.activeInHierarchy && Keyboard.current.escapeKey.wasPressedThisFrame) TalismansPanel.transform.parent.gameObject.SetActive(false);
     }
 
     void DisplayInventory(InventorySystem invToDisplay, int offset)
@@ -57,22 +58,22 @@ public class InventoryUIController : MonoBehaviour
     {
         if (tab == 1)
         {
-            playerInventoryPanel.gameObject.SetActive(true);
+            playerInventoryPanel.transform.parent.gameObject.SetActive(true);
             playerInventoryPanel.RefreshDynamicInventory(invToDisplay, offset);
         }
         else if (tab == 2)
         {
-            ArmorPanel.gameObject.SetActive(true);
+            ArmorPanel.transform.parent.gameObject.SetActive(true);
             ArmorPanel.RefreshDynamicInventory(invToDisplay, offset);
         }
         else if (tab == 3)
         {
-            WeaponsPanel.gameObject.SetActive(true);
+            WeaponsPanel.transform.parent.gameObject.SetActive(true);
             WeaponsPanel.RefreshDynamicInventory(invToDisplay, offset);
         }
         else if (tab == 4)
         {
-            TalismansPanel.gameObject.SetActive(true);
+            TalismansPanel.transform.parent.gameObject.SetActive(true);
             TalismansPanel.RefreshDynamicInventory(invToDisplay, offset);
         }
     }

@@ -113,10 +113,10 @@ TextureImporter:
       name: Main_Inventory_Background
       rect:
         serializedVersion: 2
-        x: 0
-        y: 169
-        width: 186
-        height: 128
+        x: 100
+        y: 185
+        width: 84
+        height: 98
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,6 +151,73 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
+    - serializedVersion: 2
+      name: Weapon Slots
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 241
+        width: 22
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f392e5a9d759d7846b4434423cfeb70e
+      internalID: -1057215485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Talismans
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 221
+        width: 52
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -38.5, y: 13}
+        - {x: -38.5, y: -13}
+        - {x: 38.5, y: -13}
+        - {x: 38.5, y: 13}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 399d6ca6708c11f40ad6e2d46fefc1a2
+      internalID: -372442458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Armor
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 219
+        width: 25
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df2e93331f421f4cb033508b9c7bb3e
+      internalID: 225689004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -162,8 +229,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
+      Armor: 225689004
+      InventorySheet_1: -894255348
       Inventory_Slot: 54611446
       Main_Inventory_Background: 108137662
+      Talismans: -372442458
+      Weapon Slots: -1057215485
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
