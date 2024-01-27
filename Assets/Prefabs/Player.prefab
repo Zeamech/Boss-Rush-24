@@ -120,7 +120,7 @@ MonoBehaviour:
   PlayerAim: {fileID: 7397883521431180355}
   PlayerTarget: {fileID: 4498034918045608988}
   SprintMultiplier: 1.5
-  SlideMultiplier: 1.2
+  SlideMultiplier: 1.5
   MovementSpeed: 3
   MovementAcceleration: 1.5
   ReleaseSprintDelay: 0.5
