@@ -16,6 +16,7 @@ public class PlayerInventoryHolder : InventoryHolder
 
     public static UnityAction OnPlayerInventoryChanged;
     public static UnityAction<InventorySystem, int, int> OnPlayerInventoryDisplayRequested;
+    
 
     private void Start()
     {
@@ -58,6 +59,8 @@ public class PlayerInventoryHolder : InventoryHolder
         {
             this.WeaponsInventorySystem = data.playerWeapons.InvSystem;
         }
+
+        InventorySystem.UpdatePlayerGoldAmount?.Invoke(primaryInventorySystem.Gold);
     }
 
     void Update()
