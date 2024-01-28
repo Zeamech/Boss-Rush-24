@@ -82,7 +82,7 @@ public class GolemControler : MonoBehaviour
             stage2 = true;
         }
 
-        if (healthTracker <= GetComponent<HealthBar>().MaxHealth / 4 && !stage3)
+        if (healthTracker <= GetComponent<HealthBar>().MaxHealth / 6 && !stage3)
         {
             golemState = GolemState.PlasmaSpam;
             stateSwitchTimer = 12;

@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.Mathematics;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -18,6 +19,7 @@ public class Player : MonoBehaviour
 
     public InventoryItemData EquippedWeapon;
     public ParticleSystem PlayerParticleSystem;
+    public Slider staminaBarSlider;
     public GameObject PlayerAim;
     public GameObject PlayerTarget;
 
@@ -28,6 +30,8 @@ public class Player : MonoBehaviour
     public float ReleaseSprintDelay = 0.5f;
     public float SlideDuration = 0.8f;
     public float AttackDuration = 0.3f;
+    public float playerStamina;
+    public float playerStaminaMx = 100;
 
     private Rigidbody2D rb;
     private Animator ani;
@@ -41,6 +45,11 @@ public class Player : MonoBehaviour
         PlayerMovementState = MovementState.Neutral;
         rb = GetComponent<Rigidbody2D>();
         ani = GetComponentInChildren<Animator>();
+    }
+
+    private void Start()
+    {
+        playerStamina = playerStaminaMx;
     }
 
     private void FixedUpdate()
@@ -94,6 +103,7 @@ public class Player : MonoBehaviour
                 break;
             case MovementState.Sprint:
                 ani.SetBool("Sprint", true);
+                playerStamina -= 5 * Time.deltaTime;
                 pEM.rateOverTime = 50;
                 releaseSprintTimer += Time.deltaTime;
                 maxVelocity = movementDirection * MovementSpeed * SprintMultiplier * Time.deltaTime;
@@ -134,10 +144,10 @@ public class Player : MonoBehaviour
 
     private void Update()
     {
-        movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        movementDirection = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical")).normalized;
         if(movementDirection.magnitude > 0) lastInputDirection = movementDirection;
 
-        if (Input.GetButton("Sprint") && PlayerMovementState == MovementState.Neutral) // Left shift to sprint
+        if (Input.GetButton("Sprint") && PlayerMovementState == MovementState.Neutral && playerStamina > 0) // Left shift to sprint
         {
             PlayerMovementState = MovementState.Sprint;
         }
@@ -145,6 +155,11 @@ public class Player : MonoBehaviour
 		{
             PlayerMovementState = MovementState.Neutral;
             releaseSprintTimer = 0;
+        }
+
+        if(PlayerMovementState == MovementState.Sprint && playerStamina <= 0)
+        {
+            PlayerMovementState = MovementState.Neutral;
         }
 
         bool block = Input.GetButton("Block"); // Left ctrl to block
@@ -204,5 +219,13 @@ public class Player : MonoBehaviour
             PlayerMovementState = MovementState.Neutral;
             attackTriggered = false;
         }
+
+        UpdateBar(playerStaminaMx, playerStamina);
+    }
+
+    public void UpdateBar(float max, float current)
+    {
+        staminaBarSlider.maxValue = max;
+        staminaBarSlider.value = current;
     }
 }
