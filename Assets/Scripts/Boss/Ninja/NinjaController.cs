@@ -6,6 +6,7 @@ using static Projectile;
 public class NinjaController : MonoBehaviour
 {
     public GameObject TargetObject;
+    public GameObject projPrefab;
     public Animator ninjaAni;
 
 
@@ -14,7 +15,7 @@ public class NinjaController : MonoBehaviour
     private Vector3 targetPos;
     private Vector3 targetDir;
 
-    private bool isInAir;
+    public bool isInAir;
     private bool isSlashing;
     [SerializeField]private bool slashPlease;
 
@@ -46,6 +47,18 @@ public class NinjaController : MonoBehaviour
             transform.position = Vector3.Lerp(transform.position, targetPos, 10 * Time.deltaTime);
         }
 
+    }
+
+    public void ThrowAttack()
+    {
+        ninjaAni.SetTrigger("FireStar");
+        GameObject spawn = Instantiate(projPrefab, transform);
+        spawn.transform.parent = null;
+        spawn.GetComponent<Projectile>().TargetObject = TargetObject;
+        spawn.GetComponent<Projectile>().projSpeed = 0.4f;
+        spawn.GetComponent<Projectile>().projectionTypes = ProjectionType.Consistent;
+
+        GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-3, 3), Random.Range(-3, 3));
     }
 
     public void StartSlash()

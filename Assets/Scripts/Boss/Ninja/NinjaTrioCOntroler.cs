@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using static GolemControler;
 
 public class NinjaTrioCOntroler : MonoBehaviour
 {
@@ -13,11 +14,17 @@ public class NinjaTrioCOntroler : MonoBehaviour
 
     public GameObject NinjaPrefab;
     public NinjaState ninjaStates;
+    public List<NinjaState> ninjaStateList = new List<NinjaState>();
+
+    [SerializeField] private float stateSwitchTimer;
+    [SerializeField] private float stateSwitchTimerMx = 30;
 
     private float dashTimer = 3;
     private float jumpTimer;
     private float dropTimer;
-    private float inAirTIme;
+    private float throwTimer = 1;
+    private float throwCD;
+    private int throwCOunt;
     private bool allInAir;
     private int ninjaRef;
 
@@ -29,6 +36,9 @@ public class NinjaTrioCOntroler : MonoBehaviour
         ninjaList[0] = ninja1;
         ninjaList[1] = ninja2;
         ninjaList[2] = ninja3;
+
+        ninjaStateList.Add(NinjaState.DashAttacks);
+        
     }
 
     private void Update()
@@ -37,6 +47,7 @@ public class NinjaTrioCOntroler : MonoBehaviour
         {
             case NinjaState.None:
                 break;
+
             case NinjaState.DashAttacks:
 
                 if (dashTimer <= 0)
@@ -44,7 +55,11 @@ public class NinjaTrioCOntroler : MonoBehaviour
                     ninjaList[ninjaRef].GetComponent<NinjaController>().StartSlash();
                     dashTimer = 3f;
                     ninjaRef += 1;
-                    if (ninjaRef > ninjaList.Length - 1) ninjaRef = 0;
+                    if (ninjaRef > ninjaList.Length - 1)
+                    {
+                        ninjaRef = 0;
+                        RandomSwitchState();
+                    }
                 }
                 else
                 {
@@ -52,6 +67,36 @@ public class NinjaTrioCOntroler : MonoBehaviour
                 }
 
                 break;
+
+            case NinjaState.ThrowingAttack:
+
+                throwTimer -= Time.deltaTime;
+
+                if (throwTimer <= 0)
+                {
+                    throwCD -= 1 * Time.deltaTime;
+
+                    if (throwCD <= 0)
+                    {
+                        ninjaList[ninjaRef].GetComponent <NinjaController>().ThrowAttack();
+                        throwCOunt += 1;
+                        throwCD = 0.3f;
+                        if (throwCOunt >= 3)
+                        {
+                            throwCOunt = 0;
+                            ninjaRef += 1;
+                            throwTimer = 1;
+                            if (ninjaRef > ninjaList.Length - 1)
+                            {
+                                ninjaRef = 0;
+                                RandomSwitchState();
+                            }
+                        }
+                    }
+                }
+
+                break;
+
             case NinjaState.JumpDives:
 
                 if (jumpTimer <= 0 && !allInAir)
@@ -75,6 +120,7 @@ public class NinjaTrioCOntroler : MonoBehaviour
                     {
                         ninjaRef = 0;
                         allInAir = false;
+                        RandomSwitchState();
                     }
                 }
 
@@ -83,6 +129,31 @@ public class NinjaTrioCOntroler : MonoBehaviour
                 break;
         }
 
+        stateSwitchTimer -= Time.deltaTime;
+        if (stateSwitchTimer <= 0)
+        {
+            SwitchState();
+        }
+    }
+
+    public void RandomSwitchState()
+    {
+        if(Random.Range(0, 3) <= 0)
+        {
+            SwitchState();
+        }
+    }
+
+    public void SwitchState()
+    {
+        for (int i = 0; i < ninjaList.Length; i++)
+        {
+            NinjaController ninja = ninjaList[i].GetComponent<NinjaController>();
+            if (ninja.isInAir) ninja.RunSlam();
+        }
+
+        stateSwitchTimer = stateSwitchTimerMx;
+        ninjaStates = ninjaStateList[Random.Range(0, ninjaStateList.Count)];
     }
 
     public GameObject spawnNinja()
@@ -98,5 +169,6 @@ public class NinjaTrioCOntroler : MonoBehaviour
         None,
         DashAttacks,
         JumpDives,
+        ThrowingAttack,
     }
 }

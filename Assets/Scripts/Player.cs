@@ -138,7 +138,11 @@ public class Player : MonoBehaviour
                 AttackDuration -= Time.deltaTime;
                 break;
 
+        }
 
+        if (PlayerMovementState != MovementState.Sprint && playerStamina <= playerStaminaMx)
+        {
+            playerStamina += 2 * Time.deltaTime;
         }
     }
 

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 1222382005856233661}
   - component: {fileID: 3641671805719786205}
   - component: {fileID: 2586341089023191274}
+  - component: {fileID: 6271338445101273490}
   m_Layer: 0
   m_Name: NinjaBoss
   m_TagString: Untagged
@@ -48,9 +49,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TargetObject: {fileID: 0}
+  projPrefab: {fileID: 651712526359535112, guid: f70ab140261e46244b5d57c53a73ce99, type: 3}
   ninjaAni: {fileID: 7594566521843270848}
-  ninjaStates: 0
   slashSpeed: 1
+  isInAir: 0
   slashPlease: 0
 --- !u!114 &3641671805719786205
 MonoBehaviour:
@@ -106,6 +108,33 @@ CapsuleCollider2D:
   m_Offset: {x: 0.03, y: -0.54}
   m_Size: {x: 0.5, y: 1}
   m_Direction: 0
+--- !u!50 &6271338445101273490
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2209264936518284612}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 10
+  m_LinearDrag: 1
+  m_AngularDrag: 1
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &4084369599353918726
 GameObject:
   m_ObjectHideFlags: 0
