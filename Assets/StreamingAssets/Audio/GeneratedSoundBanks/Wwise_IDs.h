@@ -13,7 +13,24 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID PLAY_BREAKING_CRATE = 3614903485U;
+        static const AkUniqueID PLAY_BREAKING_POT = 2386285885U;
+        static const AkUniqueID PLAY_BREAKING_ROCKS = 2187358630U;
+        static const AkUniqueID PLAY_BURNDAMAGE = 3226914506U;
+        static const AkUniqueID PLAY_DIRT = 2498286841U;
+        static const AkUniqueID PLAY_DRAGON_ROAR = 2084793062U;
+        static const AkUniqueID PLAY_DRAGON_STOMP = 3641122009U;
+        static const AkUniqueID PLAY_DRAGON_WINGFLAP = 3035255686U;
+        static const AkUniqueID PLAY_ENVIRONMENT_ELECTRIC_BUZZ_VER1 = 905360358U;
         static const AkUniqueID PLAY_GOLEM_HANDSLAM = 1735979121U;
+        static const AkUniqueID PLAY_GRASSSWISH = 3074015410U;
+        static const AkUniqueID PLAY_LASERSWORD = 874050906U;
+        static const AkUniqueID PLAY_MARKET_BACKGROUND_AMBIENCE_VER1 = 1066527587U;
+        static const AkUniqueID PLAY_MARKET_OPEN_ADVENTURE_BOARD_VER1 = 2375287516U;
+        static const AkUniqueID PLAY_MARKET_OPEN_SHOP_VER1 = 1778288087U;
+        static const AkUniqueID PLAY_NINJA_DASH_VER1 = 1581487416U;
+        static const AkUniqueID PLAY_NINJA_SHURIKEN_THROW_VER1 = 2185043956U;
+        static const AkUniqueID PLAY_NINJA_SWORD_STAB_INTO_GROUND_VER1 = 4079253437U;
         static const AkUniqueID PLAY_PLAYER_BLOCK = 142959787U;
         static const AkUniqueID PLAY_PLAYER_DAMAGED = 2301987285U;
         static const AkUniqueID PLAY_PLAYER_FLURRY = 3504908804U;
@@ -26,7 +43,23 @@ namespace AK
         static const AkUniqueID PLAY_UI_CONFIRM = 3022734157U;
         static const AkUniqueID PLAY_UI_HOVER = 1339559671U;
         static const AkUniqueID PLAY_UI_SLIDER = 2007211132U;
+        static const AkUniqueID PLAY_WATERSPLASH = 877418862U;
     } // namespace EVENTS
+
+    namespace SWITCHES
+    {
+        namespace FOOTSTEP_SURFACE
+        {
+            static const AkUniqueID GROUP = 1833605183U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID DIRT = 2195636714U;
+                static const AkUniqueID STONE = 1216965916U;
+            } // namespace SWITCH
+        } // namespace FOOTSTEP_SURFACE
+
+    } // namespace SWITCHES
 
     namespace BANKS
     {

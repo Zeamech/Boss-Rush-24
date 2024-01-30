@@ -1,41 +1,109 @@
 Event	ID	Name			Wwise Object Path	Notes
 	142959787	Play_Player_Block			\Default Work Unit\Play_Player_Block	
+	874050906	Play_LaserSword			\Default Work Unit\Play_LaserSword	
+	877418862	Play_WaterSplash			\Default Work Unit\Play_WaterSplash	
+	905360358	Play_Environment_Electric_Buzz_Ver1			\Default Work Unit\Play_Environment_Electric_Buzz_Ver1	
+	1066527587	Play_Market_Background_Ambience_Ver1			\Default Work Unit\Play_Market_Background_Ambience_Ver1	
 	1070486235	Play_Player_SwordAttack			\Default Work Unit\Play_Player_SwordAttack	
 	1339559671	Play_UI_Hover			\Default Work Unit\Play_UI_Hover	
 	1551064360	Play_PlayerActions_Slide			\Default Work Unit\Play_PlayerActions_Slide	
+	1581487416	Play_Ninja_Dash_Ver1			\Default Work Unit\Play_Ninja_Dash_Ver1	
 	1735979121	Play_Golem_HandSlam			\Default Work Unit\Play_Golem_HandSlam	
+	1778288087	Play_Market_Open_Shop_Ver1			\Default Work Unit\Play_Market_Open_Shop_Ver1	
 	2007211132	Play_UI_Slider			\Default Work Unit\Play_UI_Slider	
 	2013398331	Play_TestSFX			\Default Work Unit\Play_TestSFX	
+	2084793062	Play_Dragon_Roar			\Default Work Unit\Play_Dragon_Roar	
+	2185043956	Play_Ninja_Shuriken_Throw_Ver1			\Default Work Unit\Play_Ninja_Shuriken_Throw_Ver1	
+	2187358630	Play_Breaking_Rocks			\Default Work Unit\Play_Breaking_Rocks	
 	2244506081	Play_UI_Cancel			\Default Work Unit\Play_UI_Cancel	
 	2301987285	Play_Player_Damaged			\Default Work Unit\Play_Player_Damaged	
+	2375287516	Play_Market_Open_Adventure_Board_Ver1			\Default Work Unit\Play_Market_Open_Adventure_Board_Ver1	
+	2386285885	Play_Breaking_Pot			\Default Work Unit\Play_Breaking_Pot	
+	2498286841	Play_Dirt			\Default Work Unit\Play_Dirt	
 	2830931800	Play_Player_Whrilwind_WithMetal			\Default Work Unit\Play_Player_Whrilwind_WithMetal	
 	3022734157	Play_UI_Confirm			\Default Work Unit\Play_UI_Confirm	
+	3035255686	Play_Dragon_WingFlap			\Default Work Unit\Play_Dragon_WingFlap	
+	3074015410	Play_GrassSwish			\Default Work Unit\Play_GrassSwish	
+	3226914506	Play_BurnDamage			\Default Work Unit\Play_BurnDamage	
 	3504908804	Play_Player_Flurry			\Default Work Unit\Play_Player_Flurry	
 	3608174347	Play_Player_Whrilwind_NoMetal			\Default Work Unit\Play_Player_Whrilwind_NoMetal	
+	3614903485	Play_Breaking_Crate			\Default Work Unit\Play_Breaking_Crate	
+	3641122009	Play_Dragon_Stomp			\Default Work Unit\Play_Dragon_Stomp	
+	4079253437	Play_Ninja_Sword_Stab_Into_Ground_Ver1			\Default Work Unit\Play_Ninja_Sword_Stab_Into_Ground_Ver1	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1833605183	Footstep_Surface			\Default Work Unit\Footstep_Surface	
+
+Switch	ID	Name	Switch Group			Notes
+	1216965916	Stone	Footstep_Surface			
+	2195636714	Dirt	Footstep_Surface			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	37744847	Golem_HandSlam_04	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Golem_HandSlam_4896EB2C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Golem\Golem_HandSlam\Golem_HandSlam_04		135630
-	78742084	PlayerAction_Block_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\PlayerAction_Block_02_8F57AE07.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Block\PlayerAction_Block_02		64436
-	142357567	Golem_HandSlam_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Golem_HandSlam_9D1E6633.wem		\Actor-Mixer Hierarchy\Default Work Unit\Golem\Golem_HandSlam\Golem_HandSlam_03		143524
-	155595539	Player_Whrilwind_WithMetal	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Player_Whrilwind_WithMetal_9C7B83F5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_Whrilwind_WithMetal		178720
+	37744847	Golem_HandSlam_04	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Golem_HandSlam_F193BA06.wem		\Actor-Mixer Hierarchy\Default Work Unit\Golem\Golem_HandSlam\Golem_HandSlam_04		135630
+	62797840	Dirt_Footstep_06	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_0BDB3B4C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Dirt\Dirt_Footstep_06		31064
+	72160197	Environment_Breaking Rocks_Ver1_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Environment_Breaking Rocks_Ver1_D9A8A8EA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Breaking_Rocks\Environment_Breaking Rocks_Ver1_01		232054
+	78742084	PlayerAction_Block_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\PlayerAction_Block_02_1D9F14E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Block\PlayerAction_Block_02		64436
+	89012639	Dragon_Wings Flap_Ver1_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Dragon_Wings Flap_Ver1_0F0B2EA6.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragon\Dragon_WingFlap\Dragon_Wings Flap_Ver1_02		152020
+	95561609	Dragon_Wings Flap_Ver1_04	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Dragon_Wings Flap_Ver1_DFE7930D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragon\Dragon_WingFlap\Dragon_Wings Flap_Ver1_04		85898
+	142357567	Golem_HandSlam_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Golem_HandSlam_68FD6718.wem		\Actor-Mixer Hierarchy\Default Work Unit\Golem\Golem_HandSlam\Golem_HandSlam_03		143524
+	155595539	Player_Whrilwind_WithMetal	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Player_Whrilwind_WithMetal_2FF8C09C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_Whrilwind_WithMetal		178720
+	161936392	Environment_Water Splash_Ver1_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Environment_Water Splash_Ver1_0DE4A290.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\WaterSplash\Environment_Water Splash_Ver1_03		177762
+	202993643	Player_Burn Damage_Ver1_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Player_Burn Damage_Ver1_211FE332.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\BurnDamage\Player_Burn Damage_Ver1_01		58574
+	205608978	Environment_Electric Buzz_Ver1	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Environment_Electric Buzz_Ver1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Environment_Electric Buzz_Ver1		1075816
+	210457976	Dragon_Stomp_Ver1_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Dragon_Stomp_Ver1_1624D924.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragon\Dragon_Stomp\Dragon_Stomp_Ver1_01		79980
 	242347820	UI_Confirm	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Exports\UI_Confirm_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Confirm		418808
-	260157068	PlayerAction_Block_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\PlayerAction_Block_02_B1B91BB1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Block\PlayerAction_Block_03		51076
+	243733759	Ninja_Laser Sword Slash_Ver1_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Ninja_Laser Sword Slash_Ver1_D7B48CAC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ninja\LaserSword\Ninja_Laser Sword Slash_Ver1_01		77306
+	252847729	Dirt_Footstep_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_373019FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Dirt\Dirt_Footstep_03		32998
+	260157068	PlayerAction_Block_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\PlayerAction_Block_02_7B3E31B3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Block\PlayerAction_Block_03		51076
 	261679546	UI_Hover	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Exports\UI_Hover_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Hover		418808
-	285853821	Golem_HandSlam_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Golem_HandSlam_3E46AA02.wem		\Actor-Mixer Hierarchy\Default Work Unit\Golem\Golem_HandSlam\Golem_HandSlam_02		155368
+	285853821	Golem_HandSlam_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Golem_HandSlam_384535BD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Golem\Golem_HandSlam\Golem_HandSlam_02		144840
 	291562151	Player_Whrilwind_NoMetal	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Player_Whrilwind_NoMetal_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_Whrilwind_NoMetal		517598
-	327083476	Player_SwordAttack_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Player_SwordAttack_6283752C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_SwordAttack\Player_SwordAttack_02		62716
-	427384741	Player_SwordAttack_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Player_SwordAttack_EB8A2B65.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_SwordAttack\Player_SwordAttack_03		47522
+	308589895	Dragon_Wings Flap_Ver1_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Dragon_Wings Flap_Ver1_CD81ED2B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragon\Dragon_WingFlap\Dragon_Wings Flap_Ver1_03		151234
+	327083476	Player_SwordAttack_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Player_SwordAttack_4638FDB5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_SwordAttack\Player_SwordAttack_02		62716
+	341910921	Environment_Breaking Crates_Ver1_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Environment_Breaking Crates_Ver1_898FB613.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Breaking_Crate\Environment_Breaking Crates_Ver1_01		160382
+	379036877	Ninja_Shuriken Throw_Ver1	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Ninja_Shuriken Throw_Ver1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ninja\Ninja_Shuriken Throw_Ver1		45450
+	427186557	Environment_Breaking Crates_Ver1_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Environment_Breaking Crates_Ver1_E0EF0D4F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Breaking_Crate\Environment_Breaking Crates_Ver1_03		169190
+	427384741	Player_SwordAttack_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Player_SwordAttack_E024ADB7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_SwordAttack\Player_SwordAttack_03		47522
+	428091529	Environment_Breaking Pots_Ver1_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Environment_Breaking Pots_Ver1_253AE978.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Breaking_Pot\Environment_Breaking Pots_Ver1_02		117816
 	442526702	UI_Cancel	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Exports\UI_Cancel_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Cancel		418808
+	474142468	Environment_Water Splash_Ver1_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Environment_Water Splash_Ver1_E775061A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\WaterSplash\Environment_Water Splash_Ver1_02		195322
+	480246841	Dirt_Footstep_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_8311EA65.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Dirt\Dirt_Footstep_02		40740
+	492078507	Dragon_Stomp_Ver1_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Dragon_Stomp_Ver1_F1C1F411.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragon\Dragon_Stomp\Dragon_Stomp_Ver1_02		78816
+	505383271	Dirt_Footstep_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_36027CCA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Dirt\Dirt_Footstep_01		26548
+	505858539	Environment_Grass Swish_Ver1_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Environment_Grass Swish_Ver1_D12981FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\GrassSwish\Environment_Grass Swish_Ver1_02		77954
+	527798180	Environment_Breaking Pots_Ver1_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Environment_Breaking Pots_Ver1_2D5466FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Breaking_Pot\Environment_Breaking Pots_Ver1_03		136348
 	534221521	TestSFX	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Confirm_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\TestSFX		88360
-	606264282	PlayerAction_Block_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\PlayerAction_Block_02_886B011F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Block\PlayerAction_Block_01		83772
-	691972418	Player_SwordAttack_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Player_SwordAttack_4714DD48.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_SwordAttack\Player_SwordAttack_01		86200
+	606264282	PlayerAction_Block_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\PlayerAction_Block_02_E34069B2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Block\PlayerAction_Block_01		83772
+	642647210	Environment_Grass Swish_Ver1_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Environment_Grass Swish_Ver1_C92162EE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\GrassSwish\Environment_Grass Swish_Ver1_03		65728
+	646783559	Dragon_Stomp_Ver1_04	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Dragon_Stomp_Ver1_63DFA176.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragon\Dragon_Stomp\Dragon_Stomp_Ver1_04		67572
+	650066343	Dragon_Wings Flap_Ver1_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Dragon_Wings Flap_Ver1_043BDC75.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragon\Dragon_WingFlap\Dragon_Wings Flap_Ver1_01		167764
+	654293309	Environment_Water Splash_Ver1_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Environment_Water Splash_Ver1_9DC3CBBC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\WaterSplash\Environment_Water Splash_Ver1_01		128180
+	678062722	Player_Burn Damage_Ver1_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Player_Burn Damage_Ver1_2CADF1F2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\BurnDamage\Player_Burn Damage_Ver1_02		40962
+	685750716	Market_Background Ambience_Ver1	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Market_Background Ambience_Ver1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Market_Background Ambience_Ver1		4336506
+	691972418	Player_SwordAttack_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Player_SwordAttack_17FE40A5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_SwordAttack\Player_SwordAttack_01		86200
+	699420787	Ninja_Laser Sword Slash_Ver1_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Ninja_Laser Sword Slash_Ver1_7EDD6C33.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ninja\LaserSword\Ninja_Laser Sword Slash_Ver1_03		60048
 	721400278	Player_Flurry	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Player_Flurry_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_Flurry		164924
-	787857177	PlayerReactions_Damaged_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\PlayerReactions_Damaged_03_F7269740.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_Damaged\PlayerReactions_Damaged_03		58534
-	876959399	PlayerReactions_Damaged_04	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\PlayerReactions_Damaged_03_2A196554.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_Damaged\PlayerReactions_Damaged_04		45980
-	952967441	PlayerReactions_Damaged_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\PlayerReactions_Damaged_03_5162943D.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_Damaged\PlayerReactions_Damaged_02		61998
-	955359057	PlayerReactions_Damaged_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\PlayerReactions_Damaged_03_FC6AC64B.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_Damaged\PlayerReactions_Damaged_01		55936
-	961888213	Golem_HandSlam_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Golem_HandSlam_E76A07E0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Golem\Golem_HandSlam\Golem_HandSlam_01		197474
-	1049327363	Player_SwordAttack_04	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Player_SwordAttack_2CE1DE32.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_SwordAttack\Player_SwordAttack_04		37392
-	1056470861	PlayerActions_Slide	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\PlayerActions_Slide_508FC599.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\PlayerActions_Slide		109498
+	771397451	Market_Open Shop_Ver1	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Market_Open Shop_Ver1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Market_Open Shop_Ver1		48678
+	772195365	Dragon_Stomp_Ver1_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Dragon_Stomp_Ver1_2B1C7993.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragon\Dragon_Stomp\Dragon_Stomp_Ver1_03		75326
+	774230664	Dirt_Footstep_05	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_B7545505.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Dirt\Dirt_Footstep_05		36224
+	778142981	Market_Open Adventure Board_Ver1	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Market_Open Adventure Board_Ver1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Market_Open Adventure Board_Ver1		68696
+	787857177	PlayerReactions_Damaged_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\PlayerReactions_Damaged_03_B65F412A.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_Damaged\PlayerReactions_Damaged_03		58534
+	802031320	Dirt_Footstep_04	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_791C6CA2.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Dirt\Dirt_Footstep_04		32354
+	841412220	Ninja_Laser Sword Slash_Ver1_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Ninja_Laser Sword Slash_Ver1_7ED80AFA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ninja\LaserSword\Ninja_Laser Sword Slash_Ver1_02		73068
+	843371245	Environment_Breaking Crates_Ver1_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Environment_Breaking Crates_Ver1_2D4B7105.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Breaking_Crate\Environment_Breaking Crates_Ver1_02		88752
+	846513775	Environment_Breaking Rocks_Ver1_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Environment_Breaking Rocks_Ver1_812238F8.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Breaking_Rocks\Environment_Breaking Rocks_Ver1_02		209810
+	876959399	PlayerReactions_Damaged_04	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\PlayerReactions_Damaged_03_8393EFD3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_Damaged\PlayerReactions_Damaged_04		45980
+	887610808	Environment_Grass Swish_Ver1_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Environment_Grass Swish_Ver1_3A1DA846.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\GrassSwish\Environment_Grass Swish_Ver1_01		95650
+	898711250	Environment_Breaking Rocks_Ver1_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Environment_Breaking Rocks_Ver1_25F2CD42.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Breaking_Rocks\Environment_Breaking Rocks_Ver1_03		221462
+	945390322	Dragon_Roar	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Dragon_Roar_1421D4EE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragon\Dragon_Roar		319418
+	949084966	Environment_Breaking Pots_Ver1_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Environment_Breaking Pots_Ver1_F4DAFD17.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Breaking_Pot\Environment_Breaking Pots_Ver1_01		113306
+	949700526	Ninja_Sword Stab Into Ground_Ver1	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Ninja_Sword Stab Into Ground_Ver1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ninja\Ninja_Sword Stab Into Ground_Ver1		85344
+	952967441	PlayerReactions_Damaged_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\PlayerReactions_Damaged_03_E290F959.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_Damaged\PlayerReactions_Damaged_02		61998
+	955359057	PlayerReactions_Damaged_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\PlayerReactions_Damaged_03_65DB9306.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_Damaged\PlayerReactions_Damaged_01		55936
+	956170682	Player_Burn Damage_Ver1_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Player_Burn Damage_Ver1_C0190ED7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\BurnDamage\Player_Burn Damage_Ver1_03		57896
+	961888213	Golem_HandSlam_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Golem_HandSlam_A37154FC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Golem\Golem_HandSlam\Golem_HandSlam_01		197474
+	1033952369	Ninja_Dash_Ver1	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Ninja_Dash_Ver1_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ninja\Ninja_Dash_Ver1		85344
+	1049327363	Player_SwordAttack_04	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Player_SwordAttack_7D2CF7E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_SwordAttack\Player_SwordAttack_04		37392
+	1056470861	PlayerActions_Slide	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\PlayerActions_Slide_2A4961CE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\PlayerActions_Slide		109498
 	1070067498	UI_Slider	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Windows\SFX\Exports\UI_Slider_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Slider		418808
 
