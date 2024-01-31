@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 2586341089023191274}
   - component: {fileID: 6271338445101273490}
   m_Layer: 0
-  m_Name: NinjaBoss
+  m_Name: NinjaBossYellow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -210,7 +210,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 487991539, guid: 98ac49f027e76214d97b8dc644861212, type: 3}
+  m_Sprite: {fileID: 1763866351, guid: 80360a91191344242a7bb9d3d535c948, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -231,7 +231,7 @@ Animator:
   m_GameObject: {fileID: 4084369599353918726}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 9deb5c07a478ded4c83dbe3ce801a3ef, type: 2}
+  m_Controller: {fileID: 9100000, guid: 6307a7afaa4c5d940aa6db6db28c0c22, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

@@ -16,8 +16,10 @@ public class NinjaController : MonoBehaviour
     private Vector3 targetDir;
 
     public bool isInAir;
-    private bool isSlashing;
+    public bool isSlashing;
     [SerializeField]private bool slashPlease;
+
+    private float jumpPause = 0.3f;
 
     private void Start()
     {
@@ -43,14 +45,20 @@ public class NinjaController : MonoBehaviour
 
         if (isInAir)
         {
-            Vector3 targetPos = new Vector3(TargetObject.transform.position.x, TargetObject.transform.position.y, transform.position.z);
-            transform.position = Vector3.Lerp(transform.position, targetPos, 10 * Time.deltaTime);
+            jumpPause -= Time.deltaTime;
+            if(jumpPause <= 0)
+            {
+                Vector3 targetPos = new Vector3(TargetObject.transform.position.x, TargetObject.transform.position.y, transform.position.z);
+                transform.position = Vector3.Lerp(transform.position, targetPos, 10 * Time.deltaTime);
+            }
         }
+        else jumpPause = 0.3f;
 
     }
 
     public void ThrowAttack()
     {
+        FacePlayer();
         ninjaAni.SetTrigger("FireStar");
         GameObject spawn = Instantiate(projPrefab, transform);
         spawn.transform.parent = null;
@@ -58,11 +66,12 @@ public class NinjaController : MonoBehaviour
         spawn.GetComponent<Projectile>().projSpeed = 0.4f;
         spawn.GetComponent<Projectile>().projectionTypes = ProjectionType.Consistent;
 
-        GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-3, 3), Random.Range(-3, 3));
+        GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-8, 8), Random.Range(-8, 8));
     }
 
     public void StartSlash()
     {
+        FacePlayer();
         targetPos = new Vector3(TargetObject.transform.position.x, TargetObject.transform.position.y, transform.position.z);
         targetDir = transform.position - targetPos;
         isSlashing = true;
@@ -73,14 +82,14 @@ public class NinjaController : MonoBehaviour
     {
         isInAir = true;
         GetComponent<HealthBar>().isInvulnerable = true;
-        ninjaAni.SetTrigger("Jump");
+        ninjaAni.SetBool("InAir", true);
     }
 
     public void RunSlam()
     {
         isInAir = false;
         GetComponent<HealthBar>().isInvulnerable = false;
-        ninjaAni.SetTrigger("Drop");
+        ninjaAni.SetBool("InAir", false);
     }
 
     public Player CheckForPlayer()
@@ -88,5 +97,12 @@ public class NinjaController : MonoBehaviour
         return FindObjectOfType<Player>();
     }
 
+    public void FacePlayer()
+    {
+        if (TargetObject.transform.position.x > transform.position.x)
+            transform.localScale = new Vector3(-1, 1, 1);
 
+        if (TargetObject.transform.position.x < transform.position.x)
+            transform.localScale = new Vector3(1, 1, 1);
+    }
 }

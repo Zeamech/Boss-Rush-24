@@ -142,7 +142,7 @@ public class Player : MonoBehaviour
 
         if (PlayerMovementState != MovementState.Sprint && playerStamina <= playerStaminaMx)
         {
-            playerStamina += 2 * Time.deltaTime;
+            playerStamina += 5 * Time.deltaTime;
         }
     }
 

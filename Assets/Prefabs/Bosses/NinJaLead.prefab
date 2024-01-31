@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8145638058648862023}
   - component: {fileID: 3465757880073793757}
+  - component: {fileID: 3131870461570688083}
   m_Layer: 0
   m_Name: NinJaLead
   m_TagString: Untagged
@@ -48,4 +49,29 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  NinjaPrefab: {fileID: 2209264936518284612, guid: 35e5fcffe7ae47d479085a099dc8d75c, type: 3}
+  NinjaPrefab1: {fileID: 2209264936518284612, guid: 35e5fcffe7ae47d479085a099dc8d75c, type: 3}
+  NinjaPrefab2: {fileID: 2209264936518284612, guid: d5ad38fb36122df4baf97d87013f73db, type: 3}
+  NinjaPrefab3: {fileID: 2209264936518284612, guid: d372033dc26e110459c6646775681327, type: 3}
+  ninjaStates: 1
+  ninjaStateList: 
+  stateSwitchTimer: 0
+  stateSwitchTimerMx: 30
+--- !u!114 &3131870461570688083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7146984975221790413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7edcf000892b938429246eb25c8a1bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 100
+  currentHealth: 0
+  UpdateOnUpdate: 1
+  isInvulnerable: 0
+  objAni: {fileID: 0}
+  healthBarSlider: {fileID: 0}
+  healthbarHead: {fileID: 0}

@@ -37,7 +37,7 @@ public class AttackController : MonoBehaviour
 
 
             //}
-            Debug.Log("Contact non player");
+
             collision.GetComponent<HealthBar>().AlterHealth(-1);
         }
     }

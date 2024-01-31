@@ -12,33 +12,48 @@ public class NinjaTrioCOntroler : MonoBehaviour
 
     [SerializeField]GameObject[] ninjaList;
 
-    public GameObject NinjaPrefab;
+    public GameObject NinjaPrefab1;
+    public GameObject NinjaPrefab2;
+    public GameObject NinjaPrefab3;
     public NinjaState ninjaStates;
     public List<NinjaState> ninjaStateList = new List<NinjaState>();
 
-    [SerializeField] private float stateSwitchTimer;
+
+    [SerializeField] private float stateSwitchTimer = 30;
     [SerializeField] private float stateSwitchTimerMx = 30;
 
+    private float healthTracker;
+    private float healthStored;
+
+    private bool stage1;
+    private bool stage2;
+    private bool stage3;
+    private bool stage4;
+
     private float dashTimer = 3;
+    private float dashTimerMx = 3;
     private float jumpTimer;
     private float dropTimer;
     private float throwTimer = 1;
     private float throwCD;
+    private float throwCDMx = .5f;
     private int throwCOunt;
+    private int throwCOuntMx = 3;
     private bool allInAir;
     private int ninjaRef;
 
     private void Start()
     {
-        ninja1 = spawnNinja();
-        ninja2 = spawnNinja();
-        ninja3 = spawnNinja();
+        ninja1 = spawnNinja(NinjaPrefab1);
+        ninja2 = spawnNinja(NinjaPrefab2);
+        ninja3 = spawnNinja(NinjaPrefab3);
         ninjaList[0] = ninja1;
         ninjaList[1] = ninja2;
         ninjaList[2] = ninja3;
 
         ninjaStateList.Add(NinjaState.DashAttacks);
-        
+        ninjaStateList.Add(NinjaState.ThrowingAttack);
+        ninjaStates = NinjaState.DashAttacks;
     }
 
     private void Update()
@@ -53,7 +68,7 @@ public class NinjaTrioCOntroler : MonoBehaviour
                 if (dashTimer <= 0)
                 {
                     ninjaList[ninjaRef].GetComponent<NinjaController>().StartSlash();
-                    dashTimer = 3f;
+                    dashTimer = dashTimerMx;
                     ninjaRef += 1;
                     if (ninjaRef > ninjaList.Length - 1)
                     {
@@ -80,8 +95,8 @@ public class NinjaTrioCOntroler : MonoBehaviour
                     {
                         ninjaList[ninjaRef].GetComponent <NinjaController>().ThrowAttack();
                         throwCOunt += 1;
-                        throwCD = 0.3f;
-                        if (throwCOunt >= 3)
+                        throwCD = throwCDMx;
+                        if (throwCOunt >= throwCOuntMx)
                         {
                             throwCOunt = 0;
                             ninjaRef += 1;
@@ -106,6 +121,7 @@ public class NinjaTrioCOntroler : MonoBehaviour
                     ninjaRef += 1;
                     if (ninjaRef > ninjaList.Length - 1)
                     {
+                        Debug.Log("all jumped");
                         ninjaRef = 0;
                         allInAir = true;
                     }
@@ -118,6 +134,7 @@ public class NinjaTrioCOntroler : MonoBehaviour
                     ninjaRef += 1;
                     if (ninjaRef > ninjaList.Length - 1)
                     {
+                        Debug.Log("all slamed");
                         ninjaRef = 0;
                         allInAir = false;
                         RandomSwitchState();
@@ -127,6 +144,34 @@ public class NinjaTrioCOntroler : MonoBehaviour
                 jumpTimer -= 1 * Time.deltaTime;
                 dropTimer -= 1 * Time.deltaTime;
                 break;
+        }
+
+        healthTracker = GetComponent<HealthBar>().currentHealth;
+
+        if (healthTracker <= GetComponent<HealthBar>().MaxHealth / 1.5f && !stage1)
+        {
+            dashTimerMx = 2f;
+            throwCOuntMx += 1;
+            ninjaStateList.Add(NinjaState.JumpDives);
+            SetSwitchState(2);
+            stage1 = true;
+        }
+
+        if (healthTracker <= GetComponent<HealthBar>().MaxHealth / 2 && !stage2)
+        {
+            //intensify music
+            dashTimerMx = 1f;
+            throwCOuntMx += 1;
+            throwCDMx = 0.3f;
+            stage2 = true;
+        }
+
+        if (healthTracker <= GetComponent<HealthBar>().MaxHealth / 6 && !stage3)
+        {
+            throwCOuntMx += 1;
+            dashTimerMx = .5f;
+            throwCDMx = 0.1f;
+            stage3 = true;
         }
 
         stateSwitchTimer -= Time.deltaTime;
@@ -150,17 +195,32 @@ public class NinjaTrioCOntroler : MonoBehaviour
         {
             NinjaController ninja = ninjaList[i].GetComponent<NinjaController>();
             if (ninja.isInAir) ninja.RunSlam();
+            ninja.isSlashing = false;
         }
 
         stateSwitchTimer = stateSwitchTimerMx;
         ninjaStates = ninjaStateList[Random.Range(0, ninjaStateList.Count)];
     }
 
-    public GameObject spawnNinja()
+    public void SetSwitchState(int stateID)
+    {
+        for (int i = 0; i < ninjaList.Length; i++)
+        {
+            NinjaController ninja = ninjaList[i].GetComponent<NinjaController>();
+            if (ninja.isInAir) ninja.RunSlam();
+            ninja.isSlashing = false;
+        }
+
+        stateSwitchTimer = stateSwitchTimerMx;
+        ninjaStates = ninjaStateList[stateID];
+    }
+
+    public GameObject spawnNinja(GameObject prefab)
     {
         Vector3 spawnAdjust = new Vector3(Random.Range(-10, 10), Random.Range(-5, 5), 0);
-        GameObject ninja = Instantiate(NinjaPrefab);
+        GameObject ninja = Instantiate(prefab);
         ninja.transform.position += spawnAdjust;
+        ninja.GetComponent<HealthBar>().healthbarHead = GetComponent<HealthBar>();
         return ninja;
     }
 
