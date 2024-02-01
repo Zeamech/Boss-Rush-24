@@ -1300,11 +1300,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   missionTemplates:
-  - {fileID: 11400000, guid: 8cfa28510bcb37047bb680384b25068f, type: 2}
   - {fileID: 11400000, guid: bf5bacf49866ee248bd9e4d46e645329, type: 2}
+  - {fileID: 11400000, guid: 8cfa28510bcb37047bb680384b25068f, type: 2}
   GridObj: {fileID: 1797478745}
   PlayerObj: {fileID: 3938864329349406760, guid: 74cde52175acf124bacc9484c2eccbf9, type: 3}
-  SliderPlayer: {fileID: 333216725}
+  SliderPlayerHealth: {fileID: 333216725}
+  SliderPlayerStamina: {fileID: 821571485}
   SliderBoss: {fileID: 1633916683}
 --- !u!1 &1903339236
 GameObject:

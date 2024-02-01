@@ -14,7 +14,7 @@ public class HealthBar : MonoBehaviour
 
     public Animator objAni;
     public Slider healthBarSlider;
-    [SerializeField] private HealthBar healthbarHead;
+    public HealthBar healthbarHead;
 
     private void Start()
     {

@@ -1,0 +1,77 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7146984975221790413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8145638058648862023}
+  - component: {fileID: 3465757880073793757}
+  - component: {fileID: 3131870461570688083}
+  m_Layer: 0
+  m_Name: NinJaLead
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8145638058648862023
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7146984975221790413}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.2458147, y: 0.43465194, z: 0.5269225}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3465757880073793757
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7146984975221790413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f379e4b1c36fefd4e90ab1f6101f8dc7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ninjaList:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  NinjaPrefab1: {fileID: 2209264936518284612, guid: 35e5fcffe7ae47d479085a099dc8d75c, type: 3}
+  NinjaPrefab2: {fileID: 699831712265350644, guid: d372033dc26e110459c6646775681327, type: 3}
+  NinjaPrefab3: {fileID: 6688893843340193696, guid: d5ad38fb36122df4baf97d87013f73db, type: 3}
+  ninjaStates: 1
+  ninjaStateList: 
+  stateSwitchTimer: 0
+  stateSwitchTimerMx: 10
+--- !u!114 &3131870461570688083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7146984975221790413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7edcf000892b938429246eb25c8a1bd4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MaxHealth: 10
+  currentHealth: 0
+  UpdateOnUpdate: 1
+  isInvulnerable: 0
+  objAni: {fileID: 0}
+  healthBarSlider: {fileID: 0}
+  healthbarHead: {fileID: 0}

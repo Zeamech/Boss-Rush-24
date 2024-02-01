@@ -10,7 +10,8 @@ public class LevelManager : MonoBehaviour
     public Transform GridObj;
     public GameObject PlayerObj;
 
-    public Slider SliderPlayer;
+    public Slider SliderPlayerHealth;
+    public Slider SliderPlayerStamina;
     public Slider SliderBoss;
 
     private GameObject activeRoom;
@@ -22,6 +23,14 @@ public class LevelManager : MonoBehaviour
         LoadRoom();
     }
 
+    private void Update()
+    {
+        if(!activeBoss.activeSelf)
+        {
+            NextRoom();
+        }
+    }
+
     //Holds adventure list (all missions up next on this adventure)
     //Loads the room for the mission, then spawns the boss in
     //removes the loaded mission from the list
@@ -30,11 +39,12 @@ public class LevelManager : MonoBehaviour
         activeRoom = Instantiate(missionTemplates[0].LevelRoom, GridObj);
         activeBoss = Instantiate(missionTemplates[0].LevelBoss);
         activeBoss.transform.position = new Vector2(5, 0);
-        activeBoss.GetComponent<HealthBar>().healthBarSlider = SliderBoss;
+        if(activeBoss.GetComponent<HealthBar>()) activeBoss.GetComponent<HealthBar>().healthBarSlider = SliderBoss;
 
         activePlayer = Instantiate(PlayerObj);
         activePlayer.transform.position = new Vector2(-5, 0);
-        activePlayer.GetComponent<HealthBar>().healthBarSlider = SliderPlayer;
+        activePlayer.GetComponent<HealthBar>().healthBarSlider = SliderPlayerHealth;
+        activePlayer.GetComponent<Player>().staminaBarSlider = SliderPlayerStamina;
         FindObjectOfType<CamController>().SetTarget(activePlayer);
 
         missionTemplates.Remove(missionTemplates[0]);

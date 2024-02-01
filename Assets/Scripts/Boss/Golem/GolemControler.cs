@@ -77,12 +77,13 @@ public class GolemControler : MonoBehaviour
 
         if (healthTracker <= GetComponent<HealthBar>().MaxHealth / 2 && !stage2)
         {
+            //intensify music here
             golemState = GolemState.PlasmaSpam;
             stateSwitchTimer = 6;
             stage2 = true;
         }
 
-        if (healthTracker <= GetComponent<HealthBar>().MaxHealth / 4 && !stage3)
+        if (healthTracker <= GetComponent<HealthBar>().MaxHealth / 6 && !stage3)
         {
             golemState = GolemState.PlasmaSpam;
             stateSwitchTimer = 12;

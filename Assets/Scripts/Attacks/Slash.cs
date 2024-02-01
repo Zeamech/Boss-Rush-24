@@ -23,21 +23,7 @@ public class AttackController : MonoBehaviour
 
         if(collision.GetComponent<HealthBar>() != null && collision.GetComponent<Player>() == null)
         {
-            //for(int i = 0; i < hitList.Count; i++)
-            //{
-            //    if (hitList[i] == collision.GetComponent<HealthBar>())
-            //        break;
 
-            //    if (i + 1 == hitList.Count)
-            //    {
-            //        //add deal damage here
-            //        Debug.Log("Hit", collision.gameObject);
-            //        hitList.Add(collision.GetComponent<HealthBar>());
-            //    }
-
-
-            //}
-            Debug.Log("Contact non player");
             collision.GetComponent<HealthBar>().AlterHealth(-1);
         }
     }
