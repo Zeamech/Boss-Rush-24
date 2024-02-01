@@ -4,7 +4,7 @@ using System.Threading;
 using UnityEngine;
 using static GolemControler;
 
-public class NinjaTrioCOntroler : MonoBehaviour
+public class NinjaTrioControler : MonoBehaviour
 {
     GameObject ninja1;
     GameObject ninja2;
@@ -25,6 +25,7 @@ public class NinjaTrioCOntroler : MonoBehaviour
     private float healthTracker;
     private float healthStored;
 
+    private bool stage0;
     private bool stage1;
     private bool stage2;
     private bool stage3;
@@ -52,7 +53,6 @@ public class NinjaTrioCOntroler : MonoBehaviour
         ninjaList[2] = ninja3;
 
         ninjaStateList.Add(NinjaState.DashAttacks);
-        ninjaStateList.Add(NinjaState.ThrowingAttack);
         ninjaStates = NinjaState.DashAttacks;
     }
 
@@ -73,7 +73,7 @@ public class NinjaTrioCOntroler : MonoBehaviour
                     if (ninjaRef > ninjaList.Length - 1)
                     {
                         ninjaRef = 0;
-                        RandomSwitchState();
+                        RandomSwitchState(3);
                     }
                 }
                 else
@@ -101,10 +101,11 @@ public class NinjaTrioCOntroler : MonoBehaviour
                             throwCOunt = 0;
                             ninjaRef += 1;
                             throwTimer = 1;
+                            RandomSwitchState(3);
                             if (ninjaRef > ninjaList.Length - 1)
                             {
                                 ninjaRef = 0;
-                                RandomSwitchState();
+                                RandomSwitchState(2);
                             }
                         }
                     }
@@ -137,7 +138,7 @@ public class NinjaTrioCOntroler : MonoBehaviour
                         Debug.Log("all slamed");
                         ninjaRef = 0;
                         allInAir = false;
-                        RandomSwitchState();
+                        RandomSwitchState(3);
                     }
                 }
 
@@ -147,6 +148,12 @@ public class NinjaTrioCOntroler : MonoBehaviour
         }
 
         healthTracker = GetComponent<HealthBar>().currentHealth;
+
+        if (healthTracker <= GetComponent<HealthBar>().MaxHealth / 1.1f && !stage0)
+        {
+            ninjaStateList.Add(NinjaState.ThrowingAttack);
+            stage0 = true;
+        }
 
         if (healthTracker <= GetComponent<HealthBar>().MaxHealth / 1.5f && !stage1)
         {
@@ -181,9 +188,9 @@ public class NinjaTrioCOntroler : MonoBehaviour
         }
     }
 
-    public void RandomSwitchState()
+    public void RandomSwitchState(int randomRange)
     {
-        if(Random.Range(0, 3) <= 0)
+        if(Random.Range(0, randomRange) <= 0)
         {
             SwitchState();
         }

@@ -23,6 +23,14 @@ public class LevelManager : MonoBehaviour
         LoadRoom();
     }
 
+    private void Update()
+    {
+        if(!activeBoss.activeSelf)
+        {
+            NextRoom();
+        }
+    }
+
     //Holds adventure list (all missions up next on this adventure)
     //Loads the room for the mission, then spawns the boss in
     //removes the loaded mission from the list

@@ -26,6 +26,14 @@ public class NinjaController : MonoBehaviour
         TargetObject = CheckForPlayer().gameObject;
     }
 
+    private void Update()
+    {
+        if(!FindAnyObjectByType<NinjaTrioControler>())
+        {
+            Destroy(gameObject);
+        }
+    }
+
     private void FixedUpdate()
     {
 
@@ -37,7 +45,7 @@ public class NinjaController : MonoBehaviour
         }
 
         if(isSlashing) transform.position -= targetDir.normalized * slashSpeed;
-        if((targetPos - transform.position).magnitude <= 2)
+        if((targetPos - transform.position).magnitude <= 1.5f)
         {
             isSlashing = false;
             ninjaAni.SetTrigger("Slash");
@@ -63,7 +71,7 @@ public class NinjaController : MonoBehaviour
         GameObject spawn = Instantiate(projPrefab, transform);
         spawn.transform.parent = null;
         spawn.GetComponent<Projectile>().TargetObject = TargetObject;
-        spawn.GetComponent<Projectile>().projSpeed = 0.4f;
+        spawn.GetComponent<Projectile>().projSpeed = 0.2f;
         spawn.GetComponent<Projectile>().projectionTypes = ProjectionType.Consistent;
 
         GetComponent<Rigidbody2D>().velocity = new Vector2(Random.Range(-8, 8), Random.Range(-8, 8));
@@ -105,4 +113,5 @@ public class NinjaController : MonoBehaviour
         if (TargetObject.transform.position.x < transform.position.x)
             transform.localScale = new Vector3(1, 1, 1);
     }
+
 }
