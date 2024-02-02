@@ -41,7 +41,7 @@ public class NinjaTrioControler : MonoBehaviour
     private int throwCOunt;
     private int throwCOuntMx = 3;
     private bool allInAir;
-    private int ninjaRef;
+    public int ninjaRef;
 
     private void Start()
     {

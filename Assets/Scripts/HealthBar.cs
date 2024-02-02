@@ -10,7 +10,7 @@ public class HealthBar : MonoBehaviour
     public float currentHealth;
     public bool UpdateOnUpdate;
     public bool isInvulnerable;
-
+    [HideInInspector]public bool hitReg;
 
     public Animator objAni;
     public Slider healthBarSlider;
@@ -33,6 +33,8 @@ public class HealthBar : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+
+        hitReg = false;
     }
 
     public void AlterHealth(float Change)
@@ -44,6 +46,8 @@ public class HealthBar : MonoBehaviour
             healthbarHead.AlterHealth(Change);
         else
             currentHealth += Change;
+
+        hitReg = true;
 
         if(Change < 0 && objAni != null)
         {
