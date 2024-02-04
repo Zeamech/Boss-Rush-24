@@ -115,8 +115,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerMovementState: 0
   PreAttackState: 0
-  EquippedWeapon: {fileID: 11400000, guid: a51f1158bb017164eaf97119d63a3740, type: 2}
+  EquippedWeapon: {fileID: 11400000, guid: a555e0fca47d2294c9bd933b735b90ca, type: 2}
   PlayerParticleSystem: {fileID: 6665322907049543796}
+  staminaBarSlider: {fileID: 0}
   PlayerAim: {fileID: 7397883521431180355}
   PlayerTarget: {fileID: 4498034918045608988}
   SprintMultiplier: 1.5
@@ -126,6 +127,8 @@ MonoBehaviour:
   ReleaseSprintDelay: 0.5
   SlideDuration: 0.8
   AttackDuration: 0.3
+  playerStamina: 0
+  playerStaminaMx: 100
 --- !u!199 &8871625206404783566
 ParticleSystemRenderer:
   serializedVersion: 6
@@ -4939,6 +4942,7 @@ MonoBehaviour:
   currentHealth: 100
   UpdateOnUpdate: 1
   isInvulnerable: 0
+  hitReg: 0
   objAni: {fileID: 0}
   healthBarSlider: {fileID: 0}
   healthbarHead: {fileID: 0}

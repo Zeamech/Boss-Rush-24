@@ -39,15 +39,27 @@ public class HealthBar : MonoBehaviour
 
     public void AlterHealth(float Change)
     {
-        if (isInvulnerable)
-            return;
 
-        if(healthbarHead != null)
+        if (isInvulnerable)
+        {
+            //play dink noise
+            hitReg = true;
+            return;
+        }
+        else
+        {
+            hitReg = true;
+        }
+            
+        if (GetComponent<Player>())
+        {
+            FindAnyObjectByType<ScreenEffects>().PlayerHit();
+        }
+
+        if (healthbarHead != null)
             healthbarHead.AlterHealth(Change);
         else
             currentHealth += Change;
-
-        hitReg = true;
 
         if(Change < 0 && objAni != null)
         {

@@ -81,7 +81,13 @@ public class Player : MonoBehaviour
                 }
                 break;
             case MovementState.Block:
-                GetComponent<HealthBar>().isInvulnerable = true;
+                HealthBar health = GetComponent<HealthBar>();
+                if(playerStamina > 0) 
+                    health.isInvulnerable = true;
+                else 
+                    health.isInvulnerable = false;
+                if (health.hitReg)
+                    playerStamina -= 20;
                 pEM.rateOverTime = 0;
                 rb.MovePosition(transform.position);
                 ani.SetBool("Run", false);
