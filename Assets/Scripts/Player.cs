@@ -8,6 +8,7 @@ public class Player : MonoBehaviour
 {
     public enum MovementState
     {
+        None,
         Neutral,
         Block,
         Slide,
@@ -80,14 +81,14 @@ public class Player : MonoBehaviour
                     pEM.rateOverTime = 0;
                 }
                 break;
+
             case MovementState.Block:
                 HealthBar health = GetComponent<HealthBar>();
-                if(playerStamina > 0) 
+                if(playerStamina > 10) 
                     health.isInvulnerable = true;
                 else 
                     health.isInvulnerable = false;
-                if (health.hitReg)
-                    playerStamina -= 20;
+                    
                 pEM.rateOverTime = 0;
                 rb.MovePosition(transform.position);
                 ani.SetBool("Run", false);
@@ -95,6 +96,7 @@ public class Player : MonoBehaviour
                 // Stand still
                 ani.SetBool("Block", true);
                 break;
+
             case MovementState.Slide:
                 GetComponent<HealthBar>().isInvulnerable = true;
                 pEM.rateOverTime = 80;
@@ -107,6 +109,7 @@ public class Player : MonoBehaviour
                 rb.MovePosition(pos);
                 ani.SetBool("Slide", true);
                 break;
+
             case MovementState.Sprint:
                 ani.SetBool("Sprint", true);
                 playerStamina -= 5 * Time.deltaTime;
@@ -116,6 +119,7 @@ public class Player : MonoBehaviour
                 pos = Vector3.MoveTowards(transform.position, transform.position + maxVelocity, MovementAcceleration);
                 rb.MovePosition(pos);
                 break;
+
             case MovementState.Attack:
                 pEM.rateOverTime = 0;
                 rb.MovePosition(transform.position);
@@ -142,6 +146,12 @@ public class Player : MonoBehaviour
                     attackTriggered = true; 
                 } 
                 AttackDuration -= Time.deltaTime;
+                break;
+
+            case MovementState.None:
+                ani.SetBool("Block", false);
+                ani.SetBool("Sprint", false);
+                ani.SetBool("Run", false);
                 break;
 
         }

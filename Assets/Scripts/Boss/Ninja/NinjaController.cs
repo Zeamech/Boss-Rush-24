@@ -110,6 +110,7 @@ public class NinjaController : MonoBehaviour
     public void Dodge()
     {
         GetComponent<Rigidbody2D>().velocity = new Vector2(UnityEngine.Random.Range(-30, 30), UnityEngine.Random.Range(-30, 30));
+        ninjaAni.SetTrigger("Dodge");
     }
 
     public Player CheckForPlayer()

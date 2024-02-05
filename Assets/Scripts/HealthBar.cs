@@ -31,6 +31,13 @@ public class HealthBar : MonoBehaviour
 
         if(currentHealth <= 0 && healthbarHead == null)
         {
+            if(GetComponent<Player>())
+            {
+                Player player = GetComponent<Player>();
+                player.PlayerMovementState = Player.MovementState.None;
+                player.GetComponent<Animator>().SetBool("Dead", true);
+            }
+
             gameObject.SetActive(false);
         }
 
@@ -43,6 +50,10 @@ public class HealthBar : MonoBehaviour
         if (isInvulnerable)
         {
             //play dink noise
+            if(GetComponent<Player>() && GetComponent<Player>().PlayerMovementState == Player.MovementState.Block)
+            {
+                GetComponent<Player>().playerStamina -= 20;
+            }
             hitReg = true;
             return;
         }

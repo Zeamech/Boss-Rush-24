@@ -54,6 +54,7 @@ MonoBehaviour:
   currentHealth: 0
   UpdateOnUpdate: 0
   isInvulnerable: 0
+  hitReg: 0
   objAni: {fileID: 0}
   healthBarSlider: {fileID: 0}
   healthbarHead: {fileID: 5023323434014578456}
@@ -5084,6 +5085,7 @@ MonoBehaviour:
   GolemHand1: {fileID: 3519181603194544511}
   TargetObject: {fileID: 0}
   Projectle: {fileID: 651712526359535112, guid: f70ab140261e46244b5d57c53a73ce99, type: 3}
+  healthBar: {fileID: 8956776755757903783, guid: 1ce813af946eb2049813ab5767ace701, type: 3}
   golemState: 0
   stateSwitchTimer: 0
   stateSwitchTimerMx: 20
@@ -5109,6 +5111,7 @@ MonoBehaviour:
   currentHealth: 0
   UpdateOnUpdate: 1
   isInvulnerable: 0
+  hitReg: 0
   objAni: {fileID: 0}
   healthBarSlider: {fileID: 0}
   healthbarHead: {fileID: 0}
@@ -5270,6 +5273,7 @@ MonoBehaviour:
   currentHealth: 0
   UpdateOnUpdate: 0
   isInvulnerable: 0
+  hitReg: 0
   objAni: {fileID: 0}
   healthBarSlider: {fileID: 0}
   healthbarHead: {fileID: 5023323434014578456}
@@ -5657,6 +5661,7 @@ MonoBehaviour:
   currentHealth: 0
   UpdateOnUpdate: 0
   isInvulnerable: 0
+  hitReg: 0
   objAni: {fileID: 0}
   healthBarSlider: {fileID: 0}
   healthbarHead: {fileID: 5023323434014578456}

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using static GolemControler;
 using static UnityEngine.GraphicsBuffer;
 
@@ -12,6 +13,7 @@ public class GolemControler : MonoBehaviour
 
     public GameObject TargetObject;
     public GameObject Projectle;
+    public GameObject healthBar;
 
     public GolemState golemState;
     private List<GolemState> golemStateList = new List<GolemState>();
@@ -50,6 +52,12 @@ public class GolemControler : MonoBehaviour
 
     [SerializeField]private bool hand0Down = true;
     [SerializeField] private bool hand1Down = true;
+
+    private void Awake()
+    {
+        GameObject healthbar = Instantiate(healthBar, FindObjectOfType<CanvasManager>().transform);
+        GetComponent<HealthBar>().healthBarSlider = healthbar.GetComponent<Slider>();
+    }
 
     void Start()
     {

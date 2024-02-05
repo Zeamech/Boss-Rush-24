@@ -12,7 +12,6 @@ public class LevelManager : MonoBehaviour
 
     public Slider SliderPlayerHealth;
     public Slider SliderPlayerStamina;
-    public Slider SliderBoss;
 
     private GameObject activeRoom;
     private GameObject activeBoss;
@@ -39,7 +38,6 @@ public class LevelManager : MonoBehaviour
         activeRoom = Instantiate(missionTemplates[0].LevelRoom, GridObj);
         activeBoss = Instantiate(missionTemplates[0].LevelBoss);
         activeBoss.transform.position = new Vector2(5, 0);
-        if(activeBoss.GetComponent<HealthBar>()) activeBoss.GetComponent<HealthBar>().healthBarSlider = SliderBoss;
 
         activePlayer = Instantiate(PlayerObj);
         activePlayer.transform.position = new Vector2(-5, 0);
