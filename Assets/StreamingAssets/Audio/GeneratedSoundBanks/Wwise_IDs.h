@@ -43,6 +43,7 @@ namespace AK
         static const AkUniqueID PLAY_PLAYER_WHRILWIND_NOMETAL = 3608174347U;
         static const AkUniqueID PLAY_PLAYER_WHRILWIND_WITHMETAL = 2830931800U;
         static const AkUniqueID PLAY_PLAYERACTIONS_SLIDE = 1551064360U;
+        static const AkUniqueID PLAY_STONEFOOTSTEP = 1749496171U;
         static const AkUniqueID PLAY_TESTSFX = 2013398331U;
         static const AkUniqueID PLAY_UI_CANCEL = 2244506081U;
         static const AkUniqueID PLAY_UI_CONFIRM = 3022734157U;

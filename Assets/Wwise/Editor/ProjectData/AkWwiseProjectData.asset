@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: 07d9ac8661b7b948aafb12660f894a64
     GuidInternal: 
-    m_lastTime: -8584943685349564749
+    m_lastTime: -8584943677875733356
     List:
     - name: Play_Breaking_Crate
       guid: ab4fd2209c3ab64a93410415bb37dcd7
@@ -606,6 +606,23 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 1.1396018
       minDuration: 1.1396018
+    - name: Play_StoneFootstep
+      guid: 277211983bfb844f92aa32d47bfcc82c
+      id: 1749496171
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 07d9ac8661b7b948aafb12660f894a64
+      - ElementName: Play_StoneFootstep
+        ObjectType: 3
+        guid: 277211983bfb844f92aa32d47bfcc82c
+      Path: Events\Default Work Unit\Play_StoneFootstep
+      maxAttenuation: 0
+      maxDuration: 0.26266667
+      minDuration: 0.14071429
     - name: Play_TestSFX
       guid: 74d64d0339812c4fb6a17fe28af5b05c
       id: 2013398331

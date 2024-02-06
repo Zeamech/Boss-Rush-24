@@ -30,13 +30,21 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3291379323" Type="User" Language="SFX" Hash="{07CEF769-B1D1-5F61-7A7B-0A25EAC8E7D9}">
+		<SoundBank Id="3291379323" Type="User" Language="SFX" Hash="{939C167B-9613-2750-55ED-10DF3E6B4449}">
 			<ShortName>TestBank</ShortName>
 			<Path>TestBank.bnk</Path>
 			<Media>
+				<File Id="25425242" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5_C340E04F.wem</CachePath>
+				</File>
 				<File Id="37744847" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Golem_HandSlam.wav</ShortName>
 					<CachePath>SFX/Golem_HandSlam_F193BA06.wem</CachePath>
+				</File>
+				<File Id="60792595" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5_72704927.wem</CachePath>
 				</File>
 				<File Id="62797840" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
@@ -62,6 +70,10 @@
 					<ShortName>Golem_Shot Plasma_Ver1.wav</ShortName>
 					<CachePath>SFX/Golem_Shot Plasma_Ver1_3A661D6E.wem</CachePath>
 				</File>
+				<File Id="121864777" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5_1AB7688E.wem</CachePath>
+				</File>
 				<File Id="142357567" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Golem_HandSlam.wav</ShortName>
 					<CachePath>SFX/Golem_HandSlam_68FD6718.wem</CachePath>
@@ -73,6 +85,10 @@
 				<File Id="161936392" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Environment_Water Splash_Ver1.wav</ShortName>
 					<CachePath>SFX/Environment_Water Splash_Ver1_E075087C.wem</CachePath>
+				</File>
+				<File Id="201137999" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5_19D8C1B5.wem</CachePath>
 				</File>
 				<File Id="202993643" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Burn Damage_Ver1.wav</ShortName>
@@ -97,6 +113,10 @@
 				<File Id="243733759" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ninja_Laser Sword Slash_Ver1.wav</ShortName>
 					<CachePath>SFX/Ninja_Laser Sword Slash_Ver1_039321BD.wem</CachePath>
+				</File>
+				<File Id="247299071" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5_D52925F7.wem</CachePath>
 				</File>
 				<File Id="252847729" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
@@ -157,6 +177,10 @@
 				<File Id="442526702" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Exports\UI_Cancel.wav</ShortName>
 					<CachePath>SFX/Exports/UI_Cancel_10C4C929.wem</CachePath>
+				</File>
+				<File Id="443932157" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5_C4A92490.wem</CachePath>
 				</File>
 				<File Id="474142468" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Environment_Water Splash_Ver1.wav</ShortName>
@@ -528,6 +552,16 @@
 						<MediaRef Id="1056470861"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="1749496171" Name="Play_StoneFootstep" DurationType="OneShot" DurationMin="0.14071429" DurationMax="0.26266667">
+					<MediaRefs>
+						<MediaRef Id="25425242"/>
+						<MediaRef Id="60792595"/>
+						<MediaRef Id="121864777"/>
+						<MediaRef Id="201137999"/>
+						<MediaRef Id="247299071"/>
+						<MediaRef Id="443932157"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2013398331" Name="Play_TestSFX" DurationType="OneShot" DurationMin="0.59460354" DurationMax="0.59460354">
 					<MediaRefs>
 						<MediaRef Id="534221521"/>
@@ -571,5 +605,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{42805185-2D5B-91D4-BC53-EADE5EEBF84B}</FileHash>
+	<FileHash>{01F6BD28-FBC6-70A4-AA2B-D5E61A8B4281}</FileHash>
 </SoundBanksInfo>

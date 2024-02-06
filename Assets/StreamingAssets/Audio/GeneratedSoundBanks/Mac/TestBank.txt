@@ -9,6 +9,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1551064360	Play_PlayerActions_Slide			\Default Work Unit\Play_PlayerActions_Slide	
 	1581487416	Play_Ninja_Dash_Ver1			\Default Work Unit\Play_Ninja_Dash_Ver1	
 	1735979121	Play_Golem_HandSlam			\Default Work Unit\Play_Golem_HandSlam	
+	1749496171	Play_StoneFootstep			\Default Work Unit\Play_StoneFootstep	
 	1772121271	Play_Golem_Slide_Ver1			\Default Work Unit\Play_Golem_Slide_Ver1	
 	1778288087	Play_Market_Open_Shop_Ver1			\Default Work Unit\Play_Market_Open_Shop_Ver1	
 	1957861602	Play_GolemRoar			\Default Work Unit\Play_GolemRoar	
@@ -44,22 +45,27 @@ Switch	ID	Name	Switch Group			Notes
 	2195636714	Dirt	Footstep_Surface			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	25425242	Stone_Footstep_05	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5_C340E04F.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Stone\Stone_Footstep_05		20358
 	37744847	Golem_HandSlam_04	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Golem_HandSlam_F193BA06.wem		\Actor-Mixer Hierarchy\Default Work Unit\Golem\Golem_HandSlam\Golem_HandSlam_04		135630
+	60792595	Stone_Footstep_04	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5_72704927.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Stone\Stone_Footstep_04		18558
 	62797840	Dirt_Footstep_06	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_0BDB3B4C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Dirt\Dirt_Footstep_06		31064
 	72160197	Environment_Breaking Rocks_Ver1_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Environment_Breaking Rocks_Ver1_D9A8A8EA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Breaking_Rocks\Environment_Breaking Rocks_Ver1_01		232054
 	78742084	PlayerAction_Block_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\PlayerAction_Block_02_1D9F14E1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Block\PlayerAction_Block_02		64436
 	89012639	Dragon_Wings Flap_Ver1_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Dragon_Wings Flap_Ver1_3EE5B9FC.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragon\Dragon_WingFlap\Dragon_Wings Flap_Ver1_02		152020
 	95561609	Dragon_Wings Flap_Ver1_04	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Dragon_Wings Flap_Ver1_4ABB29AA.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragon\Dragon_WingFlap\Dragon_Wings Flap_Ver1_04		85898
 	118334198	Golem_Shot Plasma_Ver1_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Golem_Shot Plasma_Ver1_3A661D6E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Golem\PlasmaShot\Golem_Shot Plasma_Ver1_03		51450
+	121864777	Stone_Footstep_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5_1AB7688E.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Stone\Stone_Footstep_02		19008
 	142357567	Golem_HandSlam_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Golem_HandSlam_68FD6718.wem		\Actor-Mixer Hierarchy\Default Work Unit\Golem\Golem_HandSlam\Golem_HandSlam_03		143524
 	155595539	Player_Whrilwind_WithMetal	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Player_Whrilwind_WithMetal_2FF8C09C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_Whrilwind_WithMetal		178720
 	161936392	Environment_Water Splash_Ver1_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Environment_Water Splash_Ver1_E075087C.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\WaterSplash\Environment_Water Splash_Ver1_03		177762
+	201137999	Stone_Footstep_06	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5_19D8C1B5.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Stone\Stone_Footstep_06		19458
 	202993643	Player_Burn Damage_Ver1_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Player_Burn Damage_Ver1_C5FEE7A1.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\BurnDamage\Player_Burn Damage_Ver1_01		58574
 	205608978	Environment_Electric Buzz_Ver1	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Environment_Electric Buzz_Ver1_D79FB2B7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Environment_Electric Buzz_Ver1		1075816
 	210457976	Dragon_Stomp_Ver1_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Dragon_Stomp_Ver1_02521A30.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragon\Dragon_Stomp\Dragon_Stomp_Ver1_01		79980
 	211621833	Golem_Shot Plasma_Ver1_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Golem_Shot Plasma_Ver1_7D1C5372.wem		\Actor-Mixer Hierarchy\Default Work Unit\Golem\PlasmaShot\Golem_Shot Plasma_Ver1_01		78680
 	242347820	UI_Confirm	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Exports\UI_Confirm_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Confirm		418808
 	243733759	Ninja_Laser Sword Slash_Ver1_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Ninja_Laser Sword Slash_Ver1_039321BD.wem		\Actor-Mixer Hierarchy\Default Work Unit\Ninja\LaserSword\Ninja_Laser Sword Slash_Ver1_01		77306
+	247299071	Stone_Footstep_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5_D52925F7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Stone\Stone_Footstep_03		13604
 	252847729	Dirt_Footstep_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_373019FE.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Dirt\Dirt_Footstep_03		32998
 	260157068	PlayerAction_Block_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\PlayerAction_Block_02_7B3E31B3.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Player_Block\PlayerAction_Block_03		51076
 	261679546	UI_Hover	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Exports\UI_Hover_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Hover		418808
@@ -75,6 +81,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	427384741	Player_SwordAttack_03	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Player_SwordAttack_E024ADB7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\PlayerAttack\Player_SwordAttack\Player_SwordAttack_03		47522
 	428091529	Environment_Breaking Pots_Ver1_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Environment_Breaking Pots_Ver1_8CA9E644.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\Breaking_Pot\Environment_Breaking Pots_Ver1_02		117816
 	442526702	UI_Cancel	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Exports\UI_Cancel_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\UI\UI_Cancel		418808
+	443932157	Stone_Footstep_01	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Stone, Male, Sneakers, Normal Tempo SND4064 5_C4A92490.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Stone\Stone_Footstep_01		25312
 	474142468	Environment_Water Splash_Ver1_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Environment_Water Splash_Ver1_B76B4CED.wem		\Actor-Mixer Hierarchy\Default Work Unit\Environment\WaterSplash\Environment_Water Splash_Ver1_02		195322
 	480246841	Dirt_Footstep_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_8311EA65.wem		\Actor-Mixer Hierarchy\Default Work Unit\Player\Footsteps\Footsteps\Dirt\Dirt_Footstep_02		40740
 	492078507	Dragon_Stomp_Ver1_02	F:\Projects\Unity\Boss-Rush-Wwise\Boss-Rush-24_WwiseProject\.cache\Mac\SFX\Dragon_Stomp_Ver1_ED26B1CB.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dragon\Dragon_Stomp\Dragon_Stomp_Ver1_02		78816
