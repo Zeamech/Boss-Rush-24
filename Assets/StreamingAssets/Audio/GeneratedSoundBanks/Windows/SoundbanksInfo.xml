@@ -30,7 +30,7 @@
 				</SwitchGroup>
 			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3291379323" Type="User" Language="SFX" Hash="{95CECDAB-B749-D779-BE8F-D25B40FD7ACE}">
+		<SoundBank Id="3291379323" Type="User" Language="SFX" Hash="{723004D4-6D99-761F-F08E-B0FF3A475D73}">
 			<ShortName>TestBank</ShortName>
 			<Path>TestBank.bnk</Path>
 			<Media>
@@ -52,11 +52,15 @@
 				</File>
 				<File Id="89012639" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dragon_Wings Flap_Ver1.wav</ShortName>
-					<CachePath>SFX/Dragon_Wings Flap_Ver1_0F0B2EA6.wem</CachePath>
+					<CachePath>SFX/Dragon_Wings Flap_Ver1_3EE5B9FC.wem</CachePath>
 				</File>
 				<File Id="95561609" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dragon_Wings Flap_Ver1.wav</ShortName>
-					<CachePath>SFX/Dragon_Wings Flap_Ver1_DFE7930D.wem</CachePath>
+					<CachePath>SFX/Dragon_Wings Flap_Ver1_4ABB29AA.wem</CachePath>
+				</File>
+				<File Id="118334198" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_Shot Plasma_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_Shot Plasma_Ver1_E5201242.wem</CachePath>
 				</File>
 				<File Id="142357567" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Golem_HandSlam.wav</ShortName>
@@ -68,11 +72,11 @@
 				</File>
 				<File Id="161936392" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Environment_Water Splash_Ver1.wav</ShortName>
-					<CachePath>SFX/Environment_Water Splash_Ver1_0DE4A290.wem</CachePath>
+					<CachePath>SFX/Environment_Water Splash_Ver1_E075087C.wem</CachePath>
 				</File>
 				<File Id="202993643" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Burn Damage_Ver1.wav</ShortName>
-					<CachePath>SFX/Player_Burn Damage_Ver1_211FE332.wem</CachePath>
+					<CachePath>SFX/Player_Burn Damage_Ver1_C5FEE7A1.wem</CachePath>
 				</File>
 				<File Id="205608978" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Environment_Electric Buzz_Ver1.wav</ShortName>
@@ -80,7 +84,11 @@
 				</File>
 				<File Id="210457976" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dragon_Stomp_Ver1.wav</ShortName>
-					<CachePath>SFX/Dragon_Stomp_Ver1_1624D924.wem</CachePath>
+					<CachePath>SFX/Dragon_Stomp_Ver1_02521A30.wem</CachePath>
+				</File>
+				<File Id="211621833" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_Shot Plasma_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_Shot Plasma_Ver1_C9E27304.wem</CachePath>
 				</File>
 				<File Id="242347820" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Exports\UI_Confirm.wav</ShortName>
@@ -88,7 +96,7 @@
 				</File>
 				<File Id="243733759" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ninja_Laser Sword Slash_Ver1.wav</ShortName>
-					<CachePath>SFX/Ninja_Laser Sword Slash_Ver1_D7B48CAC.wem</CachePath>
+					<CachePath>SFX/Ninja_Laser Sword Slash_Ver1_039321BD.wem</CachePath>
 				</File>
 				<File Id="252847729" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
@@ -102,6 +110,10 @@
 					<ShortName>Exports\UI_Hover.wav</ShortName>
 					<CachePath>SFX/Exports/UI_Hover_10C4C929.wem</CachePath>
 				</File>
+				<File Id="267421699" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_Roar_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_Roar_Ver1_8EEF4D4E.wem</CachePath>
+				</File>
 				<File Id="285853821" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Golem_HandSlam.wav</ShortName>
 					<CachePath>SFX/Golem_HandSlam_384535BD.wem</CachePath>
@@ -112,7 +124,11 @@
 				</File>
 				<File Id="308589895" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dragon_Wings Flap_Ver1.wav</ShortName>
-					<CachePath>SFX/Dragon_Wings Flap_Ver1_CD81ED2B.wem</CachePath>
+					<CachePath>SFX/Dragon_Wings Flap_Ver1_EADBFACB.wem</CachePath>
+				</File>
+				<File Id="326005585" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_WindupCharge_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_WindupCharge_Ver1_FDB2D453.wem</CachePath>
 				</File>
 				<File Id="327083476" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_SwordAttack.wav</ShortName>
@@ -120,7 +136,7 @@
 				</File>
 				<File Id="341910921" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Environment_Breaking Crates_Ver1.wav</ShortName>
-					<CachePath>SFX/Environment_Breaking Crates_Ver1_898FB613.wem</CachePath>
+					<CachePath>SFX/Environment_Breaking Crates_Ver1_C53A4020.wem</CachePath>
 				</File>
 				<File Id="379036877" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ninja_Shuriken Throw_Ver1.wav</ShortName>
@@ -128,7 +144,7 @@
 				</File>
 				<File Id="427186557" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Environment_Breaking Crates_Ver1.wav</ShortName>
-					<CachePath>SFX/Environment_Breaking Crates_Ver1_E0EF0D4F.wem</CachePath>
+					<CachePath>SFX/Environment_Breaking Crates_Ver1_DD9A5D41.wem</CachePath>
 				</File>
 				<File Id="427384741" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_SwordAttack.wav</ShortName>
@@ -136,7 +152,7 @@
 				</File>
 				<File Id="428091529" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Environment_Breaking Pots_Ver1.wav</ShortName>
-					<CachePath>SFX/Environment_Breaking Pots_Ver1_253AE978.wem</CachePath>
+					<CachePath>SFX/Environment_Breaking Pots_Ver1_8CA9E644.wem</CachePath>
 				</File>
 				<File Id="442526702" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Exports\UI_Cancel.wav</ShortName>
@@ -144,7 +160,7 @@
 				</File>
 				<File Id="474142468" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Environment_Water Splash_Ver1.wav</ShortName>
-					<CachePath>SFX/Environment_Water Splash_Ver1_E775061A.wem</CachePath>
+					<CachePath>SFX/Environment_Water Splash_Ver1_B76B4CED.wem</CachePath>
 				</File>
 				<File Id="480246841" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
@@ -152,7 +168,7 @@
 				</File>
 				<File Id="492078507" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dragon_Stomp_Ver1.wav</ShortName>
-					<CachePath>SFX/Dragon_Stomp_Ver1_F1C1F411.wem</CachePath>
+					<CachePath>SFX/Dragon_Stomp_Ver1_ED26B1CB.wem</CachePath>
 				</File>
 				<File Id="505383271" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
@@ -160,11 +176,15 @@
 				</File>
 				<File Id="505858539" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Environment_Grass Swish_Ver1.wav</ShortName>
-					<CachePath>SFX/Environment_Grass Swish_Ver1_D12981FE.wem</CachePath>
+					<CachePath>SFX/Environment_Grass Swish_Ver1_A242A796.wem</CachePath>
+				</File>
+				<File Id="526610358" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_Roar_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_Roar_Ver1_7CFB6209.wem</CachePath>
 				</File>
 				<File Id="527798180" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Environment_Breaking Pots_Ver1.wav</ShortName>
-					<CachePath>SFX/Environment_Breaking Pots_Ver1_2D5466FE.wem</CachePath>
+					<CachePath>SFX/Environment_Breaking Pots_Ver1_052F034C.wem</CachePath>
 				</File>
 				<File Id="534221521" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Confirm.wav</ShortName>
@@ -176,23 +196,23 @@
 				</File>
 				<File Id="642647210" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Environment_Grass Swish_Ver1.wav</ShortName>
-					<CachePath>SFX/Environment_Grass Swish_Ver1_C92162EE.wem</CachePath>
+					<CachePath>SFX/Environment_Grass Swish_Ver1_87C96F88.wem</CachePath>
 				</File>
 				<File Id="646783559" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dragon_Stomp_Ver1.wav</ShortName>
-					<CachePath>SFX/Dragon_Stomp_Ver1_63DFA176.wem</CachePath>
+					<CachePath>SFX/Dragon_Stomp_Ver1_55ED6B33.wem</CachePath>
 				</File>
 				<File Id="650066343" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dragon_Wings Flap_Ver1.wav</ShortName>
-					<CachePath>SFX/Dragon_Wings Flap_Ver1_043BDC75.wem</CachePath>
+					<CachePath>SFX/Dragon_Wings Flap_Ver1_8921429B.wem</CachePath>
 				</File>
 				<File Id="654293309" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Environment_Water Splash_Ver1.wav</ShortName>
-					<CachePath>SFX/Environment_Water Splash_Ver1_9DC3CBBC.wem</CachePath>
+					<CachePath>SFX/Environment_Water Splash_Ver1_7E68184B.wem</CachePath>
 				</File>
 				<File Id="678062722" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Burn Damage_Ver1.wav</ShortName>
-					<CachePath>SFX/Player_Burn Damage_Ver1_2CADF1F2.wem</CachePath>
+					<CachePath>SFX/Player_Burn Damage_Ver1_64AA770A.wem</CachePath>
 				</File>
 				<File Id="685750716" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Market_Background Ambience_Ver1.wav</ShortName>
@@ -204,7 +224,7 @@
 				</File>
 				<File Id="699420787" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ninja_Laser Sword Slash_Ver1.wav</ShortName>
-					<CachePath>SFX/Ninja_Laser Sword Slash_Ver1_7EDD6C33.wem</CachePath>
+					<CachePath>SFX/Ninja_Laser Sword Slash_Ver1_DDCC2C8C.wem</CachePath>
 				</File>
 				<File Id="721400278" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Flurry.wav</ShortName>
@@ -216,7 +236,7 @@
 				</File>
 				<File Id="772195365" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dragon_Stomp_Ver1.wav</ShortName>
-					<CachePath>SFX/Dragon_Stomp_Ver1_2B1C7993.wem</CachePath>
+					<CachePath>SFX/Dragon_Stomp_Ver1_2D014079.wem</CachePath>
 				</File>
 				<File Id="774230664" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
@@ -234,17 +254,21 @@
 					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
 					<CachePath>SFX/Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_791C6CA2.wem</CachePath>
 				</File>
+				<File Id="825169108" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_Roar_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_Roar_Ver1_1556F49E.wem</CachePath>
+				</File>
 				<File Id="841412220" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ninja_Laser Sword Slash_Ver1.wav</ShortName>
-					<CachePath>SFX/Ninja_Laser Sword Slash_Ver1_7ED80AFA.wem</CachePath>
+					<CachePath>SFX/Ninja_Laser Sword Slash_Ver1_E4845145.wem</CachePath>
 				</File>
 				<File Id="843371245" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Environment_Breaking Crates_Ver1.wav</ShortName>
-					<CachePath>SFX/Environment_Breaking Crates_Ver1_2D4B7105.wem</CachePath>
+					<CachePath>SFX/Environment_Breaking Crates_Ver1_CBC2AE70.wem</CachePath>
 				</File>
 				<File Id="846513775" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Environment_Breaking Rocks_Ver1.wav</ShortName>
-					<CachePath>SFX/Environment_Breaking Rocks_Ver1_812238F8.wem</CachePath>
+					<CachePath>SFX/Environment_Breaking Rocks_Ver1_1418FF3D.wem</CachePath>
 				</File>
 				<File Id="876959399" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>PlayerReactions_Damaged_03.wav</ShortName>
@@ -252,19 +276,23 @@
 				</File>
 				<File Id="887610808" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Environment_Grass Swish_Ver1.wav</ShortName>
-					<CachePath>SFX/Environment_Grass Swish_Ver1_3A1DA846.wem</CachePath>
+					<CachePath>SFX/Environment_Grass Swish_Ver1_BF868CD3.wem</CachePath>
 				</File>
 				<File Id="898711250" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Environment_Breaking Rocks_Ver1.wav</ShortName>
-					<CachePath>SFX/Environment_Breaking Rocks_Ver1_25F2CD42.wem</CachePath>
+					<CachePath>SFX/Environment_Breaking Rocks_Ver1_4DC151D7.wem</CachePath>
+				</File>
+				<File Id="925244277" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_Shot Plasma_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_Shot Plasma_Ver1_28243F76.wem</CachePath>
 				</File>
 				<File Id="945390322" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Dragon_Roar.wav</ShortName>
-					<CachePath>SFX/Dragon_Roar_1421D4EE.wem</CachePath>
+					<CachePath>SFX/Dragon_Roar_03109359.wem</CachePath>
 				</File>
 				<File Id="949084966" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Environment_Breaking Pots_Ver1.wav</ShortName>
-					<CachePath>SFX/Environment_Breaking Pots_Ver1_F4DAFD17.wem</CachePath>
+					<CachePath>SFX/Environment_Breaking Pots_Ver1_21C703C5.wem</CachePath>
 				</File>
 				<File Id="949700526" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ninja_Sword Stab Into Ground_Ver1.wav</ShortName>
@@ -280,11 +308,19 @@
 				</File>
 				<File Id="956170682" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Player_Burn Damage_Ver1.wav</ShortName>
-					<CachePath>SFX/Player_Burn Damage_Ver1_C0190ED7.wem</CachePath>
+					<CachePath>SFX/Player_Burn Damage_Ver1_3D17B3E7.wem</CachePath>
 				</File>
 				<File Id="961888213" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Golem_HandSlam.wav</ShortName>
 					<CachePath>SFX/Golem_HandSlam_A37154FC.wem</CachePath>
+				</File>
+				<File Id="964464640" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_Slide_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_Slide_Ver1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="996780197" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_Rage_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_Rage_Ver1_10C4C929.wem</CachePath>
 				</File>
 				<File Id="1033952369" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Ninja_Dash_Ver1.wav</ShortName>
@@ -376,6 +412,28 @@
 						<MediaRef Id="961888213"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2041641761" Name="Play_Golem_Rage_Ver1" DurationType="OneShot" DurationMin="1.6007708" DurationMax="1.6007708">
+					<MediaRefs>
+						<MediaRef Id="996780197"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1772121271" Name="Play_Golem_Slide_Ver1" DurationType="OneShot" DurationMin="0.62395835" DurationMax="0.62395835">
+					<MediaRefs>
+						<MediaRef Id="964464640"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3559821743" Name="Play_Golem_WindupCharge_Ver1" DurationType="OneShot" DurationMin="1.70173" DurationMax="1.70173">
+					<MediaRefs>
+						<MediaRef Id="326005585"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1957861602" Name="Play_GolemRoar" DurationType="OneShot" DurationMin="0.96788275" DurationMax="1.0955156">
+					<MediaRefs>
+						<MediaRef Id="267421699"/>
+						<MediaRef Id="526610358"/>
+						<MediaRef Id="825169108"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="3074015410" Name="Play_GrassSwish" DurationType="OneShot" DurationMin="0.6836754" DurationMax="0.99535096">
 					<MediaRefs>
 						<MediaRef Id="505858539"/>
@@ -418,6 +476,13 @@
 				<Event Id="4079253437" Name="Play_Ninja_Sword_Stab_Into_Ground_Ver1" DurationType="OneShot" DurationMin="0.888" DurationMax="0.888">
 					<MediaRefs>
 						<MediaRef Id="949700526"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3038681280" Name="Play_PlasmaShot" DurationType="OneShot" DurationMin="0.47749797" DurationMax="0.81856793">
+					<MediaRefs>
+						<MediaRef Id="118334198"/>
+						<MediaRef Id="211621833"/>
+						<MediaRef Id="925244277"/>
 					</MediaRefs>
 				</Event>
 				<Event Id="142959787" Name="Play_Player_Block" DurationType="OneShot" DurationMin="0.5310381" DurationMax="0.87163496">
@@ -506,5 +571,5 @@
 			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{70986BE2-BBA1-07C6-947D-2C129E257289}</FileHash>
+	<FileHash>{881F42DB-235E-86F3-7940-F546E575C1FD}</FileHash>
 </SoundBanksInfo>

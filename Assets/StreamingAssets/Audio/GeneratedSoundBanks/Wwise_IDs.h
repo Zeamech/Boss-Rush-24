@@ -23,6 +23,10 @@ namespace AK
         static const AkUniqueID PLAY_DRAGON_WINGFLAP = 3035255686U;
         static const AkUniqueID PLAY_ENVIRONMENT_ELECTRIC_BUZZ_VER1 = 905360358U;
         static const AkUniqueID PLAY_GOLEM_HANDSLAM = 1735979121U;
+        static const AkUniqueID PLAY_GOLEM_RAGE_VER1 = 2041641761U;
+        static const AkUniqueID PLAY_GOLEM_SLIDE_VER1 = 1772121271U;
+        static const AkUniqueID PLAY_GOLEM_WINDUPCHARGE_VER1 = 3559821743U;
+        static const AkUniqueID PLAY_GOLEMROAR = 1957861602U;
         static const AkUniqueID PLAY_GRASSSWISH = 3074015410U;
         static const AkUniqueID PLAY_LASERSWORD = 874050906U;
         static const AkUniqueID PLAY_MARKET_BACKGROUND_AMBIENCE_VER1 = 1066527587U;
@@ -31,6 +35,7 @@ namespace AK
         static const AkUniqueID PLAY_NINJA_DASH_VER1 = 1581487416U;
         static const AkUniqueID PLAY_NINJA_SHURIKEN_THROW_VER1 = 2185043956U;
         static const AkUniqueID PLAY_NINJA_SWORD_STAB_INTO_GROUND_VER1 = 4079253437U;
+        static const AkUniqueID PLAY_PLASMASHOT = 3038681280U;
         static const AkUniqueID PLAY_PLAYER_BLOCK = 142959787U;
         static const AkUniqueID PLAY_PLAYER_DAMAGED = 2301987285U;
         static const AkUniqueID PLAY_PLAYER_FLURRY = 3504908804U;

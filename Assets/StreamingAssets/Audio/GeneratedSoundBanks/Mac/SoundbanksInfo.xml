@@ -21,24 +21,555 @@
 			<Busses>
 				<Bus Id="3803692087" Name="Master Audio Bus"/>
 			</Busses>
+			<SwitchGroups>
+				<SwitchGroup Id="1833605183" Name="Footstep_Surface">
+					<Switches>
+						<Switch Id="1216965916" Name="Stone"/>
+						<Switch Id="2195636714" Name="Dirt"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
-		<SoundBank Id="3291379323" Type="User" Language="SFX" Hash="{D2E55AC1-0ECA-16E9-7E03-29B2C3533127}">
+		<SoundBank Id="3291379323" Type="User" Language="SFX" Hash="{07CEF769-B1D1-5F61-7A7B-0A25EAC8E7D9}">
 			<ShortName>TestBank</ShortName>
 			<Path>TestBank.bnk</Path>
 			<Media>
+				<File Id="37744847" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_HandSlam.wav</ShortName>
+					<CachePath>SFX/Golem_HandSlam_F193BA06.wem</CachePath>
+				</File>
+				<File Id="62797840" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_0BDB3B4C.wem</CachePath>
+				</File>
+				<File Id="72160197" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Environment_Breaking Rocks_Ver1.wav</ShortName>
+					<CachePath>SFX/Environment_Breaking Rocks_Ver1_D9A8A8EA.wem</CachePath>
+				</File>
+				<File Id="78742084" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerAction_Block_02.wav</ShortName>
+					<CachePath>SFX/PlayerAction_Block_02_1D9F14E1.wem</CachePath>
+				</File>
+				<File Id="89012639" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dragon_Wings Flap_Ver1.wav</ShortName>
+					<CachePath>SFX/Dragon_Wings Flap_Ver1_3EE5B9FC.wem</CachePath>
+				</File>
+				<File Id="95561609" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dragon_Wings Flap_Ver1.wav</ShortName>
+					<CachePath>SFX/Dragon_Wings Flap_Ver1_4ABB29AA.wem</CachePath>
+				</File>
+				<File Id="118334198" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_Shot Plasma_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_Shot Plasma_Ver1_3A661D6E.wem</CachePath>
+				</File>
+				<File Id="142357567" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_HandSlam.wav</ShortName>
+					<CachePath>SFX/Golem_HandSlam_68FD6718.wem</CachePath>
+				</File>
+				<File Id="155595539" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Whrilwind_WithMetal.wav</ShortName>
+					<CachePath>SFX/Player_Whrilwind_WithMetal_2FF8C09C.wem</CachePath>
+				</File>
+				<File Id="161936392" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Environment_Water Splash_Ver1.wav</ShortName>
+					<CachePath>SFX/Environment_Water Splash_Ver1_E075087C.wem</CachePath>
+				</File>
+				<File Id="202993643" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Burn Damage_Ver1.wav</ShortName>
+					<CachePath>SFX/Player_Burn Damage_Ver1_C5FEE7A1.wem</CachePath>
+				</File>
+				<File Id="205608978" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Environment_Electric Buzz_Ver1.wav</ShortName>
+					<CachePath>SFX/Environment_Electric Buzz_Ver1_D79FB2B7.wem</CachePath>
+				</File>
+				<File Id="210457976" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dragon_Stomp_Ver1.wav</ShortName>
+					<CachePath>SFX/Dragon_Stomp_Ver1_02521A30.wem</CachePath>
+				</File>
+				<File Id="211621833" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_Shot Plasma_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_Shot Plasma_Ver1_7D1C5372.wem</CachePath>
+				</File>
+				<File Id="242347820" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Exports\UI_Confirm.wav</ShortName>
+					<CachePath>SFX/Exports/UI_Confirm_10C4C929.wem</CachePath>
+				</File>
+				<File Id="243733759" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ninja_Laser Sword Slash_Ver1.wav</ShortName>
+					<CachePath>SFX/Ninja_Laser Sword Slash_Ver1_039321BD.wem</CachePath>
+				</File>
+				<File Id="252847729" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_373019FE.wem</CachePath>
+				</File>
+				<File Id="260157068" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerAction_Block_02.wav</ShortName>
+					<CachePath>SFX/PlayerAction_Block_02_7B3E31B3.wem</CachePath>
+				</File>
+				<File Id="261679546" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Exports\UI_Hover.wav</ShortName>
+					<CachePath>SFX/Exports/UI_Hover_10C4C929.wem</CachePath>
+				</File>
+				<File Id="267421699" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_Roar_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_Roar_Ver1_A975D38A.wem</CachePath>
+				</File>
+				<File Id="285853821" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_HandSlam.wav</ShortName>
+					<CachePath>SFX/Golem_HandSlam_384535BD.wem</CachePath>
+				</File>
+				<File Id="291562151" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Whrilwind_NoMetal.wav</ShortName>
+					<CachePath>SFX/Player_Whrilwind_NoMetal_10C4C929.wem</CachePath>
+				</File>
+				<File Id="308589895" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dragon_Wings Flap_Ver1.wav</ShortName>
+					<CachePath>SFX/Dragon_Wings Flap_Ver1_EADBFACB.wem</CachePath>
+				</File>
+				<File Id="326005585" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_WindupCharge_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_WindupCharge_Ver1_4A2B58EF.wem</CachePath>
+				</File>
+				<File Id="327083476" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_SwordAttack.wav</ShortName>
+					<CachePath>SFX/Player_SwordAttack_4638FDB5.wem</CachePath>
+				</File>
+				<File Id="341910921" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Environment_Breaking Crates_Ver1.wav</ShortName>
+					<CachePath>SFX/Environment_Breaking Crates_Ver1_C53A4020.wem</CachePath>
+				</File>
+				<File Id="379036877" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ninja_Shuriken Throw_Ver1.wav</ShortName>
+					<CachePath>SFX/Ninja_Shuriken Throw_Ver1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="427186557" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Environment_Breaking Crates_Ver1.wav</ShortName>
+					<CachePath>SFX/Environment_Breaking Crates_Ver1_DD9A5D41.wem</CachePath>
+				</File>
+				<File Id="427384741" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_SwordAttack.wav</ShortName>
+					<CachePath>SFX/Player_SwordAttack_E024ADB7.wem</CachePath>
+				</File>
+				<File Id="428091529" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Environment_Breaking Pots_Ver1.wav</ShortName>
+					<CachePath>SFX/Environment_Breaking Pots_Ver1_8CA9E644.wem</CachePath>
+				</File>
+				<File Id="442526702" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Exports\UI_Cancel.wav</ShortName>
+					<CachePath>SFX/Exports/UI_Cancel_10C4C929.wem</CachePath>
+				</File>
+				<File Id="474142468" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Environment_Water Splash_Ver1.wav</ShortName>
+					<CachePath>SFX/Environment_Water Splash_Ver1_B76B4CED.wem</CachePath>
+				</File>
+				<File Id="480246841" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_8311EA65.wem</CachePath>
+				</File>
+				<File Id="492078507" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dragon_Stomp_Ver1.wav</ShortName>
+					<CachePath>SFX/Dragon_Stomp_Ver1_ED26B1CB.wem</CachePath>
+				</File>
+				<File Id="505383271" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_36027CCA.wem</CachePath>
+				</File>
+				<File Id="505858539" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Environment_Grass Swish_Ver1.wav</ShortName>
+					<CachePath>SFX/Environment_Grass Swish_Ver1_A242A796.wem</CachePath>
+				</File>
+				<File Id="526610358" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_Roar_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_Roar_Ver1_19316A6D.wem</CachePath>
+				</File>
+				<File Id="527798180" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Environment_Breaking Pots_Ver1.wav</ShortName>
+					<CachePath>SFX/Environment_Breaking Pots_Ver1_052F034C.wem</CachePath>
+				</File>
 				<File Id="534221521" Language="SFX" Streaming="false" Location="Memory">
 					<ShortName>Confirm.wav</ShortName>
 					<CachePath>SFX/Confirm_10C4C929.wem</CachePath>
 				</File>
+				<File Id="606264282" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerAction_Block_02.wav</ShortName>
+					<CachePath>SFX/PlayerAction_Block_02_E34069B2.wem</CachePath>
+				</File>
+				<File Id="642647210" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Environment_Grass Swish_Ver1.wav</ShortName>
+					<CachePath>SFX/Environment_Grass Swish_Ver1_87C96F88.wem</CachePath>
+				</File>
+				<File Id="646783559" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dragon_Stomp_Ver1.wav</ShortName>
+					<CachePath>SFX/Dragon_Stomp_Ver1_55ED6B33.wem</CachePath>
+				</File>
+				<File Id="650066343" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dragon_Wings Flap_Ver1.wav</ShortName>
+					<CachePath>SFX/Dragon_Wings Flap_Ver1_8921429B.wem</CachePath>
+				</File>
+				<File Id="654293309" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Environment_Water Splash_Ver1.wav</ShortName>
+					<CachePath>SFX/Environment_Water Splash_Ver1_7E68184B.wem</CachePath>
+				</File>
+				<File Id="678062722" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Burn Damage_Ver1.wav</ShortName>
+					<CachePath>SFX/Player_Burn Damage_Ver1_64AA770A.wem</CachePath>
+				</File>
+				<File Id="685750716" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Market_Background Ambience_Ver1.wav</ShortName>
+					<CachePath>SFX/Market_Background Ambience_Ver1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="691972418" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_SwordAttack.wav</ShortName>
+					<CachePath>SFX/Player_SwordAttack_17FE40A5.wem</CachePath>
+				</File>
+				<File Id="699420787" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ninja_Laser Sword Slash_Ver1.wav</ShortName>
+					<CachePath>SFX/Ninja_Laser Sword Slash_Ver1_DDCC2C8C.wem</CachePath>
+				</File>
+				<File Id="721400278" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Flurry.wav</ShortName>
+					<CachePath>SFX/Player_Flurry_10C4C929.wem</CachePath>
+				</File>
+				<File Id="771397451" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Market_Open Shop_Ver1.wav</ShortName>
+					<CachePath>SFX/Market_Open Shop_Ver1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="772195365" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dragon_Stomp_Ver1.wav</ShortName>
+					<CachePath>SFX/Dragon_Stomp_Ver1_2D014079.wem</CachePath>
+				</File>
+				<File Id="774230664" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_B7545505.wem</CachePath>
+				</File>
+				<File Id="778142981" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Market_Open Adventure Board_Ver1.wav</ShortName>
+					<CachePath>SFX/Market_Open Adventure Board_Ver1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="787857177" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerReactions_Damaged_03.wav</ShortName>
+					<CachePath>SFX/PlayerReactions_Damaged_03_B65F412A.wem</CachePath>
+				</File>
+				<File Id="802031320" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035.wav</ShortName>
+					<CachePath>SFX/Footsteps, Human, Dirt, Dry, Sneaker, Fast SND1035_791C6CA2.wem</CachePath>
+				</File>
+				<File Id="825169108" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_Roar_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_Roar_Ver1_576BDBA0.wem</CachePath>
+				</File>
+				<File Id="841412220" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ninja_Laser Sword Slash_Ver1.wav</ShortName>
+					<CachePath>SFX/Ninja_Laser Sword Slash_Ver1_E4845145.wem</CachePath>
+				</File>
+				<File Id="843371245" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Environment_Breaking Crates_Ver1.wav</ShortName>
+					<CachePath>SFX/Environment_Breaking Crates_Ver1_CBC2AE70.wem</CachePath>
+				</File>
+				<File Id="846513775" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Environment_Breaking Rocks_Ver1.wav</ShortName>
+					<CachePath>SFX/Environment_Breaking Rocks_Ver1_1418FF3D.wem</CachePath>
+				</File>
+				<File Id="876959399" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerReactions_Damaged_03.wav</ShortName>
+					<CachePath>SFX/PlayerReactions_Damaged_03_8393EFD3.wem</CachePath>
+				</File>
+				<File Id="887610808" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Environment_Grass Swish_Ver1.wav</ShortName>
+					<CachePath>SFX/Environment_Grass Swish_Ver1_BF868CD3.wem</CachePath>
+				</File>
+				<File Id="898711250" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Environment_Breaking Rocks_Ver1.wav</ShortName>
+					<CachePath>SFX/Environment_Breaking Rocks_Ver1_4DC151D7.wem</CachePath>
+				</File>
+				<File Id="925244277" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_Shot Plasma_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_Shot Plasma_Ver1_60A7C840.wem</CachePath>
+				</File>
+				<File Id="945390322" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Dragon_Roar.wav</ShortName>
+					<CachePath>SFX/Dragon_Roar_03109359.wem</CachePath>
+				</File>
+				<File Id="949084966" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Environment_Breaking Pots_Ver1.wav</ShortName>
+					<CachePath>SFX/Environment_Breaking Pots_Ver1_21C703C5.wem</CachePath>
+				</File>
+				<File Id="949700526" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ninja_Sword Stab Into Ground_Ver1.wav</ShortName>
+					<CachePath>SFX/Ninja_Sword Stab Into Ground_Ver1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="952967441" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerReactions_Damaged_03.wav</ShortName>
+					<CachePath>SFX/PlayerReactions_Damaged_03_E290F959.wem</CachePath>
+				</File>
+				<File Id="955359057" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerReactions_Damaged_03.wav</ShortName>
+					<CachePath>SFX/PlayerReactions_Damaged_03_65DB9306.wem</CachePath>
+				</File>
+				<File Id="956170682" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_Burn Damage_Ver1.wav</ShortName>
+					<CachePath>SFX/Player_Burn Damage_Ver1_3D17B3E7.wem</CachePath>
+				</File>
+				<File Id="961888213" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_HandSlam.wav</ShortName>
+					<CachePath>SFX/Golem_HandSlam_A37154FC.wem</CachePath>
+				</File>
+				<File Id="964464640" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_Slide_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_Slide_Ver1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="996780197" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Golem_Rage_Ver1.wav</ShortName>
+					<CachePath>SFX/Golem_Rage_Ver1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1033952369" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Ninja_Dash_Ver1.wav</ShortName>
+					<CachePath>SFX/Ninja_Dash_Ver1_10C4C929.wem</CachePath>
+				</File>
+				<File Id="1049327363" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Player_SwordAttack.wav</ShortName>
+					<CachePath>SFX/Player_SwordAttack_7D2CF7E1.wem</CachePath>
+				</File>
+				<File Id="1056470861" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>PlayerActions_Slide.wav</ShortName>
+					<CachePath>SFX/PlayerActions_Slide_2A4961CE.wem</CachePath>
+				</File>
+				<File Id="1070067498" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Exports\UI_Slider.wav</ShortName>
+					<CachePath>SFX/Exports/UI_Slider_10C4C929.wem</CachePath>
+				</File>
 			</Media>
 			<Events>
+				<Event Id="3614903485" Name="Play_Breaking_Crate" DurationType="OneShot" DurationMin="0.9235071" DurationMax="1.761391">
+					<MediaRefs>
+						<MediaRef Id="341910921"/>
+						<MediaRef Id="427186557"/>
+						<MediaRef Id="843371245"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2386285885" Name="Play_Breaking_Pot" DurationType="OneShot" DurationMin="1.1792741" DurationMax="1.4193033">
+					<MediaRefs>
+						<MediaRef Id="428091529"/>
+						<MediaRef Id="527798180"/>
+						<MediaRef Id="949084966"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2187358630" Name="Play_Breaking_Rocks" DurationType="OneShot" DurationMin="2.1845317" DurationMax="2.4162245">
+					<MediaRefs>
+						<MediaRef Id="72160197"/>
+						<MediaRef Id="846513775"/>
+						<MediaRef Id="898711250"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3226914506" Name="Play_BurnDamage" DurationType="OneShot" DurationMin="0.4256908" DurationMax="0.60913765">
+					<MediaRefs>
+						<MediaRef Id="202993643"/>
+						<MediaRef Id="678062722"/>
+						<MediaRef Id="956170682"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2498286841" Name="Play_Dirt" DurationType="OneShot" DurationMin="0.27553812" DurationMax="0.42338783">
+					<MediaRefs>
+						<MediaRef Id="62797840"/>
+						<MediaRef Id="252847729"/>
+						<MediaRef Id="480246841"/>
+						<MediaRef Id="505383271"/>
+						<MediaRef Id="774230664"/>
+						<MediaRef Id="802031320"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2084793062" Name="Play_Dragon_Roar" DurationType="OneShot" DurationMin="3.3262756" DurationMax="3.3262756">
+					<MediaRefs>
+						<MediaRef Id="945390322"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3641122009" Name="Play_Dragon_Stomp" DurationType="OneShot" DurationMin="0.70286584" DurationMax="0.8321285">
+					<MediaRefs>
+						<MediaRef Id="210457976"/>
+						<MediaRef Id="492078507"/>
+						<MediaRef Id="646783559"/>
+						<MediaRef Id="772195365"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3035255686" Name="Play_Dragon_WingFlap" DurationType="OneShot" DurationMin="0.89377344" DurationMax="1.746548">
+					<MediaRefs>
+						<MediaRef Id="89012639"/>
+						<MediaRef Id="95561609"/>
+						<MediaRef Id="308589895"/>
+						<MediaRef Id="650066343"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="905360358" Name="Play_Environment_Electric_Buzz_Ver1" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="205608978"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1735979121" Name="Play_Golem_HandSlam" DurationType="OneShot" DurationMin="1.4957564" DurationMax="2.178286">
+					<MediaRefs>
+						<MediaRef Id="37744847"/>
+						<MediaRef Id="142357567"/>
+						<MediaRef Id="285853821"/>
+						<MediaRef Id="961888213"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2041641761" Name="Play_Golem_Rage_Ver1" DurationType="OneShot" DurationMin="1.6007708" DurationMax="1.6007708">
+					<MediaRefs>
+						<MediaRef Id="996780197"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1772121271" Name="Play_Golem_Slide_Ver1" DurationType="OneShot" DurationMin="0.62395835" DurationMax="0.62395835">
+					<MediaRefs>
+						<MediaRef Id="964464640"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3559821743" Name="Play_Golem_WindupCharge_Ver1" DurationType="OneShot" DurationMin="1.70173" DurationMax="1.70173">
+					<MediaRefs>
+						<MediaRef Id="326005585"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1957861602" Name="Play_GolemRoar" DurationType="OneShot" DurationMin="0.96788275" DurationMax="1.0955156">
+					<MediaRefs>
+						<MediaRef Id="267421699"/>
+						<MediaRef Id="526610358"/>
+						<MediaRef Id="825169108"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3074015410" Name="Play_GrassSwish" DurationType="OneShot" DurationMin="0.6836754" DurationMax="0.99535096">
+					<MediaRefs>
+						<MediaRef Id="505858539"/>
+						<MediaRef Id="642647210"/>
+						<MediaRef Id="887610808"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="874050906" Name="Play_LaserSword" DurationType="OneShot" DurationMin="0.6244928" DurationMax="0.8042711">
+					<MediaRefs>
+						<MediaRef Id="243733759"/>
+						<MediaRef Id="699420787"/>
+						<MediaRef Id="841412220"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1066527587" Name="Play_Market_Background_Ambience_Ver1" DurationType="OneShot" DurationMin="45.170937" DurationMax="45.170937">
+					<MediaRefs>
+						<MediaRef Id="685750716"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2375287516" Name="Play_Market_Open_Adventure_Board_Ver1" DurationType="OneShot" DurationMin="0.71458334" DurationMax="0.71458334">
+					<MediaRefs>
+						<MediaRef Id="778142981"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1778288087" Name="Play_Market_Open_Shop_Ver1" DurationType="OneShot" DurationMin="0.5060625" DurationMax="0.5060625">
+					<MediaRefs>
+						<MediaRef Id="771397451"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1581487416" Name="Play_Ninja_Dash_Ver1" DurationType="OneShot" DurationMin="0.888" DurationMax="0.888">
+					<MediaRefs>
+						<MediaRef Id="1033952369"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2185043956" Name="Play_Ninja_Shuriken_Throw_Ver1" DurationType="OneShot" DurationMin="0.4724375" DurationMax="0.4724375">
+					<MediaRefs>
+						<MediaRef Id="379036877"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="4079253437" Name="Play_Ninja_Sword_Stab_Into_Ground_Ver1" DurationType="OneShot" DurationMin="0.888" DurationMax="0.888">
+					<MediaRefs>
+						<MediaRef Id="949700526"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3038681280" Name="Play_PlasmaShot" DurationType="OneShot" DurationMin="0.47749797" DurationMax="0.81856793">
+					<MediaRefs>
+						<MediaRef Id="118334198"/>
+						<MediaRef Id="211621833"/>
+						<MediaRef Id="925244277"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="142959787" Name="Play_Player_Block" DurationType="OneShot" DurationMin="0.5310381" DurationMax="0.87163496">
+					<MediaRefs>
+						<MediaRef Id="78742084"/>
+						<MediaRef Id="260157068"/>
+						<MediaRef Id="606264282"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2301987285" Name="Play_Player_Damaged" DurationType="OneShot" DurationMin="0.47796226" DurationMax="0.64479816">
+					<MediaRefs>
+						<MediaRef Id="787857177"/>
+						<MediaRef Id="876959399"/>
+						<MediaRef Id="952967441"/>
+						<MediaRef Id="955359057"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3504908804" Name="Play_Player_Flurry" DurationType="OneShot" DurationMin="1.7169583" DurationMax="1.7169583">
+					<MediaRefs>
+						<MediaRef Id="721400278"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1070486235" Name="Play_Player_SwordAttack" DurationType="OneShot" DurationMin="0.38850504" DurationMax="0.8969191">
+					<MediaRefs>
+						<MediaRef Id="327083476"/>
+						<MediaRef Id="427384741"/>
+						<MediaRef Id="691972418"/>
+						<MediaRef Id="1049327363"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3608174347" Name="Play_Player_Whrilwind_NoMetal" DurationType="OneShot" DurationMin="5.390646" DurationMax="5.390646">
+					<MediaRefs>
+						<MediaRef Id="291562151"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2830931800" Name="Play_Player_Whrilwind_WithMetal" DurationType="OneShot" DurationMin="1.8606635" DurationMax="1.8606635">
+					<MediaRefs>
+						<MediaRef Id="155595539"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1551064360" Name="Play_PlayerActions_Slide" DurationType="OneShot" DurationMin="1.1396018" DurationMax="1.1396018">
+					<MediaRefs>
+						<MediaRef Id="1056470861"/>
+					</MediaRefs>
+				</Event>
 				<Event Id="2013398331" Name="Play_TestSFX" DurationType="OneShot" DurationMin="0.59460354" DurationMax="0.59460354">
 					<MediaRefs>
 						<MediaRef Id="534221521"/>
 					</MediaRefs>
 				</Event>
+				<Event Id="2244506081" Name="Play_UI_Cancel" DurationType="OneShot" DurationMin="4.361583" DurationMax="4.361583">
+					<MediaRefs>
+						<MediaRef Id="442526702"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="3022734157" Name="Play_UI_Confirm" DurationType="OneShot" DurationMin="4.361583" DurationMax="4.361583">
+					<MediaRefs>
+						<MediaRef Id="242347820"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1339559671" Name="Play_UI_Hover" DurationType="OneShot" DurationMin="4.361583" DurationMax="4.361583">
+					<MediaRefs>
+						<MediaRef Id="261679546"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2007211132" Name="Play_UI_Slider" DurationType="OneShot" DurationMin="4.361583" DurationMax="4.361583">
+					<MediaRefs>
+						<MediaRef Id="1070067498"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="877418862" Name="Play_WaterSplash" DurationType="OneShot" DurationMin="1.3342177" DurationMax="2.033606">
+					<MediaRefs>
+						<MediaRef Id="161936392"/>
+						<MediaRef Id="474142468"/>
+						<MediaRef Id="654293309"/>
+					</MediaRefs>
+				</Event>
 			</Events>
+			<SwitchGroups>
+				<SwitchGroup Id="1833605183" Name="Footstep_Surface">
+					<Switches>
+						<Switch Id="1216965916" Name="Stone"/>
+						<Switch Id="2195636714" Name="Dirt"/>
+					</Switches>
+				</SwitchGroup>
+			</SwitchGroups>
 		</SoundBank>
 	</SoundBanks>
-	<FileHash>{88482AF9-B754-7479-CA68-AC2BA951C5B5}</FileHash>
+	<FileHash>{42805185-2D5B-91D4-BC53-EADE5EEBF84B}</FileHash>
 </SoundBanksInfo>
