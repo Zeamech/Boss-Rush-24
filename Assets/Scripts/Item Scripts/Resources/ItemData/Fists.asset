@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 398da06ce2ba3b246a92cbd63256b4a1, type: 3}
+  m_Name: Fists
+  m_EditorClassIdentifier: 
+  ID: -1
+  DisplayName: Kunckle Dusters
+  Description: Fists of fury
+  ItemType: 0
+  Icon: {fileID: 419829623, guid: cee6ccaa3b3666d46a41ad306baaf24b, type: 3}
+  MaxStackSize: 1
+  GoldValue: 450
+  attackCoolsown: 0.3
+  BasicAttack: {fileID: 11400000, guid: 41a988ab91c8ce84b80c8bc2e1762d6c, type: 2}
+  SlideAttack: {fileID: 11400000, guid: 7e8af2abed42a7d4f8314fad6c5bd64d, type: 2}
+  SprintAttack: {fileID: 11400000, guid: eafb451b0b14aec4d80c833e3762b06f, type: 2}
+  BlockAttack: {fileID: 11400000, guid: 41d7dc4835ec3ff4a986a47ab5751818, type: 2}
+  DrawAttack: {fileID: 0}

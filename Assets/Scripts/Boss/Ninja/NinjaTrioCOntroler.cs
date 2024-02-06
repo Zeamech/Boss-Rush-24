@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Threading;
 using UnityEngine;
+using UnityEngine.UI;
 using static GolemControler;
 
 public class NinjaTrioControler : MonoBehaviour
@@ -15,6 +16,7 @@ public class NinjaTrioControler : MonoBehaviour
     public GameObject NinjaPrefab1;
     public GameObject NinjaPrefab2;
     public GameObject NinjaPrefab3;
+    public GameObject healthBar;
     public NinjaState ninjaStates;
     public List<NinjaState> ninjaStateList = new List<NinjaState>();
 
@@ -41,7 +43,13 @@ public class NinjaTrioControler : MonoBehaviour
     private int throwCOunt;
     private int throwCOuntMx = 3;
     private bool allInAir;
-    private int ninjaRef;
+    public int ninjaRef;
+
+    private void Awake()
+    {
+        GameObject healthbar = Instantiate(healthBar, FindObjectOfType<CanvasManager>().transform);
+        GetComponent<HealthBar>().healthBarSlider = healthbar.GetComponent<Slider>();
+    }
 
     private void Start()
     {

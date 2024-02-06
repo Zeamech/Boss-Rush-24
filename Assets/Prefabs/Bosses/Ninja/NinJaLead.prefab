@@ -52,10 +52,12 @@ MonoBehaviour:
   NinjaPrefab1: {fileID: 2209264936518284612, guid: 35e5fcffe7ae47d479085a099dc8d75c, type: 3}
   NinjaPrefab2: {fileID: 699831712265350644, guid: d372033dc26e110459c6646775681327, type: 3}
   NinjaPrefab3: {fileID: 6688893843340193696, guid: d5ad38fb36122df4baf97d87013f73db, type: 3}
+  healthBar: {fileID: 8956776755757903783, guid: 1ce813af946eb2049813ab5767ace701, type: 3}
   ninjaStates: 1
   ninjaStateList: 
   stateSwitchTimer: 0
   stateSwitchTimerMx: 10
+  ninjaRef: 0
 --- !u!114 &3131870461570688083
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,10 +70,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7edcf000892b938429246eb25c8a1bd4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  MaxHealth: 10
+  MaxHealth: 70
   currentHealth: 0
   UpdateOnUpdate: 1
   isInvulnerable: 0
+  hitReg: 0
   objAni: {fileID: 0}
   healthBarSlider: {fileID: 0}
   healthbarHead: {fileID: 0}

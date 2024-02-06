@@ -9,7 +9,7 @@ public class NinjaController : MonoBehaviour
     public GameObject projPrefab;
     public Animator ninjaAni;
 
-
+    public int ninjaRef;
     public float slashSpeed;
 
     private Vector3 targetPos;
@@ -28,7 +28,14 @@ public class NinjaController : MonoBehaviour
 
     private void Update()
     {
-        if(!FindAnyObjectByType<NinjaTrioControler>())
+        if(FindAnyObjectByType<NinjaTrioControler>())
+        {
+            if(FindAnyObjectByType<NinjaTrioControler>().ninjaRef != ninjaRef && GetComponent<HealthBar>().hitReg)
+            {
+                Dodge();
+            }
+        }
+        else
         {
             Destroy(gameObject);
         }
@@ -98,6 +105,12 @@ public class NinjaController : MonoBehaviour
         isInAir = false;
         GetComponent<HealthBar>().isInvulnerable = false;
         ninjaAni.SetBool("InAir", false);
+    }
+
+    public void Dodge()
+    {
+        GetComponent<Rigidbody2D>().velocity = new Vector2(UnityEngine.Random.Range(-30, 30), UnityEngine.Random.Range(-30, 30));
+        ninjaAni.SetTrigger("Dodge");
     }
 
     public Player CheckForPlayer()

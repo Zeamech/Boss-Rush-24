@@ -10,7 +10,7 @@ public class HealthBar : MonoBehaviour
     public float currentHealth;
     public bool UpdateOnUpdate;
     public bool isInvulnerable;
-
+    [HideInInspector]public bool hitReg;
 
     public Animator objAni;
     public Slider healthBarSlider;
@@ -31,16 +31,43 @@ public class HealthBar : MonoBehaviour
 
         if(currentHealth <= 0 && healthbarHead == null)
         {
+            if(GetComponent<Player>())
+            {
+                Player player = GetComponent<Player>();
+                player.PlayerMovementState = Player.MovementState.None;
+                player.GetComponent<Animator>().SetBool("Dead", true);
+            }
+
             gameObject.SetActive(false);
         }
+
+        hitReg = false;
     }
 
     public void AlterHealth(float Change)
     {
-        if (isInvulnerable)
-            return;
 
-        if(healthbarHead != null)
+        if (isInvulnerable)
+        {
+            //play dink noise
+            if(GetComponent<Player>() && GetComponent<Player>().PlayerMovementState == Player.MovementState.Block)
+            {
+                GetComponent<Player>().playerStamina -= 20;
+            }
+            hitReg = true;
+            return;
+        }
+        else
+        {
+            hitReg = true;
+        }
+            
+        if (GetComponent<Player>())
+        {
+            FindAnyObjectByType<ScreenEffects>().PlayerHit();
+        }
+
+        if (healthbarHead != null)
             healthbarHead.AlterHealth(Change);
         else
             currentHealth += Change;
