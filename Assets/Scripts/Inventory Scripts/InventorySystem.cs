@@ -17,17 +17,20 @@ public class InventorySystem
     public int InventorySize => inventorySlots.Count;
 
     public UnityAction<InventorySlot> OnInventorySlotChanged;
+    public static UnityAction<int> UpdatePlayerGoldAmount;
 
     public InventorySystem(int size)
     {
         _gold = 0;
         CreateInventory(size);
+        UpdatePlayerGoldAmount?.Invoke(_gold);
     }
 
     public InventorySystem(int size, int gold)
     {
         _gold = gold;
         CreateInventory(size);
+        UpdatePlayerGoldAmount?.Invoke(_gold);
     }
 
     private void CreateInventory(int size)
@@ -101,6 +104,7 @@ public class InventorySystem
     public void SpendGold(int basketTotal)
     {
         _gold -= basketTotal;
+        UpdatePlayerGoldAmount?.Invoke(_gold);
     }
 
     public Dictionary<InventoryItemData, int> GetAllItemsHeld()
@@ -121,6 +125,7 @@ public class InventorySystem
     public void GainGold(int price)
     {
         _gold += price;
+        UpdatePlayerGoldAmount?.Invoke(_gold);
     }
 
     public void RemoveItemsFromInventory(InventoryItemData data, int amount)

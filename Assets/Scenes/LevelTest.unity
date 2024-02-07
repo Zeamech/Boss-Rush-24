@@ -391,30 +391,6 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3629510135833142951, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3629510135833142951, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 3629510135833142951, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_Color.a
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3629510135833142951, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_Color.b
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3629510135833142951, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_Color.g
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3629510135833142951, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_Color.r
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 5710905627937092973, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
       propertyPath: m_Name
       value: InventoryUIController
@@ -426,14 +402,6 @@ PrefabInstance:
     - target: {fileID: 6595777489890915907, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
       propertyPath: m_SizeDelta.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7437573976860011514, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_Type
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7437573976860011514, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
-      propertyPath: m_Sprite
-      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 7462639889817323665, guid: e9ddec8fb1643504dae72c38b38d686d, type: 3}
       propertyPath: m_SizeDelta.x

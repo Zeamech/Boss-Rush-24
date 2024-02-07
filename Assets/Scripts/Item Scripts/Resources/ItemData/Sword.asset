@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ID: 2
   DisplayName: Sword
-  Description: 
+  Description: Hurts
   ItemType: 0
   Icon: {fileID: 21300000, guid: 6ea6ed6e2789de04597d992f692003e7, type: 3}
   MaxStackSize: 1
