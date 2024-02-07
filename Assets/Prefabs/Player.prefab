@@ -116,7 +116,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerMovementState: 0
   PreAttackState: 0
-  EquippedWeapon: {fileID: 11400000, guid: a555e0fca47d2294c9bd933b735b90ca, type: 2}
+  EquippedWeapon: {fileID: 11400000, guid: a51f1158bb017164eaf97119d63a3740, type: 2}
   PlayerParticleSystem: {fileID: 6665322907049543796}
   staminaBarSlider: {fileID: 0}
   PlayerAim: {fileID: 7397883521431180355}
