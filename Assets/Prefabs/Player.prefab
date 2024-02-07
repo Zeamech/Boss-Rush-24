@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 8871625206404783566}
   - component: {fileID: 6665322907049543796}
   - component: {fileID: -3781215776406311179}
+  - component: {fileID: 4100965025650835021}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -4946,6 +4947,35 @@ MonoBehaviour:
   objAni: {fileID: 0}
   healthBarSlider: {fileID: 0}
   healthbarHead: {fileID: 0}
+--- !u!114 &4100965025650835021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3938864329349406760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bd752b65f1adb9408d0ce68c8a8fea2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  primaryInventorySystem:
+    inventorySlots: []
+    _gold: 1000
+  inventorySize: 30
+  offset: 0
+  ArmorInventorySystem:
+    inventorySlots: []
+    _gold: 0
+  WeaponsInventorySystem:
+    inventorySlots: []
+    _gold: 0
+  TalismansInventorySystem:
+    inventorySlots: []
+    _gold: 0
+  ArmorSlots: 4
+  WeaponSlots: 2
+  TalismanSlots: 3
 --- !u!1 &4498034918045608988
 GameObject:
   m_ObjectHideFlags: 0
