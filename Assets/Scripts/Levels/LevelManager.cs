@@ -14,20 +14,12 @@ public class LevelManager : MonoBehaviour
     public Slider SliderPlayerStamina;
 
     private GameObject activeRoom;
-    private GameObject activeBoss;
+    public GameObject activeBoss;
     private GameObject activePlayer;
 
     private void Awake()
     {
         LoadRoom();
-    }
-
-    private void Update()
-    {
-        if(!activeBoss.activeSelf)
-        {
-            NextRoom();
-        }
     }
 
     //Holds adventure list (all missions up next on this adventure)
@@ -46,6 +38,9 @@ public class LevelManager : MonoBehaviour
         FindObjectOfType<CamController>().SetTarget(activePlayer);
 
         missionTemplates.Remove(missionTemplates[0]);
+
+        FindAnyObjectByType<ScreenEffects>().ScreenWipe(false);
+        Camera.main.transform.position = new Vector3(0, 0, Camera.main.transform.position.z);
     }
     //when level is complete unload level then restarts loading sequence for next mission
     private void UnloadRoom()

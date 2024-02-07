@@ -1477,6 +1477,7 @@ MonoBehaviour:
   PlayerObj: {fileID: 3938864329349406760, guid: 74cde52175acf124bacc9484c2eccbf9, type: 3}
   SliderPlayerHealth: {fileID: 333216725}
   SliderPlayerStamina: {fileID: 821571485}
+  activeBoss: {fileID: 0}
 --- !u!1001 &1849753920
 PrefabInstance:
   m_ObjectHideFlags: 0

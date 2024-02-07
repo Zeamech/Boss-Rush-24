@@ -14,4 +14,10 @@ public class ScreenEffects : MonoBehaviour
     {
         Camera.main.GetComponent<Animator>().SetTrigger("Shake0");
     }
+
+    public void ScreenWipe(bool value)
+    {
+        GetComponent<Animator>().SetBool("Wipe", value);
+    }
+
 }
