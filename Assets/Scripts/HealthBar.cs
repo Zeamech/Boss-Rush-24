@@ -35,10 +35,9 @@ public class HealthBar : MonoBehaviour
             {
                 Player player = GetComponent<Player>();
                 player.PlayerMovementState = Player.MovementState.None;
-                player.GetComponent<Animator>().SetBool("Dead", true);
+                player.GetComponentInChildren<Animator>().SetBool("Dead", true);
             }
-
-            gameObject.SetActive(false);
+            else gameObject.SetActive(false);
         }
 
         hitReg = false;
