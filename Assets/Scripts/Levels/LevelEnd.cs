@@ -5,6 +5,7 @@ using UnityEngine;
 public class LevelEnd : MonoBehaviour
 {
     public GameObject blockage;
+    public Transform startPoint;
 
     LevelManager levelManager;
     private bool endLevel;

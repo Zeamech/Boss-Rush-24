@@ -47,6 +47,8 @@ public class GolemControler : MonoBehaviour
     [SerializeField] private float HeadChaseDist = 10;
     [SerializeField] private float HeadMoveForce = 20;
     private bool catchPlayer;
+    private bool golemStartUp;
+    private float startRoarTimer = 1.5f;
 
     [SerializeField]private float handSpeed = 8;
 
@@ -68,12 +70,31 @@ public class GolemControler : MonoBehaviour
         healthStored = healthTracker;
 
         golemStateList.Add(GolemState.BasicHands);
-        golemState = GolemState.BasicHands;
+        golemState = GolemState.None;
+        golemStartUp = true;
         stateSwitchTimer = 5;
     }
 
     private void Update()
     {
+        if(golemStartUp)
+        {
+            stateSwitchTimer = 5;
+
+            Vector2 distance = GolemHead.transform.position - TargetObject.transform.position;
+            if (distance.magnitude < 5)
+            {
+                golemHeadAni.SetBool("Sliding", true);
+                startRoarTimer -= Time.deltaTime;
+                if(startRoarTimer <= 0)
+                {
+                    golemState = GolemState.BasicHands;
+                    golemStartUp = false;
+                }
+            }
+
+        }
+
         healthTracker = GetComponent<HealthBar>().currentHealth;
 
         if (healthTracker <= GetComponent<HealthBar>().MaxHealth / 1.5f && !stage1)
@@ -164,7 +185,7 @@ public class GolemControler : MonoBehaviour
             if(distance.magnitude > HeadChaseDist)
                 catchPlayer = true;
 
-            if (catchPlayer)
+            if (catchPlayer && golemState != GolemState.None)
             {
                 if (distance.magnitude < 5)
                     catchPlayer = false;

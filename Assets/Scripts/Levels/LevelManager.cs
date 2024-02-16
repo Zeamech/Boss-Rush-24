@@ -29,10 +29,9 @@ public class LevelManager : MonoBehaviour
     {
         activeRoom = Instantiate(missionTemplates[0].LevelRoom, GridObj);
         activeBoss = Instantiate(missionTemplates[0].LevelBoss);
-        activeBoss.transform.position = new Vector2(5, 0);
 
         activePlayer = Instantiate(PlayerObj);
-        activePlayer.transform.position = new Vector2(-5, 0);
+        activePlayer.transform.position = FindObjectOfType<LevelEnd>().startPoint.position;
         activePlayer.GetComponent<HealthBar>().healthBarSlider = SliderPlayerHealth;
         activePlayer.GetComponent<Player>().staminaBarSlider = SliderPlayerStamina;
         FindObjectOfType<CamController>().SetTarget(activePlayer);
